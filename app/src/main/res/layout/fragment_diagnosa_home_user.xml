@@ -1,0 +1,1195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/padding_Bottom_RelativeLayout"
+    tools:context="com.example.belajar_android_pengenalan_material_design.fragmentUsers.HomeDiagnosaUsersFragment">
+
+    <!-- TODO: Update blank com.example.belajar_android_pengenalan_material_design.fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ExtraText,ScrollViewCount,UselessLeaf"
+        android:layout_above="@+id/btn_simpan_diagnosa">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="@dimen/corner_radius_CardViewDiagnosa"
+                app:cardElevation="@dimen/CardElevation_CardView"
+                android:layout_marginBottom="@dimen/layout_marginBottom_CardView_Diagnosa"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa">
+
+                <RelativeLayout
+                    android:id="@+id/linear2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_LinearLayout">
+                    <TextView
+                        android:id="@+id/tv_tingkat_stres"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/panduan1"
+                        android:textSize="@dimen/TextView_judul_size"/>
+                    <TextView
+                        android:id="@+id/tv_hasil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/panduan2"
+                        android:layout_marginTop="@dimen/layout_marginTop_hasil"
+                        android:layout_below="@+id/tv_tingkat_stres"
+                        android:textSize="@dimen/TextView_judul_size"/>
+                    <TextView
+                        android:id="@+id/tv_solusi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/panduan3"
+                        android:layout_marginTop="@dimen/layout_marginTop_hasil"
+                        android:layout_below="@+id/tv_hasil"
+                        android:textSize="@dimen/TextView_judul_size"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <EditText
+                android:id="@+id/edt_NPM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Edit_Text_NPM"
+                android:inputType="textCapSentences"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/edt_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_marginTop_EditText"
+                android:hint="@string/EditTextName"
+                android:inputType="textCapSentences"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/edt_JK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_marginTop_EditText"
+                android:hint="@string/Jenis_Kelamin"
+                android:maxLength="1"
+                android:inputType="textCapSentences"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                tools:ignore="Autofill" />
+            <EditText
+                android:id="@+id/edt_Jurusan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_marginTop_EditText"
+                android:hint="@string/Jurusan"
+                android:inputType="textCapSentences"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                tools:ignore="Autofill" />
+            <EditText
+                android:id="@+id/edt_Universitas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_marginTop_EditText"
+                android:hint="@string/Universitas"
+                android:inputType="textCapSentences"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                tools:ignore="Autofill" />
+
+            <CheckBox
+                android:id="@+id/cb_G48"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G48"
+                tools:ignore="TooManyViews" />
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G48"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"/>
+
+            <CheckBox
+                android:id="@+id/cb_G29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G29"
+                tools:ignore="TooManyViews" />
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"/>
+
+            <CheckBox
+                android:id="@+id/cb_G03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G03"
+                tools:ignore="TooManyViews" />
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                tools:ignore="TooManyViews" />
+
+            <CheckBox
+                android:id="@+id/cb_G44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G44"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                tools:ignore="TooManyViews" />
+
+            <CheckBox
+                android:id="@+id/cb_G38"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G38"
+                tools:ignore="TooManyViews" />
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G38"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"/>
+
+            <CheckBox
+                android:id="@+id/cb_G27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G27"
+                tools:ignore="TooManyViews" />
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"/>
+
+            <CheckBox
+                android:id="@+id/cb_G45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G45"
+                tools:ignore="TooManyViews" />
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"/>
+
+            <CheckBox
+                android:id="@+id/cb_G34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G34"
+                tools:ignore="TooManyViews" />
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                tools:ignore="TooManyViews" />
+
+            <CheckBox
+                android:id="@+id/cb_G09"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G09"
+                tools:ignore="TooManyViews" />
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G09"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                tools:ignore="TooManyViews" />
+
+            <CheckBox
+                android:id="@+id/cb_G17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G17"
+                tools:ignore="TooManyViews" />
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"/>
+
+            <CheckBox
+                android:id="@+id/cb_G50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G50"
+                tools:ignore="TooManyViews" />
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                tools:ignore="TooManyViews" />
+
+            <CheckBox
+                android:id="@+id/cb_G16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G16"
+                tools:ignore="TooManyViews" />
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"/>
+
+            <CheckBox
+                android:id="@+id/cb_G18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G18"
+                tools:ignore="TooManyViews" />
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"/>
+
+            <CheckBox
+                android:id="@+id/cb_G05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G05"
+                tools:ignore="TooManyViews" />
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"/>
+
+            <CheckBox
+                android:id="@+id/cb_G07"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G07"
+                tools:ignore="TooManyViews" />
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G07"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"/>
+
+            <CheckBox
+                android:id="@+id/cb_G04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G04"
+                tools:ignore="TooManyViews" />
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"/>
+
+            <CheckBox
+                android:id="@+id/cb_G08"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G08"
+                tools:ignore="TooManyViews" />
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G08"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"/>
+
+            <CheckBox
+                android:id="@+id/cb_G28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G28"
+                tools:ignore="TooManyViews" />
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"/>
+
+            <CheckBox
+                android:id="@+id/cb_G30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G30"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"/>
+
+            <CheckBox
+                android:id="@+id/cb_G12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G12"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"/>
+
+            <CheckBox
+                android:id="@+id/cb_G02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G02"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"/>
+
+            <CheckBox
+                android:id="@+id/cb_G13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G13"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"/>
+
+            <CheckBox
+                android:id="@+id/cb_G39"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G39"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G39"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"/>
+
+            <CheckBox
+                android:id="@+id/cb_G49"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G49"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G49"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"/>
+
+            <CheckBox
+                android:id="@+id/cb_G46"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G46"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G46"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"/>
+
+
+            <CheckBox
+                android:id="@+id/cb_G47"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G47"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G47"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"/>
+
+            <CheckBox
+                android:id="@+id/cb_G24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G24"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"/>
+
+            <CheckBox
+                android:id="@+id/cb_G37"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G37"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G37"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"/>
+
+            <CheckBox
+                android:id="@+id/cb_G43"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G43"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G43"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"/>
+
+            <CheckBox
+                android:id="@+id/cb_G35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G35"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"/>
+
+            <CheckBox
+                android:id="@+id/cb_G36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G36"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"/>
+
+            <CheckBox
+                android:id="@+id/cb_G23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G23"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"/>
+
+            <CheckBox
+                android:id="@+id/cb_G06"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G06"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G06"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"/>
+
+            <CheckBox
+                android:id="@+id/cb_G33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G33"
+                tools:ignore="TooManyViews" />
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"/>
+
+            <CheckBox
+                android:id="@+id/cb_G21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G21"
+                />
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                tools:ignore="TooManyViews"/>
+
+            <CheckBox
+                android:id="@+id/cb_G15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G15"
+                tools:ignore="TooManyViews" />
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                tools:ignore="TooManyViews" />
+
+            <CheckBox
+                android:id="@+id/cb_G20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G20"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                tools:ignore="TooManyViews" />
+
+            <CheckBox
+                android:id="@+id/cb_G40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G40"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                tools:ignore="TooManyViews" />
+
+            <CheckBox
+                android:id="@+id/cb_G10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G10"
+                tools:ignore="TooManyViews" />
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                tools:ignore="TooManyViews" />
+
+            <CheckBox
+                android:id="@+id/cb_G41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G41"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                tools:ignore="TooManyViews" />
+
+            <CheckBox
+                android:id="@+id/cb_G19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G19"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                tools:ignore="TooManyViews" />
+
+            <CheckBox
+                android:id="@+id/cb_G11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G11"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                tools:ignore="TooManyViews" />
+
+            <CheckBox
+                android:id="@+id/cb_G42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G42"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                tools:ignore="TooManyViews" />
+
+            <CheckBox
+                android:id="@+id/cb_G31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G31"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                tools:ignore="TooManyViews" />
+
+            <CheckBox
+                android:id="@+id/cb_G14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G14"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                tools:ignore="TooManyViews" />
+
+            <CheckBox
+                android:id="@+id/cb_G26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G26"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                tools:ignore="TooManyViews" />
+
+            <CheckBox
+                android:id="@+id/cb_G22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G22"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                tools:ignore="TooManyViews" />
+
+            <CheckBox
+                android:id="@+id/cb_G32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G32"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                tools:ignore="TooManyViews" />
+
+            <CheckBox
+                android:id="@+id/cb_G01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G01"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                tools:ignore="TooManyViews" />
+
+            <CheckBox
+                android:id="@+id/cb_G25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:text="@string/G25"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoComplete_tv_G25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintACT"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                tools:ignore="TooManyViews" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_simpan_diagnosa"
+        android:text="@string/btn_diagnosa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_marginStart_BtnDiagnosa"
+        android:layout_marginTop="@dimen/layout_marginTop_BtnDiagnosa"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/layout_marginEnd_BtnDiagnosa"
+        android:layout_marginLeft="@dimen/layout_marginLeft_BtnDiagnosa"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/custom_button"
+        android:textColor="@color/colorAccent"
+        android:layout_marginRight="@dimen/layout_marginRight_BtnDiagnosa"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

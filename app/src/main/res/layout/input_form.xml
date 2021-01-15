@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@id/Linearlayout_inputform"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_heightLinearLayout"
+        android:background="@color/colorAccent"
+        tools:ignore="UselessParent"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Input_Form"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="@dimen/textSizeInputForm"
+            android:textColor="@color/colorPrimarySplashScreen"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Linearlayout_inputform"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/paddingLinearLayout">
+
+        <EditText
+            android:id="@+id/et_kode_gejala"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/EditText_Kode_Gejala"
+            android:inputType="textCapSentences"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/et_nama_gejala"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_marginTop_EditText"
+            android:hint="@string/EditText_Nama_Gejala"
+            android:inputType="textCapSentences"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/et_bobot_nilai_cf_gejala"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_marginTop_EditText"
+            android:hint="@string/EditText_Bobot_Nilai_CF_Gejala"
+            android:inputType="numberDecimal"
+            tools:ignore="Autofill" />
+
+        <ProgressBar
+            android:layout_width="@dimen/ProgressBar_layout_width"
+            android:layout_height="@dimen/ProgressBar_layout_height"
+            android:id="@+id/progressBar"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/colorAccent"
+            android:indeterminateTint="@color/colorAccent"
+            tools:targetApi="lollipop"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/btn_simpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_marginTop_button_simpan"
+            android:background="@drawable/custom_button"
+            android:text="@string/Button_simpan"/>
+    </LinearLayout>
+
+</LinearLayout>

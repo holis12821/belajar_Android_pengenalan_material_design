@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "650497553560",
+    "firebase_url": "https://sistempakar-aa569.firebaseio.com",
+    "project_id": "sistempakar-aa569",
+    "storage_bucket": "sistempakar-aa569.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650497553560:android:45c7e6da4794e8b4904ced",
+        "android_client_info": {
+          "package_name": "com.example.belajar_android_pengenalan_material_design"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650497553560-8uovirgr427vr7jvsfk8t80tdcrbddb1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9-mrVpSRTIHYomOmKBtk9Awljiq2vwL4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "650497553560-8uovirgr427vr7jvsfk8t80tdcrbddb1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

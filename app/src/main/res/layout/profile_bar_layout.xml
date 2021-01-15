@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    app:titleTextColor="@color/colorPrimary_Login"
+    android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/menuStyle"
+    android:id="@+id/toolbar">
+
+    <RelativeLayout
+        android:id="@+id/layout_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/layout_marginTop_RelativeLayout">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/layout_width_CircleImageView"
+            android:layout_height="@dimen/layout_height_CircleImageView"
+            android:id="@+id/profileImage"
+            app:civ_border_width="@dimen/civ_border_width"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_color="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="@dimen/paddingTop_CircleImageView"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:text="@string/TextView_Profile_Image"
+            android:layout_gravity="center"
+            android:layout_below="@+id/profileImage"
+            android:textColor="@color/colorPrimary_Login"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSize_TextView_CircleImageView"
+            android:layout_margin="@dimen/layout_margin_TextView_CircleImageView_Username"/>
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>

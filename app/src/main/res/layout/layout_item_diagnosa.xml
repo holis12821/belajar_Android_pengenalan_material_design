@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="@dimen/layout_marginLeft_LinearLayout"
+    android:layout_marginRight="@dimen/layout_marginLeft_LinearLayout"
+    android:layout_marginBottom="@dimen/layout_marginBottom_LinearLayout"
+    android:layout_marginTop="@dimen/layout_marginTop_LinearLayout"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/colorAccent"
+    app:cardCornerRadius="@dimen/corner_radius_CardView_2"
+    android:layout_marginStart="@dimen/layout_marginLeft_LinearLayout"
+    android:layout_marginEnd="@dimen/layout_marginRight_LinearLayout"
+    app:cardElevation="@dimen/CardElevation_CardView"
+    tools:targetApi="lollipop">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/layout_marginStart_CardView"
+        app:cardCornerRadius="@dimen/corner_radius_CardView"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_marginLeft_CardView">
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:paddingEnd="@dimen/paddingEnd_cardView"
+            android:paddingStart="@dimen/paddingStart_CardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/paddingLeft_CardView"
+            android:paddingRight="@dimen/paddingRight_CardView">
+
+            <TextView
+                android:padding="@dimen/padding_CardView_diagnosa"
+                android:id="@+id/tv_NPM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/TextView_NPM_CardView"/>
+
+            <TextView
+                android:padding="@dimen/padding_CardView_diagnosa"
+                android:id="@+id/tv_Nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/TextView_Nama_CardView"
+                />
+            <TextView
+                android:padding="@dimen/padding_CardView_diagnosa"
+                android:id="@+id/tv_jenis_kelamin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/TextView_Jenis_Kelamin"
+                />
+
+            <TextView
+                android:padding="@dimen/padding_CardView_diagnosa"
+                android:id="@+id/tv_Jurusan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/TextView_Jurusan"
+                />
+            <TextView
+                android:padding="@dimen/padding_CardView_diagnosa"
+                android:id="@+id/tv_Universitas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/TextView_Universitas"
+                />
+            <TextView
+                android:padding="@dimen/padding_CardView_diagnosa"
+                android:id="@+id/tv_tingkat_stres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/TextView_TingkatStres"
+                />
+            <TextView
+                android:padding="@dimen/padding_CardView_diagnosa"
+                android:id="@+id/tv_Solusi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/TextView_Solusi"
+                />
+            <TextView
+                android:padding="@dimen/padding_CardView_diagnosa"
+                android:id="@+id/tv_Persentase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/TextView_Persentase"
+                />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.cardview.widget.CardView>

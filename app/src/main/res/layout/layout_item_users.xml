@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="@dimen/layout_marginLeft_LinearLayout"
+    android:layout_marginRight="@dimen/layout_marginLeft_LinearLayout"
+    android:layout_marginBottom="@dimen/layout_marginBottom_LinearLayout"
+    android:layout_marginTop="@dimen/layout_marginTop_LinearLayout"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/colorAccent"
+    app:cardCornerRadius="@dimen/corner_radius_CardView_2"
+    android:layout_marginStart="@dimen/layout_marginLeft_LinearLayout"
+    android:layout_marginEnd="@dimen/layout_marginRight_LinearLayout"
+    app:cardElevation="@dimen/CardElevation_CardView"
+    tools:targetApi="lollipop">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/layout_marginStart_CardView"
+        app:cardCornerRadius="@dimen/corner_radius_CardView"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_marginLeft_CardView">
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:paddingEnd="@dimen/paddingEnd_LinearLayout"
+            android:paddingStart="@dimen/paddingStart_LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/paddingLeft_LinearLayout"
+            android:paddingRight="@dimen/paddingRight_LinearLayout">
+
+            <TextView
+                android:padding="@dimen/padding_CardView"
+                android:id="@+id/tv_kode_gejala"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/TextView_Kode_Gejala_CardView"/>
+
+            <TextView
+                android:padding="@dimen/padding_CardView"
+                android:id="@+id/tv_nama_gejala"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/TextView_Nama_Gejala_CardView"
+                />
+            <TextView
+                android:padding="@dimen/padding_CardView"
+                android:id="@+id/tv_bobot_nilai_cf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/TextView_Bobot_Nilai_CF_CardView"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.cardview.widget.CardView>

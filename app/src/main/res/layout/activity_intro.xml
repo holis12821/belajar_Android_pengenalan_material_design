@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntroActivity"
+    android:background="@color/background_layout_activity_intro">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/screen_viewpager"
+        android:layout_width="@dimen/layout_width_ViewPager"
+        android:layout_height="@dimen/layout_height_ViewPager"
+        android:layout_marginBottom="@dimen/layout_marginBottom_ViewPager"
+        app:layout_constraintBottom_toTopOf="@+id/tab_indicator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/layout_marginEnd_button"
+        android:layout_marginRight="@dimen/layout_marginRight_button"
+        android:layout_marginBottom="@dimen/layout_marginBottom_button"
+        android:background="#fff"
+        android:drawableRight="@drawable/ic_arrow_forward_24"
+        android:drawableTint="@color/gradient_start_color"
+        android:text="@string/text_button_next"
+        android:textColor="@color/gradient_start_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:targetApi="m"
+        android:drawableEnd="@drawable/ic_arrow_forward_24" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_marginStart_TabLayout"
+        android:layout_marginLeft="@dimen/layout_marginLeft_TabLayout"
+        android:layout_marginEnd="@dimen/layout_marginEnd_TabLayout"
+        android:layout_marginRight="@dimen/layout_marginRight_TabLayout"
+        android:layout_marginBottom="@dimen/layout_marginBottom_TabLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_next"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tabBackground="@drawable/indicator_selector">
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/btn_get_started"
+        android:layout_width="@dimen/layout_width_btnGetStarted"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_marginStart_btnGetStarted"
+        android:layout_marginLeft="@dimen/layout_marginLeft_btnGetStarted"
+        android:layout_marginEnd="@dimen/layout_marginEnd_btnGetStarted"
+        android:layout_marginRight="@dimen/layout_marginRight_btnGetStarted"
+        android:layout_marginBottom="@dimen/layout_marginBottom_btnGetStarted"
+        android:background="@drawable/btn_gradient_style"
+        android:text="@string/getStarted"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:textSize="@dimen/textSize_textView_Skip"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary_Splash_Screen"
+        android:id="@+id/tv_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_marginTop_Skip"
+        android:layout_marginEnd="@dimen/layout_marginEnd_Skip"
+        android:layout_marginRight="@dimen/layout_marginRight_Skip"
+        android:text="@string/skip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StartActivity"
+    android:background="@color/colorPrimaryDark">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/profile_bar_layout"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/layout_marginBottom_CardView_CircleImageView"
+        app:cardCornerRadius="@dimen/cardCornerRadius_CardView">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/layout_width_Start_Activity_ImageView"
+            android:layout_height="@dimen/layout_height_Start_Activity_ImageView"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/ImageView_layout_marginBottom"
+            android:contentDescription="@string/ImageView_StartActivity"
+            android:src="@drawable/stres_icon" />
+
+        <TextView
+            android:id="@+id/deskripsi1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_marginLeft_TextView_Start_Activity"
+            android:layout_marginLeft="@dimen/layout_marginLeft_TextView_Start_Activity"
+            android:layout_marginTop="@dimen/layout_marginTop_TextView_StartActivity"
+            android:text="@string/TextView_Describing"
+            android:textSize="@dimen/textSize_TextView_Describe" />
+
+        <TextView
+            android:id="@+id/deskripsi2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_marginLeft_TextView_Start_Activity"
+            android:layout_marginLeft="@dimen/layout_marginLeft_TextView_Start_Activity"
+            android:layout_marginTop="@dimen/layout_marginTop_TextView_StartActivity_copyright3"
+            android:text="@string/TextView_Describing2"
+            android:textSize="@dimen/textSize_TextView_Describe" />
+
+        <TextView
+            android:id="@+id/copyright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_marginLeft_TextView_Start_Activity_copyright"
+            android:layout_marginLeft="@dimen/layout_marginLeft_TextView_Start_Activity_copyright"
+            android:layout_marginTop="@dimen/layout_marginTop_TextView_StartActivity_copyright2"
+            android:text="@string/Copyright"
+            android:textSize="@dimen/textSize_TextView_Describe2" />
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

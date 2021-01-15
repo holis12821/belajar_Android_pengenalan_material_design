@@ -1,0 +1,247 @@
+<resources>
+    <string name="app_name">Aplikasi_Sistem_Pakar</string>
+    <!--Strings used for icon in the Toolbar-->
+    <string name="action_settings">Settings</string>
+    <string name="acton_search">Search</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Content Description ImageView-->
+    <string name="ContentDescription_ImageView">icon</string>
+    <string name="ContentDescription_ImageView_thumbnail">thumbnail</string>
+    <string name="ContentDescription_ImageView_SplashScreen">ImageView</string>
+    <string name="Judul_TextView">Judul</string>
+    <string name="Deskripsi_TextView">Deskripsi</string>
+    <string name="fab">fab</string>
+    <!--Define Text in the TextView Login-->
+    <string name="textName">Nurholis</string>
+    <string name="textTest">Test</string>
+    <string name="textWaktu">4 menit</string>
+    <string name="textView_Login">Login</string>
+    <string name="textView_Register">Register</string>
+    <string name="textView_Email">Email Address</string>
+    <string name="textView_Password">Password</string>
+    <string name="textView_Forget_Password">Forget Password?</string>
+    <string name="label_Login">Login</string>
+    <string name="label_Register">Register</string>
+    <string name="label_Register_TextView">Create New Account</string>
+    <string name="TextView_hint_Username">Username</string>
+    <string name="TextView_hint_Password">Password</string>
+    <string name="TextView_hint_Mobile">Mobile</string>
+
+    <!--Define Judul in the SplashScreen-->
+    <string name="TextView_Splash_Screen_Judul">Aplikasi</string>
+    <string name="TextView_Splash_Screen_Sub_Judul">Sistem Pakar</string>
+    <string name="TextView_Splash_Screen_Sub_Sub_Judul">Diagnosa</string>
+    <string name="TextView_Splash_Screen_Tingkat_Stres">Tingkat Stres Mahasiswa</string>
+    <string name="TextView_Splash_Screen_Tingkat_Stres2">Tingkat Akhir</string>
+
+    <!--Title Apps-->
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_Forget_Password">Forget Password</string>
+
+    <!--Define Radio Button String in the Scope RadioGroup-->
+    <string name="male">male</string>
+    <string name="female">female</string>
+
+    <!--Define TextView Profile Image-->
+    <string name="TextView_Profile_Image">Hallo User</string>
+    <string name="TextView_Profile_Image_Welcome_User">Welcome to Application Expert System</string>
+    <string name="TextView_Profile_Image_Diagnosis">Diagnosa Tingkat Stres Mahasiswa Tingkat Akhir</string>
+    <string name="TextView_Profile_Image_openFile_Location">Open Images</string>
+    <string name="ImageView_StartActivity">Covid</string>
+
+    <!--Describing TextView from StartActivity-->
+    <string name="TextView_Describing">Stres merupakan gangguan pada tubuh dan pikiran yang disebabkan oleh perubahan dan tuntutan
+        kehidupan, yang dipengaruhi oleh lingkungan maupun penampilan individu di dalam lingkungannya.</string>
+
+    <string name="TextView_Describing2"> Aplikasi Sistem Pakar ini dibuat untuk mendiagnosa Tingkat Stres Mahasiswa Tingkat Akhir agar memudahkan
+    pakar dalam mendiagnosa Tingkat Stres berdasarkan gejala - gejala yang dialami. Semoga aplikasi ini
+    bermanfaat bagi pasien dan pakar, Terimakasih.</string>
+
+    <string name="Copyright">Nurholis - 173112700650120 - All Rights Reserved</string>
+    <string name="Button_TextView">GO TO APPS</string>
+
+    <!--Define TextView Reset Password-->
+    <string name="TextView_Reset_Password">Reset Password</string>
+    <string name="Textview_Send_Reset_Message">Send Reset Message</string>
+    <string name="Textview_Send">You will receive an email to reset password</string>
+
+    <!--Item Menu-->
+    <string name="action_changePassword">Change Password</string>
+    <string name="action_Logout">Logout</string>
+
+    <!--Define Manifest to Change Password-->
+    <string name="title_changePassword">Change Password</string>
+    <string name="TextView_hint_Change_Password_Old">Old Password</string>
+    <string name="TextView_hint_Change_Password_New">New Password</string>
+    <string name="TextView_hint_Change_Password_Confirm">Confirm Password</string>
+    <string name="TextView_Confirm_Password">Confirm Password</string>
+    <string name="TextView_changePassword">Change Password</string>
+
+    <!--Button-->
+    <string name="text_button_next">Next</string>
+    <string name="getStarted">Get Started</string>
+    <string name="skip">Skip</string>
+    <!--Manifest intro activity-->
+
+    <!--TextView Intro-->
+    <string name="TextView_Intro">TextView</string>
+
+    !--Text Checkbox-->
+    <string name="Text_Checkbox_Expert">Register as Expert</string>
+    <string name="Text_Checkbox_User">Register as User</string>
+
+    <!--Label Expert Activity-->
+    <string name="label_ExpertActivity">Home Pakar</string>
+
+    <!--String Input Form-->
+    <string name="Input_Form">Input Form</string>
+
+    <!--Edit Text-->
+    <string name="EditText_Kode_Gejala">Kode Gejala</string>
+    <string name="EditText_Nama_Gejala">Nama Gejala</string>
+    <string name="EditText_Bobot_Nilai_CF_Gejala">Bobot Nilai CF</string>
+
+    <string name="Button_simpan">Simpan</string>
+
+    <!--TextView-->
+    <string name="TextView_Kode_Gejala_CardView">Kode Gejala : </string>
+    <string name="TextView_Nama_Gejala_CardView">Nama Gejala :</string>
+    <string name="TextView_Bobot_Nilai_CF_CardView">Bobot Nilai CF :</string>
+
+    <string name="TextView_NPM_CardView">NPM : </string>
+    <string name="TextView_Nama_CardView">Nama  :</string>
+    <string name="TextView_Jenis_Kelamin">Jenis Kelamin : </string>
+    <string name="TextView_Alamat">Alamat : </string>
+    <string name="TextView_Jurusan">Jurusan : </string>
+    <string name="TextView_Universitas">Universitas : </string>
+    <string name="TextView_TingkatStres">Tingkat Stres : </string>
+    <string name="TextView_Persentase">Persentase : </string>
+    <string name="TextView_Solusi">Solusi : </string>
+    <!-- String Toolbar-->
+    <string name="appbarLayout">Data Gejala</string>
+    <string name="Account">About Account</string>
+
+    <!--Edit Text-->
+    <string name="Edit_Text_NPM">NPM : </string>
+    <string name="EditTextName">Nama : </string>
+    <string name="Jurusan">Jurusan : </string>
+    <string name="Universitas">Universitas : </string>
+    <!--Gejala stres-->
+    <string name="judul">Anda diminta untuk memilih lebih dari satu gejala yang sesuai dengan
+    pengalaman pribadi anda tentang stres yang dialami selama menyusun tugas akhir.Terdapat 50 gejala stres sesuai tingkatannya
+        dan terdapat lima pilihan jawaban
+    yaitu : 0: Sangat tidak tahu, 0.2 : Tidak tahu, 0.4 : Mungkin,
+    0.6 : Kemungkinan besar, 0.8 : Hampir pasti, 1 : Pasti. Anda hanya menceklis gejala yang anda rasakan, jika anda tidak menceklis
+    gejala sesuai aturan dari sistem maka tidak akan menghasilkan diagnosa.</string>
+
+    <!--Stres Ringan-->
+    <string name="G48">Wajah tampak murung</string>
+    <string name="G29">Kesulitan untuk tidur</string>
+    <string name="G03">Merasa letih ketika bangun pagi</string>
+    <string name="G44">Merasa tegang</string>
+    <string name="G38">Kesulitan berkonsentrasi saat mengikuti perkuliahan</string>
+    <string name="G27">Kesulitan berkonsentrasi saat mengerjakan tugas kuliah</string>
+    <string name="G45">Mudah lupa</string>
+
+    <string name="G34">Merasa bosan dengan kehidupan</string>
+    <string name="G09">Kehilangan semangat pada apapun</string>
+    <string name="G17">Respon tubuh menjadi lambat</string>
+    <string name="G50">Melakukan penundaan yang kronis</string>
+
+    <!--Stres sedang 1-->
+    <string name="G16">Tidak dapat tidur / insomnia</string>
+    <string name="G18">Terjaga saat malam hari</string>
+    <string name="G05">Melamun saat sendiri</string>
+    <string name="G07">Kesulitan untuk berfikir / agak lemot</string>
+    <string name="G04">Aktifitas perkuliahan terasa sulit </string>
+    <string name="G08">Kegiatan yang lakukan melelahkan</string>
+    <string name="G28">Kualitas tugas yang kerjakan menurun</string>
+
+    <!--Ruless Stres Sedang 2-->
+    <string name="G30">Merasakan perut tidak nyaman</string>
+    <string name="G12">Selera makan menurun</string>
+    <string name="G02">Malas berbicara tentang skripsi</string>
+    <string name="G13">Jantung berdebar-debar</string>
+    <string name="G39">Mudah panik</string>
+    <string name="G49">Berjalan mondar-mandir</string>
+    <string name="G46">Mengkonsumsi makanan atau minuman tertentu berlebihan</string>
+    <string name="G47">Kehilangan ketertarikan pada penampilan fisik</string>
+
+    <string name="G24">Suasana hati (mood) berubah-ubah</string>
+    <string name="G37">Memiliki ketidakmampuan membuat keputusan</string>
+    <string name="G43">Mengalami periode kebingungan</string>
+    <string name="G35">Pikiran yang kacau atau kehilangan orientasi</string>
+    <string name="G36">Mudah marah</string>
+    <string name="G23">Mudah tersinggung</string>
+
+
+    <!--Rules Stres berat-->
+    <string name="G06">Merasa lelah untuk berfikir</string>
+    <string name="G33">Kehilangan motivasi untuk belajar</string>
+    <string name="G21">Gerakan otot gemetar dan/ atau gelisah tanpa sadar saat mengerjakan skripsi</string>
+    <string name="G15">Mengeluarkan keringat dingin ketika mengerjakan Skripsi</string>
+    <string name="G20">Sering merasa cemas memikirkan hal tentang pengerjaan skripsi</string>
+    <string name="G40">Sering menangis</string>
+    <string name="G10">Merasakan mual dan/ atau muntah-muntah</string>
+    <string name="G41">Muncul pikiran untuk bunuh diri</string>
+
+
+    <!--Rules Stres sangat berat-->
+    <string name="G19">Malas beraktifitas sepanjang hari</string>
+    <string name="G11">Berat badan anda bertambah atau berkurang</string>
+    <string name="G42">Kehilangan orientasi waktu / sering tidak tepat waktu/ salah jadwal</string>
+    <string name="G31">Merasa khawatir bertemu dosen pembimbing skripsi</string>
+    <string name="G14">Tangan dan/ atau kaki dingin saat membahas tugas akhir</string>
+    <string name="G26">Bersikap agresif yang tidak normal</string>
+    <string name="G22">Ceroboh</string>
+    <string name="G32">Merasa tidak berdaya atau frustrasi"</string>
+    <string name="G01">Merasakan sakit Kepala ?</string>
+    <string name="G25">Depresi</string>
+
+    <string name="iya">iya</string>
+    <string name="tidak">tidak</string>
+
+    <string name="Jenis_Kelamin">Jenis Kelamin</string>
+    <string name="SplashScreen_onBoard">SplashScreen onBoard</string>
+
+    <string name="btn_diagnosa">Diagnosa</string>
+    <string name="tingkat_stres">Tingkat Stres</string>
+
+    <string name="hintACT">Masukkan bobot nilai kepercayaan</string>
+
+
+    <string name="hasil">hasil</string>
+    <string name="actionGuidline">Panduan</string>
+    <string name="settings">Settings</string>
+    <string name="about_developer">About Developer</string>
+    <string name="no">1</string>
+
+    <string name="panduan1">Isilah biodata anda terlebih dahulu di bawah ini.</string>
+    <string name="panduan2">Setelah itu anda diminta untuk memilih lebih dari satu gejala yang sesuai dengan
+    pengalaman pribadi anda tentang stres yang dialami selama menyusun tugas akhir.</string>
+    <string name="panduan3">Terdapat 50 gejala stres sesuai tingkatannya
+        dan terdapat lima pilihan jawaban
+    yaitu : 0: Sangat tidak tahu, 0.2 : Tidak tahu, 0.4 : Mungkin,
+    0.6 : Kemungkinan besar, 0.8 : Hampir pasti, 1 : Pasti. Anda hanya menceklis gejala yang anda rasakan, jika anda tidak menceklis
+    gejala sesuai aturan dari sistem maka tidak akan menghasilkan diagnosa.</string>
+
+    <string name="setContentDescriptionCardView">Gambar Delete</string>
+
+    <string name="Chat">Chat</string>
+    <string name="username">username</string>
+    <string name="profile_status">hey, i am online now.</string>
+    <string name="update_profile">Update</string>
+    <string name="type_message_here">Type Message Here</string>
+
+</resources>

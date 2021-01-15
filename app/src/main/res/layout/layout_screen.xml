@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background_layout_activity_intro">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.56882256"/>
+
+    <TextView
+        android:id="@+id/intro_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_marginStart_TextView_Intro"
+        android:layout_marginLeft="@dimen/layout_marginLeft_TextView_Intro"
+        android:layout_marginEnd="@dimen/layout_marginEnd_TextView_Intro"
+        android:layout_marginRight="@dimen/layout_marginRight_TextView_Intro"
+        android:layout_marginBottom="@dimen/layout_marginBottom_TextView_Intro"
+        android:text="@string/TextView_Intro"
+        android:textColor="@color/intro_title_color"
+        android:textSize="@dimen/textSize_TextViewIntro"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"/>
+
+    <TextView
+        android:lineSpacingExtra="@dimen/lineSpacingExtra"
+        android:id="@+id/intro_description"
+        android:layout_width="@dimen/layout_width_TextView_Intro_Description"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_marginStart_TextView_Intro_Description"
+        android:layout_marginLeft="@dimen/layout_marginLeft_TextView_Intro_Description"
+        android:layout_marginTop="@dimen/layout_marginTop_TextView_Intro_Description"
+        android:layout_marginEnd="@dimen/layout_marginEnd_TextView_Intro_Description"
+        android:layout_marginRight="@dimen/layout_marginRight_TextView_Intro_Description"
+        android:layout_marginBottom="@dimen/layout_marginBottom_TextView_Intro_Description"
+        android:text="@string/TextView_Intro"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/intro_title"
+        app:layout_constraintVertical_bias="0.13"/>
+
+    <ImageView
+        android:id="@+id/intro_img"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/layout_height_ImageView_Intro"
+        android:layout_marginStart="@dimen/layout_marginStart_ImageView_Intro"
+        android:layout_marginLeft="@dimen/layout_marginLeft_ImageView_Intro"
+        android:layout_marginEnd="@dimen/layout_marginEnd_ImageView_Intro"
+        android:layout_marginRight="@dimen/layout_marginRight_ImageView_Intro"
+        android:layout_marginBottom="@dimen/layout_marginBottom_ImageView_Intro"
+        app:layout_constraintBottom_toTopOf="@+id/intro_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:srcCompat="@tools:sample/avatars"
+        android:contentDescription="@string/ContentDescription_ImageView_SplashScreen" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

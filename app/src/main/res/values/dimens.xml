@@ -1,0 +1,394 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="paddingTop_layout_tab_View">12dp</dimen>
+    <dimen name="paddingBottom_layout_tab_view">12dp</dimen>
+
+    <!--Define Margin ListView in RelativeLayout-->
+    <dimen name="layout_marginLeft_list_view">10dp</dimen>
+    <dimen name="layout_marginTop_list_view">3dp</dimen>
+    <dimen name="layout_marginBottom_list_view">3dp</dimen>
+    <dimen name="layout_marginRight_list_View">10dp</dimen>
+
+    <!--Define Margin ImageView-->
+    <dimen name="layout_width_ImageView">70dp</dimen>
+    <dimen name="layout_height_ImageView">70dp</dimen>
+
+    <dimen name="layout_marginLeft_ImageView">8dp</dimen>
+    <dimen name="layout_marginTop_ImageView">8dp</dimen>
+    <dimen name="layout_marginBottom_ImageView">10dp</dimen>
+    <dimen name="layout_width_Image_View">30dp</dimen>
+    <dimen name="layout_marginRight_ImageView">10dp</dimen>
+    <dimen name="layout_height_Image_View">30dp</dimen>
+
+    <dimen name="layout_height_ImageView_thumbnail">140dp</dimen>
+
+    <!--Define Margin TextView-->
+    <dimen name="layout_marginTop_TextView">13dp</dimen>
+    <dimen name="layout_marginLeft_TextView">15dp</dimen>
+    <dimen name="layout_marginTop_Text_View">4dp</dimen>
+    <dimen name="layout_marginTop_Text_name">5dp</dimen>
+    <dimen name="textSize_name">15sp</dimen>
+    <dimen name="layout_height_Textview_status">20dp</dimen>
+    <dimen name="textSize_status">14sp</dimen>
+    <dimen name="layout_marginLeft_TextView_status">8dp</dimen>
+    <dimen name="layout_marginTop_TextView_status">10dp</dimen>
+    <dimen name="layout_marginBottom_TextView_status">5dp</dimen>
+    <dimen name="textSize_Waktu">10sp</dimen>
+
+    <!--Define Margin CardView-->
+    <dimen name="layout_marginTop_CardView">3dp</dimen>
+     <dimen name="layout_marginBottom_CardView">4dp</dimen>
+    <dimen name="layout_margin_CardView">4dp</dimen>
+    <dimen name="cardElevation">3dp</dimen>
+
+    <!-- Define Margin LinearLayout in FragmentExplore-->
+    <dimen name="layout_marginTop__LinearLayout_Fragment_Explore">56dp</dimen>
+
+    <!--Define SplashScreen Margin and TextSize SplashScreen-->
+    <dimen name="textSize_Splash_Screen_Judul">39sp</dimen>
+    <dimen name="textSize_Splash_Screen_Sub_judul">29sp</dimen>
+    <dimen name="textSize_Splash_Screen_Sub_Sub_judul">25sp</dimen>
+    <dimen name="textSize_Splash_Screen_Sub_Sub_Sub_Judul">24sp</dimen>
+
+    <!--Define textView size in the activity Login-->
+    <dimen name="textSize_Login_TextView">50sp</dimen>
+    <dimen name="TextView_layout_marginTop">10dp</dimen>
+    <dimen name="textSize_Button">20sp</dimen>
+    <dimen name="TextView_ForgotPassword_layout_margin">20sp</dimen>
+    <dimen name="textSize_textView_Forgot_password">20sp</dimen>
+
+    <!--Padding and Margin in the Material EditText in the LoginActivity-->
+    <dimen name="paddingLeft_EditText">16dp</dimen>
+    <dimen name="paddingRight_EditText">16dp</dimen>
+
+
+    <!--Define ImageView to SplashScreen-->
+    <dimen name="ImageView_Splash_Screen_width">350dp</dimen>
+    <dimen name="ImageView_Splash_Screen_height">250dp</dimen>
+
+    <!--Define Margin TextView-->
+    <dimen name="TextView_marginTop_Splash_Screen">26dp</dimen>
+    <dimen name="Textview_marginTop_Splash_Screen_Sub_Sub_Judul">9dp</dimen>
+    <dimen name="Textview_marginTop_Splash_Screen_Sub_Sub_sub_Judul">9dp</dimen>
+    <dimen name="Textview_marginBottom_Splash_Screen">24dp</dimen>
+
+    <!--Define textHint-->
+    <dimen name="textHint_size">14sp</dimen>
+
+    <!--Create margin with Frame Layout with Activity_login-->
+    <dimen name="layout_height_FrameLayout">60dp</dimen>
+    <dimen name="layout_margin_FrameLayout">20dp</dimen>
+    <dimen name="FrameLayout_elevation">10dp</dimen>
+
+    <!--Define Margin in the FrameLayout-->
+    <dimen name="layout_height_FrameLayout_Button">50dp</dimen>
+    <dimen name="layout_marginTop_FrameLayout">15dp</dimen>
+    <dimen name="layout_marginLeft_FrameLayout">50dp</dimen>
+    <dimen name="layout_marginRight_FrameLayout">50dp</dimen>
+    <dimen name="layout_marginBottom_FrameLayout">27dp</dimen>
+
+
+    /*Define Radius to layout corners*/
+    <dimen name="cornerRadius">15dp</dimen>
+
+    <!--Define ProgressBar-->
+    <dimen name="ProgressBar_layout_width">34dp</dimen>
+    <dimen name="ProgressBar_layout_height">34dp</dimen>
+
+    <!--Define Margin Textview in the Register-->
+    <dimen name="layout_marginTop_TextView_Register">10dp</dimen>
+    <dimen name="textSize_TextView_Register">30sp</dimen>
+    <dimen name="layout_marginTop_TextView_Username">12dp</dimen>
+
+    <!--Define textSize TextView Register-->
+    <dimen name="textSize_TextView_Register_Username">19sp</dimen>
+    <dimen name="textSize_TextView_Register_Email">19sp</dimen>
+    <dimen name="textSize_TextView_Register_Password">19sp</dimen>
+    <dimen name="textSize_TextView_Register_Mobile">19sp</dimen>
+
+    <!--Define Radio Button Margin in the scope RadioGroup -->
+    <dimen name="layout_margin_RadioGroup">20dp</dimen>
+    <dimen name="layout_marginTop_RadioGroup">4.5dp</dimen>
+    <dimen name="layout_marginLeft_RadioGroup">20dp</dimen>
+    <dimen name="layout_marginRight_RadioGroup">20dp</dimen>
+    <dimen name="layout_marginBottom_RadioGroup">4.5dp</dimen>
+    <dimen name="padding_RadioGroup">10dp</dimen>
+    <dimen name="textSize_RadioButton_male">14sp</dimen>
+    <dimen name="textSize_RadioButton_female">14sp</dimen>
+
+    <!-- Define Margin in the RelativeLayout-->
+    <dimen name="layout_marginTop_RelativeLayout">40dp</dimen>
+
+    <!--Define CircleImageView with layout_width and layout_height-->
+    <dimen name="layout_width_CircleImageView">150dp</dimen>
+    <dimen name="layout_height_CircleImageView">150dp</dimen>
+    <dimen name="civ_border_width">2dp</dimen>
+    <dimen name="paddingTop_CircleImageView">8dp</dimen>
+    <dimen name="textSize_TextView_CircleImageView">25sp</dimen>
+    <dimen name="layout_margin_TextView_CircleImageView_Username">15dp</dimen>
+
+    <!--Define CardView-->
+    <dimen name="cardCornerRadius_CardView">50dp</dimen>
+    <dimen name="layout_marginBottom_CardView_CircleImageView">-50dp</dimen>
+
+    <!--Define TextView margin in the profile image and Text size-->
+    <dimen name="layout_marginBottom_openImages">20dp</dimen>
+
+    <!--Define layout width and layout height in the RelativeLayout from layout image-->
+    <dimen name="layout_width_RelativeLayout_from_imageLayout">100dp</dimen>
+    <dimen name="layout_height_RelativeLayout_from_imageLayout">100dp</dimen>
+    <dimen name="layout_marginRelativeLayout_from_imageLayout">5dp</dimen>
+
+    <!--Define margin CardView from imageLayout and CircleImageView-->
+    <dimen name="cardElevation_CardView_from_ImageProfile">10dp</dimen>
+    <dimen name="cardCornerRadius_Profile_Image">10dp</dimen>
+    <dimen name="layout_margin_CardView_from_ImageProfile">3dp</dimen>
+    <dimen name="layout_margin_CircleImageView">3dp</dimen>
+
+    <!--Define Margin ImageView from StartActivity-->
+    <dimen name="layout_width_Start_Activity_ImageView">160dp</dimen>
+    <dimen name="layout_height_Start_Activity_ImageView">160dp</dimen>
+    <dimen name="ImageView_layout_marginBottom">165dp</dimen>
+
+    <!--Define TextView to Describing from StartActivity-->
+    <dimen name="layout_marginLeft_TextView_Start_Activity">6.5dp</dimen>
+    <dimen name="layout_marginLeft_TextView_Start_Activity_copyright">65dp</dimen>
+    <dimen name="layout_marginRight_TextView_Copyright">176dp</dimen>
+    <dimen name="layout_marginTop_TextView_StartActivity">190dp</dimen>
+    <dimen name="layout_marginTop_TextView_StartActivity_copyright">310dp</dimen>
+    <dimen name="layout_marginTop_TextView_StartActivity_copyright2">380dp</dimen>
+    <dimen name="layout_marginTop_TextView_StartActivity_copyright3">235dp</dimen>
+    <dimen name="layout_marginLeft_TextView_CopyRight">100dp</dimen>
+    <dimen name="textSize_TextView_Describe">11.5sp</dimen>
+    <dimen name="textSize_TextView_Describe2">12sp</dimen>
+    <dimen name="textSize_Button_TextView">11.5sp</dimen>
+
+    <!--Define TextView margin from Activity Forget Password-->
+    <dimen name="TextView_layout_marginTop_forgetPassword">10dp</dimen>
+    <dimen name="textSize_TextView_forget_Password">30sp</dimen>
+    <dimen name="TextView_layout_margin_TextView_Send_Reset_Password">20dp</dimen>
+
+    <!--ViewPager-->
+    <dimen name="layout_width_ViewPager">0dp</dimen>
+    <dimen name="layout_height_ViewPager">0dp</dimen>
+    <dimen name="layout_marginBottom_ViewPager">8dp</dimen>
+
+    <!--button-->
+    <dimen name="layout_marginEnd_button">32dp</dimen>
+    <dimen name="layout_marginRight_button">32dp</dimen>
+    <dimen name="layout_marginBottom_button">16dp</dimen>
+
+    <!--TabLayout-->
+    <dimen name="layout_marginStart_TabLayout">32dp</dimen>
+    <dimen name="layout_marginLeft_TabLayout">32dp</dimen>
+    <dimen name="layout_marginEnd_TabLayout">8dp</dimen>
+    <dimen name="layout_marginRight_TabLayout">8dp</dimen>
+    <dimen name="layout_marginBottom_TabLayout">16dp</dimen>
+
+    <!--indicator selected-->
+    <dimen name="innerRadius">3dp</dimen>
+    <dimen name="thickness">2dp</dimen>
+    <dimen name="innerRadius_default">0dp</dimen>
+    <dimen name="thickness_default">4dp</dimen>
+    <dimen name="cornerRadius_btn">25dp</dimen>
+
+    <!--Button getStarted-->
+    <dimen name="layout_width_btnGetStarted">132dp</dimen>
+    <dimen name="layout_marginStart_btnGetStarted">8dp</dimen>
+    <dimen name="layout_marginLeft_btnGetStarted">8dp</dimen>
+    <dimen name="layout_marginEnd_btnGetStarted">8dp</dimen>
+    <dimen name="layout_marginRight_btnGetStarted">8dp</dimen>
+    <dimen name="layout_marginBottom_btnGetStarted">64dp</dimen>
+
+    <!--TextView Skip-->
+    <dimen name="textSize_textView_Skip">16sp</dimen>
+    <dimen name="layout_marginTop_Skip">24dp</dimen>
+    <dimen name="layout_marginEnd_Skip">24dp</dimen>
+    <dimen name="layout_marginRight_Skip">24dp</dimen>
+
+    <dimen name="layout_marginStart_TextView_Intro">16dp</dimen>
+    <dimen name="layout_marginLeft_TextView_Intro">16dp</dimen>
+    <dimen name="layout_marginEnd_TextView_Intro">16dp</dimen>
+    <dimen name="layout_marginRight_TextView_Intro">16dp</dimen>
+    <dimen name="layout_marginBottom_TextView_Intro">8dp</dimen>
+
+    <!--TextView Intro Title-->
+    <dimen name="textSize_TextViewIntro">32sp</dimen>
+    <dimen name="layout_width_TextView_Intro_Description">0dp</dimen>
+    <dimen name="lineSpacingExtra">16dp</dimen>
+
+    <dimen name="layout_marginStart_TextView_Intro_Description">32dp</dimen>
+    <dimen name="layout_marginLeft_TextView_Intro_Description">32dp</dimen>
+    <dimen name="layout_marginTop_TextView_Intro_Description">8dp</dimen>
+    <dimen name="layout_marginEnd_TextView_Intro_Description">32dp</dimen>
+    <dimen name="layout_marginRight_TextView_Intro_Description">32dp</dimen>
+    <dimen name="layout_marginBottom_TextView_Intro_Description">8dp</dimen>
+
+    <!--ImageView Intro-->
+    <dimen name="layout_height_ImageView_Intro">222dp</dimen>
+    <dimen name="layout_marginStart_ImageView_Intro">8dp</dimen>
+    <dimen name="layout_marginLeft_ImageView_Intro">8dp</dimen>
+    <dimen name="layout_marginEnd_ImageView_Intro">8dp</dimen>
+    <dimen name="layout_marginRight_ImageView_Intro">8dp</dimen>
+    <dimen name="layout_marginBottom_ImageView_Intro">32dp</dimen>
+
+    <!--Margin Checkbox-->
+    <dimen name="layout_marginTop_Checkbox">10dp</dimen>
+    <dimen name="layout_marginLeft_Checkbox">29dp</dimen>
+    <dimen name="layout_marginRight_Checkbox">19dp</dimen>
+
+    <!--layout_height LinearLayout-->
+    <dimen name="layout_heightLinearLayout">90dp</dimen>
+
+    <dimen name="layout_marginTop_LinearLayout">12dp</dimen>
+    <dimen name="layout_marginLeft_LinearLayout">13dp</dimen>
+    <dimen name="layout_marginRight_LinearLayout">13dp</dimen>
+    <dimen name="layout_marginBottom_LinearLayout">10dp</dimen>
+
+    <!--TextSize Input form-->
+    <dimen name="textSizeInputForm">27sp</dimen>
+    <dimen name="layout_marginTop_EditText">16dp</dimen>
+
+    <!--Padding LinearLayout-->
+    <dimen name="paddingLinearLayout">20dp</dimen>
+
+    <!--margin bottom button-->
+    <dimen name="layout_marginTop_button_simpan">26dp</dimen>
+    <dimen name="shape_width">2dp</dimen>
+    <dimen name="corners_radius_btn">20dp</dimen>
+
+    <!--CardView-->
+    <dimen name="layout_marginStart_CardView">20dp</dimen>
+    <dimen name="layout_marginStart_CardView_Diagnosa">15dp</dimen>
+    <dimen name="layout_marginEnd_CardView_Diagnosa">15dp</dimen>
+    <dimen name="layout_marginLeft_CardView_Diagnosa">15dp</dimen>
+    <dimen name="layout_marginTop_CardView_Diagnosa">5dp</dimen>
+    <dimen name="layout_marginTop_CardView_Diagnosa3">15dp</dimen>
+    <dimen name="layout_marginTop_CardView_Diagnosa2">3dp</dimen>
+    <dimen name="layout_marginBottom_CardView_Diagnosa">5dp</dimen>
+    <dimen name="layout_marginRight_CardView_Diagnosa">15dp</dimen>
+    <dimen name="layout_marginLeft_CardView">20dp</dimen>
+    <dimen name="corner_radius_CardView">10dp</dimen>
+    <dimen name="corner_radius_CardView_2">20dp</dimen>
+    <dimen name="CardElevation_CardView">8dp</dimen>
+    <dimen name="padding_CardView">7dp</dimen>
+    <dimen name="CardView_layout_width">348dp</dimen>
+    <dimen name="corner_radius_CardViewDiagnosa">8dp</dimen>
+
+    <dimen name="paddingEnd_LinearLayout">10dp</dimen>
+    <dimen name="paddingStart_LinearLayout">10dp</dimen>
+    <dimen name="paddingLeft_LinearLayout">10dp</dimen>
+    <dimen name="paddingRight_LinearLayout">10dp</dimen>
+    <dimen name="padding_LinearLayout">10dp</dimen>
+
+    <dimen name="paddingEnd_cardView">5dp</dimen>
+    <dimen name="paddingStart_CardView">5dp</dimen>
+    <dimen name="paddingLeft_CardView">5dp</dimen>
+    <dimen name="paddingRight_CardView">5dp</dimen>
+    <dimen name="padding_CardView_diagnosa">5dp</dimen>
+    <!--TextView-->
+    <dimen name="TextViewListSize">25sp</dimen>
+
+    <dimen name="TextView_judul_size">12sp</dimen>
+
+    <dimen name="paddingTop_EditText">10dp</dimen>
+
+    <dimen name="textSizeEditText">15sp</dimen>
+
+    <!--TextSize kode gejala-->
+    <dimen name="G48">13sp</dimen>
+    <dimen name="marginTopTextView">10dp</dimen>
+
+    <dimen name="marginLeft">5.3dp</dimen>
+    <dimen name="marginLeft_tv">2dp</dimen>
+    <dimen name="marginBottom_tv">2dp</dimen>
+    <dimen name="paddingBottom">15dp</dimen>
+    <dimen name="textSize" tools:ignore="SmallSp">11sp</dimen>
+
+    <dimen name="marginTop">7dp</dimen>
+
+    <dimen name="marginLeft_Auto">69dp</dimen>
+    <dimen name="marginLeft_Checkbox">15dp</dimen>
+    <!--Auto  Complete TextView-->
+    <dimen name="layout_width_AutoCompleteTV">55dp</dimen>
+    <dimen name="layout_height_AutoCompleteTV">50dp</dimen>
+
+    <!--Ukuran Button Simpan-->
+    <dimen name="layout_marginTop_Btn_diagnosa">2dp</dimen>
+    <dimen name="layout_width_btn_diagnosa">350dp</dimen>
+    <dimen name="layout_height_btn_diagnosa">30dp</dimen>
+    <dimen name="layout_marginBottom_btn_diagnosa">17dp</dimen>
+    <dimen name="layout_marginLeft_btn_diagnosa">15dp</dimen>
+    <dimen name="layout_marginRight_btn_diagnosa">15dp</dimen>
+
+    <!--Margin EditText-->
+    <dimen name="layout_marginTop_edt">7dp</dimen>
+    <dimen name="layout_marginRight_edt">10dp</dimen>
+    <dimen name="layout_marginLeft_edt">10dp</dimen>
+    <dimen name="layout_marginBottom_edt">7dp</dimen>
+
+    <dimen name="layout_marginTop_Act">37dp</dimen>
+
+    <dimen name="padding_Bottom_RelativeLayout">20dp</dimen>
+    <dimen name="layout_marginTop_RecyclerView">6dp</dimen>
+
+    <dimen name="layout_marginStart_BtnDiagnosa">85dp</dimen>
+    <dimen name="layout_marginTop_BtnDiagnosa">20dp</dimen>
+    <dimen name="layout_marginEnd_BtnDiagnosa">85dp</dimen>
+    <dimen name="layout_marginLeft_BtnDiagnosa">20dp</dimen>
+    <dimen name="layout_marginRight_BtnDiagnosa">20dp</dimen>
+
+    <dimen name="layout_marginTop_TingkatStres">8dp</dimen>
+    <dimen name="layout_marginTop_hasil">8dp</dimen>
+
+    <dimen name="layout_marginRight_TextViewNo">13dp</dimen>
+
+    <dimen name="layout_weightBtn_diagnosa">350dp</dimen>
+    <dimen name="layout_height_Btn_diagnosa">100</dimen>
+
+    <!--Margin Checkbox DiagnosaUser-->
+    <dimen name="layout_marginLeft_Checkbox_Diagnosa">15dp</dimen>
+    <dimen name="layout_marginRight_Checkbox_Diagnosa">15dp</dimen>
+
+    <!--Padding Checkbox diagnosa-->
+    <dimen name="paddingLeft_Checkbox">8dp</dimen>
+
+    <dimen name="layout_marginStartCardView">10dp</dimen>
+    <dimen name="layout_marginLeftCardView">10dp</dimen>
+    <dimen name="paddingTopCardView">10dp</dimen>
+
+    <dimen name="paddingBottomCardView">10dp</dimen>
+    <dimen name="paddingTopIconDelete">12dp</dimen>
+    <dimen name="layout_marginRightImageViewDelete">6dp</dimen>
+
+    <dimen name="textSizeEditTextDiagnosa">16sp</dimen>
+
+    <dimen name="layout_width_CircleImageView_Pakar">250dp</dimen>
+    <dimen name="layout_height_Circle_ImageView_Pakar">250dp</dimen>
+    <dimen name="civBorderWidth">5dp</dimen>
+
+    <dimen name="layout_marginTop_CircleImageView">45dp</dimen>
+    <dimen name="layout_marginStart">15dp</dimen>
+    <dimen name="layout_marginEnd">15dp</dimen>
+    <dimen name="padding_circleImageView">6dp</dimen>
+    <dimen name="paddingTop_circleImageView">13dp</dimen>
+    <dimen name="layout_marginTop">10dp</dimen>
+    <dimen name="layout_marginLeft">15dp</dimen>
+    <dimen name="layout_marginRight">15dp</dimen>
+
+    <dimen name="layout_width_chat">330dp</dimen>
+    <dimen name="layout_height_chat">70dp</dimen>
+    <dimen name="padding_chat">15dp</dimen>
+    <dimen name="layout_marginRight_chat">5dp</dimen>
+    <dimen name="layout_marginLeft_chat">5dp</dimen>
+    <dimen name="cornerRadius_chat">20dp</dimen>
+
+    <!-- Image Button-->
+    <dimen name="ImageButton_layout_width">60dp</dimen>
+    <dimen name="layout_marginRight_chat_btn">13dp</dimen>
+    <dimen name="layout_marginBottom_chat">13dp</dimen>
+    <dimen name="layout_marginTop_chat">21.5dp</dimen>
+    <dimen name="paddingLeft_send">12dp</dimen>
+    <dimen name="padding_Right_send">15dp</dimen>
+</resources>

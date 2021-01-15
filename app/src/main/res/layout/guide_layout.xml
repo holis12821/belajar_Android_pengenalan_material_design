@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="@dimen/corner_radius_CardViewDiagnosa"
+        app:cardElevation="@dimen/CardElevation_CardView"
+        android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+        android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+        android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+        android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa">
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_LinearLayout">
+            <TextView
+                android:id="@+id/tv_judul2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/judul"
+                android:textSize="@dimen/TextView_judul_size"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
