@@ -16,8 +16,4 @@ class FragmentDetailDiagnosaUsers : Fragment() {
     ): View? {
         return inflater.inflate(R.layout.fragment_detail_diagnosa_users, container, false)
     }
-
-    
-
-
 }

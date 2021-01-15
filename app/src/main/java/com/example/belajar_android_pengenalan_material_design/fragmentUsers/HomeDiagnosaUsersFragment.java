@@ -3,6 +3,7 @@ package com.example.belajar_android_pengenalan_material_design.fragmentUsers;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 
@@ -2079,6 +2080,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                             @Override
                             public void onSuccess(Void aVoid) {
                                 Toast.makeText(itemView.getContext(), "Diagnosa dan Biodata User Berhasil Disimpan", Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent();
                             }
                         }).addOnFailureListener(new OnFailureListener() {
                     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
