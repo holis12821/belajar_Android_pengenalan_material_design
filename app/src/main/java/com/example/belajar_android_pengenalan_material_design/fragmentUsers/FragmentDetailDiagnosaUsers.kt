@@ -9,6 +9,10 @@ import com.example.belajar_android_pengenalan_material_design.R
 
 class FragmentDetailDiagnosaUsers : Fragment() {
 
+    companion object {
+        const val EXTRA_PARCEL_DIAGNOSA = "Extra_Parcel_Diagnosa"
+    }
+
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,

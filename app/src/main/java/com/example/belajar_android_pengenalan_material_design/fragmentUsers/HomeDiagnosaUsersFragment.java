@@ -38,6 +38,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Objects;
 
@@ -2080,7 +2081,10 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                             @Override
                             public void onSuccess(Void aVoid) {
                                 Toast.makeText(itemView.getContext(), "Diagnosa dan Biodata User Berhasil Disimpan", Toast.LENGTH_SHORT).show();
-                                Intent intent = new Intent();
+                                Intent intent = new Intent(getActivity(), FragmentDetailDiagnosaUsers.class);
+                                ArrayList<UserDiagnosa> userDiagnosa = new ArrayList<>();
+                                intent.putParcelableArrayListExtra(FragmentDetailDiagnosaUsers.EXTRA_PARCEL_DIAGNOSA, userDiagnosa);
+                                startActivity(intent);
                             }
                         }).addOnFailureListener(new OnFailureListener() {
                     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
