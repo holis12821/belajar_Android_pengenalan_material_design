@@ -3,6 +3,7 @@ package com.example.belajar_android_pengenalan_material_design.fragmentusers;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 
@@ -23,6 +24,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.example.belajar_android_pengenalan_material_design.R;
+import com.example.belajar_android_pengenalan_material_design.model.UserDiagnosa;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -32,6 +34,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 
@@ -2067,7 +2070,10 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                     @Override
                     public void onSuccess(Void aVoid) {
                         Toast.makeText(getContext(), "Diagnosa dan biodata berhasil  disimpan", Toast.LENGTH_SHORT).show();
-
+                        Intent intent = new Intent(getActivity(), FragmentDetailDiagnosaUsers.class);
+                        ArrayList<UserDiagnosa> userDiagnosa = new ArrayList<>();
+                        intent.putParcelableArrayListExtra(FragmentDetailDiagnosaUsers.EXTRA_PARCEL_DIAGNOSA, userDiagnosa);
+                        startActivity(intent);
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override

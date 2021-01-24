@@ -38,4 +38,7 @@
     <!--Background Button-->
     <color name="background_button">#fff</color>
     <color name="colorBtn_Input">#FFFFFF</color>
+
+    <!--Menambahkan warna grey-->
+    <color name="grey">#808080</color>
 </resources>
