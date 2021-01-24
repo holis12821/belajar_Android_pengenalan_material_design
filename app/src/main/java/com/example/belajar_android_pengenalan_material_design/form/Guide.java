@@ -1,4 +1,4 @@
-package com.example.belajar_android_pengenalan_material_design.Form;
+package com.example.belajar_android_pengenalan_material_design.form;
 
 import android.app.Dialog;
 import android.os.Build;

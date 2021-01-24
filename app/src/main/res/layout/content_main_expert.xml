@@ -9,11 +9,11 @@
     tools:context=".ExpertActivity"
     tools:showIn="@layout/activity_expert">
 
-    <com.example.belajar_android_pengenalan_material_design.Tab.SlidingTabLayout
+    <com.example.belajar_android_pengenalan_material_design.tab.SlidingTabLayout
         android:id="@+id/stl_tabs"
         android:layout_height="wrap_content"
         android:layout_width="match_parent">
-    </com.example.belajar_android_pengenalan_material_design.Tab.SlidingTabLayout>
+    </com.example.belajar_android_pengenalan_material_design.tab.SlidingTabLayout>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/vp_tabs"

@@ -1,4 +1,4 @@
-package com.example.belajar_android_pengenalan_material_design.POJO;
+package com.example.belajar_android_pengenalan_material_design.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;

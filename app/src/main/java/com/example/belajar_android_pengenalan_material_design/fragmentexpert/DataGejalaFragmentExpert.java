@@ -1,4 +1,4 @@
- package com.example.belajar_android_pengenalan_material_design.fragmentExpert;
+ package com.example.belajar_android_pengenalan_material_design.fragmentexpert;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
@@ -21,8 +21,8 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.belajar_android_pengenalan_material_design.Form.DialogForm;
-import com.example.belajar_android_pengenalan_material_design.POJO.Gejala;
+import com.example.belajar_android_pengenalan_material_design.form.DialogForm;
+import com.example.belajar_android_pengenalan_material_design.model.Gejala;
 import com.example.belajar_android_pengenalan_material_design.R;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;

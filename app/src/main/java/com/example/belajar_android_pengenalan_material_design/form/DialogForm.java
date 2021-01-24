@@ -1,4 +1,4 @@
-package com.example.belajar_android_pengenalan_material_design.Form;
+package com.example.belajar_android_pengenalan_material_design.form;
 
 import android.app.Dialog;
 import android.os.Build;
@@ -17,7 +17,7 @@ import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.fragment.app.DialogFragment;
 
-import com.example.belajar_android_pengenalan_material_design.POJO.Gejala;
+import com.example.belajar_android_pengenalan_material_design.model.Gejala;
 import com.example.belajar_android_pengenalan_material_design.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;

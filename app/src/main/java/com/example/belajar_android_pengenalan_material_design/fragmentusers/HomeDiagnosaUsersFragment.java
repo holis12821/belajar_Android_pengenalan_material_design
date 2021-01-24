@@ -1,4 +1,4 @@
-package com.example.belajar_android_pengenalan_material_design.fragmentUsers;
+package com.example.belajar_android_pengenalan_material_design.fragmentusers;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
@@ -25,7 +25,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.belajar_android_pengenalan_material_design.POJO.UserDiagnosa;
+import com.example.belajar_android_pengenalan_material_design.model.UserDiagnosa;
 import com.example.belajar_android_pengenalan_material_design.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;

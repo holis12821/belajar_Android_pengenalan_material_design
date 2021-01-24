@@ -1,4 +1,4 @@
-package com.example.belajar_android_pengenalan_material_design.fragmentUsers;
+package com.example.belajar_android_pengenalan_material_design.fragmentusers;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

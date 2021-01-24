@@ -3,9 +3,9 @@ package com.example.belajar_android_pengenalan_material_design;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.example.belajar_android_pengenalan_material_design.Form.Guide;
-import com.example.belajar_android_pengenalan_material_design.Tab.MyAdapter;
-import com.example.belajar_android_pengenalan_material_design.Tab.SlidingTabLayout;
+import com.example.belajar_android_pengenalan_material_design.form.Guide;
+import com.example.belajar_android_pengenalan_material_design.tab.MyAdapter;
+import com.example.belajar_android_pengenalan_material_design.tab.SlidingTabLayout;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 

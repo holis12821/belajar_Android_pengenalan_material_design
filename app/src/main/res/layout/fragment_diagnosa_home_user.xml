@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:paddingBottom="@dimen/padding_Bottom_RelativeLayout"
-    tools:context="com.example.belajar_android_pengenalan_material_design.fragmentUsers.HomeDiagnosaUsersFragment">
+    tools:context="com.example.belajar_android_pengenalan_material_design.fragmentusers.HomeDiagnosaUsersFragment">
 
     <!-- TODO: Update blank com.example.belajar_android_pengenalan_material_design.fragment layout -->
     <ScrollView

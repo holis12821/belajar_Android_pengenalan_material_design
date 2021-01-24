@@ -16,7 +16,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.belajar_android_pengenalan_material_design.ScreenItem.ScreenItem;
+import com.example.belajar_android_pengenalan_material_design.screenItem.ScreenItem;
 import com.example.belajar_android_pengenalan_material_design.adapter.IntroViewPagerAdapter;
 import com.google.android.material.tabs.TabLayout;
 

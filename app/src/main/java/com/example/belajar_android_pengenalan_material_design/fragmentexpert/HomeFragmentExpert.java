@@ -1,4 +1,4 @@
-package com.example.belajar_android_pengenalan_material_design.fragmentExpert;
+package com.example.belajar_android_pengenalan_material_design.fragmentexpert;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.belajar_android_pengenalan_material_design.POJO.UserDiagnosa;
+import com.example.belajar_android_pengenalan_material_design.model.UserDiagnosa;
 import com.example.belajar_android_pengenalan_material_design.R;
 import com.example.belajar_android_pengenalan_material_design.adapter.DiagnosaAdapterExpert;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;

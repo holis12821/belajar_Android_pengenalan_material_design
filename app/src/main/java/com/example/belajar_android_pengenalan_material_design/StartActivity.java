@@ -21,8 +21,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.example.belajar_android_pengenalan_material_design.POJO.UsersData;
-import com.example.belajar_android_pengenalan_material_design.POJO.ImagesList;
+import com.example.belajar_android_pengenalan_material_design.model.UsersData;
+import com.example.belajar_android_pengenalan_material_design.model.ImagesList;
 import com.example.belajar_android_pengenalan_material_design.adapter.ImagesRecyclerAdapter;
 import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCompleteListener;

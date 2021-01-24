@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.belajar_android_pengenalan_material_design.POJO.UserDiagnosa;
+import com.example.belajar_android_pengenalan_material_design.model.UserDiagnosa;
 import com.example.belajar_android_pengenalan_material_design.R;
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;

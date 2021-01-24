@@ -1,4 +1,4 @@
-package com.example.belajar_android_pengenalan_material_design.POJO;
+package com.example.belajar_android_pengenalan_material_design.model;
 
 public class ImagesList {
     /*Define Field from class imagesList*/

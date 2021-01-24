@@ -1,4 +1,4 @@
-package com.example.belajar_android_pengenalan_material_design.Tab;
+package com.example.belajar_android_pengenalan_material_design.tab;
 
 import android.content.Context;
 import android.graphics.Typeface;

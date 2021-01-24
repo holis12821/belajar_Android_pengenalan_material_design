@@ -1,10 +1,7 @@
-package com.example.belajar_android_pengenalan_material_design.loadingProgres;
+package com.example.belajar_android_pengenalan_material_design.loadingprogres;
 
-import android.animation.Animator;
-import android.animation.ValueAnimator;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;

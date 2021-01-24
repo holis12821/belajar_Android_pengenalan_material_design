@@ -1,4 +1,4 @@
-package com.example.belajar_android_pengenalan_material_design.fragmentUsers;
+package com.example.belajar_android_pengenalan_material_design.fragmentusers;
 
 
 import android.os.Bundle;
@@ -13,7 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-import com.example.belajar_android_pengenalan_material_design.POJO.Gejala;
+import com.example.belajar_android_pengenalan_material_design.model.Gejala;
 import com.example.belajar_android_pengenalan_material_design.R;
 import com.example.belajar_android_pengenalan_material_design.adapter.GejalaAdapter;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;

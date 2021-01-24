@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.belajar_android_pengenalan_material_design.POJO.ImagesList;
+import com.example.belajar_android_pengenalan_material_design.model.ImagesList;
 import com.example.belajar_android_pengenalan_material_design.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
