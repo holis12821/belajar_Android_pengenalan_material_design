@@ -3,7 +3,6 @@ package com.example.belajar_android_pengenalan_material_design.fragmentusers;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 
@@ -12,7 +11,6 @@ import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,23 +22,17 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.example.belajar_android_pengenalan_material_design.model.UserDiagnosa;
 import com.example.belajar_android_pengenalan_material_design.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Objects;
 
 
 public class HomeDiagnosaUsersFragment extends Fragment {
@@ -2058,7 +2050,6 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 String userId = mUser.getUid();
                 /*Menambahkan DocumentReference untuk memasukan data pada FirebaseFirestore*/
                 DocumentReference df = firebaseFirestore.collection("diagnosa").document(mUser.getUid());
-                DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("diagnosa").child(userId);
 
                 //Membuat HashMap
                 HashMap<String, String> hashMap = new HashMap<>();
@@ -2072,28 +2063,19 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 hashMap.put("solusi", Solusi);
                 hashMap.put("persentase", precision.format(Persentase));
                 /*menambahkan data hashMap pada FirebaseFireStore*/
-                df.set(hashMap);
-                /*Menambahkan data pada DatabaseReference*/
-                databaseReference.push().setValue(new UserDiagnosa(hashMap.get("key"), hashMap.get("npm"), hashMap.get("nama"),
-                        hashMap.get("jenis_kelamin"), hashMap.get("jurusan"), hashMap.get("universitas"), hashMap.get("tingkat_stres"),
-                        hashMap.get("solusi"), hashMap.get("persentase")))
-                        .addOnSuccessListener(new OnSuccessListener<Void>() {
-                            @Override
-                            public void onSuccess(Void aVoid) {
-                                Toast.makeText(itemView.getContext(), "Diagnosa dan Biodata User Berhasil Disimpan", Toast.LENGTH_SHORT).show();
-                                Intent intent = new Intent(getActivity(), FragmentDetailDiagnosaUsers.class);
-                                ArrayList<UserDiagnosa> userDiagnosa = new ArrayList<>();
-                                intent.putParcelableArrayListExtra(FragmentDetailDiagnosaUsers.EXTRA_PARCEL_DIAGNOSA, userDiagnosa);
-                                startActivity(intent);
-                            }
-                        }).addOnFailureListener(new OnFailureListener() {
-                    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
+                df.set(hashMap).addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                        Toast.makeText(getContext(), "Diagnosa dan biodata berhasil  disimpan", Toast.LENGTH_SHORT).show();
+
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(itemView.getContext(), "DiagnosaUser Gagal Disimpan", Toast.LENGTH_SHORT).show();
-                        Log.e("Gagal Disimpan", Objects.requireNonNull(e.getMessage()));
+                        Toast.makeText(getContext(), "Diagnosa dan biodata  gagal tersimpan", Toast.LENGTH_SHORT).show();
                     }
                 });
+
             }
         } catch (Exception e) {
             Toast.makeText(itemView.getContext(), "Failure Error, Isilah Biodata Anda Terlebih Dahulu Pada Menu Tombol Floating Action Button !!!", Toast.LENGTH_SHORT).show();
