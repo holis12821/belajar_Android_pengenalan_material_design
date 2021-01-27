@@ -391,4 +391,30 @@
     <dimen name="layout_marginTop_chat">21.5dp</dimen>
     <dimen name="paddingLeft_send">12dp</dimen>
     <dimen name="padding_Right_send">15dp</dimen>
+
+    <dimen name="layout_height_LinearLayout">240dp</dimen>
+
+    <dimen name="padding_linearLayout">10dp</dimen>
+    <dimen name="textSizeTextView">19sp</dimen>
+    <dimen name="paddingLeft">20dp</dimen>
+    <dimen name="paddingRight">20dp</dimen>
+    <dimen name="androidradious">"20dp</dimen>
+    <dimen name="paddingLinearLayoutProfile">16dp</dimen>
+
+    <dimen name="layout_width_cardView">150dp</dimen>
+    <dimen name="layout_height_cardView">90dp</dimen>
+    <dimen name="cardCornerRadius">6dp</dimen>
+    <dimen name="cardElevationCardView">0dp</dimen>
+    <dimen name="paddingCardView">9dp</dimen>
+
+    <dimen name="layout_BottomToptextView">7dp</dimen>
+    <dimen name="layout_marginTopTextView">7dp</dimen>
+
+    <!--Margin for textView-->
+    <dimen name="layout_marginTopTextViewDiagnosa">6dp</dimen>
+    <dimen name="layout_marginBottomTextViewDiagnosa">6dp</dimen>
+    <dimen name="layout_marginStartTextViewDiagnosa">6dp</dimen>
+    <dimen name="layout_marginEndTextViewDiagnosa">6dp</dimen>
+    <dimen name="layout_marginRightTextViewDiagnosa">6dp</dimen>
+    <dimen name="layout_marginLeftTextViewDiagnosa">6dp</dimen>
 </resources>
