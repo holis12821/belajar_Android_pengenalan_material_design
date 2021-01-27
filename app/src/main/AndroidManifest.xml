@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.belajar_android_pengenalan_material_design">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -9,8 +10,8 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true">
-
+        android:supportsRtl="true"
+        tools:ignore="AllowBackup">
         <activity
             android:name=".SplashScreen"
             android:label="@string/app_name"
@@ -58,9 +59,15 @@
             android:label="@string/title_changePassword"
             android:theme="@style/AppTheme_Change_Password"
             android:windowSoftInputMode="adjustResize|stateHidden" />
-        <activity android:name=".ChatActivity"
+        <activity
+            android:name=".ChatActivity"
             android:label="@string/Chat"
             android:theme="@style/AppTheme_chat"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity android:name=".DetailDiagnosa"
+            android:label="@string/detail_Diagnosa"
+            android:theme="@style/AppTheme_detail_Diagnosa"
             android:windowSoftInputMode="adjustResize|stateHidden"/>
     </application>
 

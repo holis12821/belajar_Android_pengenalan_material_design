@@ -23,6 +23,8 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.belajar_android_pengenalan_material_design.DetailDiagnosa;
 import com.example.belajar_android_pengenalan_material_design.R;
 import com.example.belajar_android_pengenalan_material_design.model.UserDiagnosa;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -2070,9 +2072,15 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                     @Override
                     public void onSuccess(Void aVoid) {
                         Toast.makeText(getContext(), "Diagnosa dan biodata berhasil  disimpan", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(getActivity(), FragmentDetailDiagnosaUsers.class);
-                        ArrayList<UserDiagnosa> userDiagnosa = new ArrayList<>();
-                        intent.putParcelableArrayListExtra(FragmentDetailDiagnosaUsers.EXTRA_PARCEL_DIAGNOSA, userDiagnosa);
+                        /*Menggunakan moveWithObjectIntent.putExtra(MoveWithObjectReceiver.EXTRA_PERSON, personPojo);*/
+                        /*Menggunakan intent dengan array list sebagai media penampung kumpulan data pada objek yang akan dikirim ke activity lain*/
+                        /*Buat Array List yang digunakan untuk menampung kumpulan data*/
+                        Intent intent = new Intent(getActivity(), DetailDiagnosa.class);
+                        /*Buat Model Data*/
+                        UserDiagnosa userDiagnosa = new UserDiagnosa();
+                        ArrayList<UserDiagnosa> mList = new ArrayList<>();
+                        mList.add(userDiagnosa);
+                        intent.putParcelableArrayListExtra(DetailDiagnosa.EXTRA_PARCELABLE, mList);
                         startActivity(intent);
                     }
                 }).addOnFailureListener(new OnFailureListener() {
