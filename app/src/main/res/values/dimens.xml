@@ -398,7 +398,7 @@
     <dimen name="textSizeTextView">19sp</dimen>
     <dimen name="paddingLeft">20dp</dimen>
     <dimen name="paddingRight">20dp</dimen>
-    <dimen name="androidradious">"20dp</dimen>
+    <dimen name="androidradious">20dp</dimen>
     <dimen name="paddingLinearLayoutProfile">16dp</dimen>
 
     <dimen name="layout_width_cardView">150dp</dimen>
