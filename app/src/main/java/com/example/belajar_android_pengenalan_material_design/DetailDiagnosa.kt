@@ -1,5 +1,6 @@
 package com.example.belajar_android_pengenalan_material_design
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -41,6 +42,7 @@ class DetailDiagnosa : AppCompatActivity() {
         }
     }
 
+  @SuppressLint("SetTextI18n")
   private fun dataDiagnosa(){
         /*define fineViewById with View*/
         this.tvnama = findViewById(R.id.tv_nama)
