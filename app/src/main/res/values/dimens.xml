@@ -407,8 +407,8 @@
     <dimen name="cardElevationCardView">0dp</dimen>
     <dimen name="paddingCardView">9dp</dimen>
 
-    <dimen name="layout_BottomToptextView">7dp</dimen>
-    <dimen name="layout_marginTopTextView">7dp</dimen>
+    <dimen name="layout_marginToptextView">7dp</dimen>
+    <dimen name="layout_marginTopTextView">20dp</dimen>
 
     <!--Margin for textView-->
     <dimen name="layout_marginTopTextViewDiagnosa">6dp</dimen>
@@ -417,4 +417,6 @@
     <dimen name="layout_marginEndTextViewDiagnosa">6dp</dimen>
     <dimen name="layout_marginRightTextViewDiagnosa">6dp</dimen>
     <dimen name="layout_marginLeftTextViewDiagnosa">6dp</dimen>
+
+    <dimen name="layout_marginToptextView_linear">25dp</dimen>
 </resources>

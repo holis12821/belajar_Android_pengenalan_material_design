@@ -36,7 +36,6 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
-import java.util.ArrayList;
 import java.util.HashMap;
 
 
@@ -2057,7 +2056,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 DocumentReference df = firebaseFirestore.collection("diagnosa").document(mUser.getUid());
 
                 //Membuat HashMap
-                HashMap<String, String> hashMap = new HashMap<>();
+                final HashMap<String, String> hashMap = new HashMap<>();
                 hashMap.put("key", userId);
                 hashMap.put("npm", _EditNPM);
                 hashMap.put("nama", _EditNama);
@@ -2068,20 +2067,24 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 hashMap.put("solusi", Solusi);
                 hashMap.put("persentase", precision.format(Persentase));
                 /*menambahkan data hashMap pada FirebaseFireStore*/
-                df.set(hashMap).addOnSuccessListener(new OnSuccessListener<Void>() {
+                df.set(new UserDiagnosa(hashMap.get("key"), hashMap.get("npm"), hashMap.get("nama"), hashMap.get("jenis_kelamin"),
+                        hashMap.get("jurusan"), hashMap.get("universitas"), hashMap.get("tingkat_stres"), hashMap.get("solusi"),
+                        hashMap.get("persentase"))).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
                         Toast.makeText(getContext(), "Diagnosa dan biodata berhasil  disimpan", Toast.LENGTH_SHORT).show();
                         /*Menggunakan moveWithObjectIntent.putExtra(MoveWithObjectReceiver.EXTRA_PERSON, personPojo);*/
                         /*Menggunakan intent dengan array list sebagai media penampung kumpulan data pada objek yang akan dikirim ke activity lain*/
-                        /*Buat Array List yang digunakan untuk menampung kumpulan data*/
+                        //Buat Array List yang digunakan untuk menampung kumpulan data
                         Intent intent = new Intent(getActivity(), DetailDiagnosa.class);
                         /*Buat Model Data*/
-                        UserDiagnosa userDiagnosa = new UserDiagnosa();
-                        ArrayList<UserDiagnosa> mList = new ArrayList<>();
-                        mList.add(userDiagnosa);
-                        intent.putParcelableArrayListExtra(DetailDiagnosa.EXTRA_PARCELABLE, mList);
-                        startActivity(intent);
+                         intent.putExtra(DetailDiagnosa.NAMA, hashMap.get("nama"));
+                         intent.putExtra(DetailDiagnosa.TINGKAT_STRES, hashMap.get("tingkat_stres"));
+                         intent.putExtra(DetailDiagnosa.PERSENTASE, hashMap.get("persentase"));
+                         intent.putExtra(DetailDiagnosa.SOLUSI, hashMap.get("solusi"));
+                         /*Start Activity*/
+                         startActivity(intent);
+
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override

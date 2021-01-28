@@ -3,7 +3,7 @@ package com.example.belajar_android_pengenalan_material_design.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-public class UserDiagnosa implements Parcelable {
+public class UserDiagnosa  {
     private String key;
     private String npm;
     private String nama;
@@ -30,31 +30,6 @@ public class UserDiagnosa implements Parcelable {
     public UserDiagnosa(){
         /*Empty Constructor*/
     }
-
-    protected UserDiagnosa(Parcel in) {
-        key = in.readString();
-        npm = in.readString();
-        nama = in.readString();
-        jenis_kelamin = in.readString();
-        jurusan = in.readString();
-        universitas = in.readString();
-        tingkat_stres = in.readString();
-        solusi = in.readString();
-        persentase = in.readString();
-    }
-
-    public static final Creator<UserDiagnosa> CREATOR = new Creator<UserDiagnosa>() {
-        @Override
-        public UserDiagnosa createFromParcel(Parcel in) {
-            return new UserDiagnosa(in);
-        }
-
-        @Override
-        public UserDiagnosa[] newArray(int size) {
-            return new UserDiagnosa[size];
-        }
-    };
-
     public String getKey(){
         return this.key;
     }
@@ -120,23 +95,5 @@ public class UserDiagnosa implements Parcelable {
 
     public void setSolusi(String solusi) {
         this.solusi = solusi;
-    }
-
-    @Override
-    public int describeContents() {
-        return 0;
-    }
-
-    @Override
-    public void writeToParcel(Parcel dest, int flags) {
-        dest.writeString(key);
-        dest.writeString(npm);
-        dest.writeString(nama);
-        dest.writeString(jenis_kelamin);
-        dest.writeString(jurusan);
-        dest.writeString(universitas);
-        dest.writeString(tingkat_stres);
-        dest.writeString(solusi);
-        dest.writeString(persentase);
     }
 }

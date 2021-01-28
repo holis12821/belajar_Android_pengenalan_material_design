@@ -60,7 +60,7 @@
                 android:background="@drawable/circularbordersolid"
                 android:gravity="left"
                 android:orientation="vertical"
-                android:layout_marginTop="@dimen/layout_BottomToptextView"
+                android:layout_marginTop="@dimen/layout_marginToptextView"
                 android:padding="@dimen/paddingLinearLayoutProfile"
                 tools:ignore="RtlHardcoded,UselessParent">
 
@@ -69,19 +69,9 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/npm"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/layout_marginBottomTextViewDiagnosa"
-                        android:layout_marginLeft="@dimen/layout_marginLeftTextViewDiagnosa"
-                        android:layout_marginRight="@dimen/layout_marginRightTextViewDiagnosa"
-                        android:text="@string/TextView_NPM_CardView"/>
-
-                    <TextView
                         android:id="@+id/tv_nama"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/npm"
                         android:layout_marginTop="@dimen/layout_marginTopTextViewDiagnosa"
                         android:layout_marginBottom="@dimen/layout_marginBottomTextViewDiagnosa"
                         android:layout_marginLeft="@dimen/layout_marginLeftTextViewDiagnosa"
@@ -89,43 +79,10 @@
                         android:text="@string/TextView_Nama_CardView"/>
 
                     <TextView
-                        android:id="@+id/tv_jk"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/tv_nama"
-                        android:layout_marginTop="@dimen/layout_marginTopTextViewDiagnosa"
-                        android:layout_marginBottom="@dimen/layout_marginBottomTextViewDiagnosa"
-                        android:layout_marginLeft="@dimen/layout_marginLeftTextViewDiagnosa"
-                        android:layout_marginRight="@dimen/layout_marginRightTextViewDiagnosa"
-                        android:text="@string/TextView_Jenis_Kelamin"/>
-
-                    <TextView
-                        android:id="@+id/tv_jurusan"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/tv_jk"
-                        android:layout_marginTop="@dimen/layout_marginTopTextViewDiagnosa"
-                        android:layout_marginBottom="@dimen/layout_marginBottomTextViewDiagnosa"
-                        android:layout_marginLeft="@dimen/layout_marginLeftTextViewDiagnosa"
-                        android:layout_marginRight="@dimen/layout_marginRightTextViewDiagnosa"
-                        android:text="@string/TextView_Jurusan"/>
-
-                    <TextView
-                        android:id="@+id/tv_universitas"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/tv_jurusan"
-                        android:layout_marginTop="@dimen/layout_marginTopTextViewDiagnosa"
-                        android:layout_marginBottom="@dimen/layout_marginBottomTextViewDiagnosa"
-                        android:layout_marginLeft="@dimen/layout_marginLeftTextViewDiagnosa"
-                        android:layout_marginRight="@dimen/layout_marginRightTextViewDiagnosa"
-                        android:text="@string/TextView_Universitas"/>
-
-                    <TextView
                         android:id="@+id/tv_tingkat_stres"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/tv_universitas"
+                        android:layout_below="@+id/tv_nama"
                         android:layout_marginTop="@dimen/layout_marginTopTextViewDiagnosa"
                         android:layout_marginBottom="@dimen/layout_marginBottomTextViewDiagnosa"
                         android:layout_marginLeft="@dimen/layout_marginLeftTextViewDiagnosa"
@@ -153,10 +110,50 @@
                         android:layout_marginLeft="@dimen/layout_marginLeftTextViewDiagnosa"
                         android:layout_marginRight="@dimen/layout_marginRightTextViewDiagnosa"
                         android:text="@string/TextView_Solusi"/>
-
                 </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circularbordersolid"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/layout_marginToptextView_linear"
+                android:padding="@dimen/paddingLinearLayoutProfile"
+                tools:ignore="RtlHardcoded,UselessParent">
+
+                <TextView
+                    android:id="@+id/tv_referensi1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_marginTopTextViewDiagnosa"
+                    android:layout_marginBottom="@dimen/layout_marginBottomTextViewDiagnosa"
+                    android:layout_marginLeft="@dimen/layout_marginLeftTextViewDiagnosa"
+                    android:layout_marginRight="@dimen/layout_marginRightTextViewDiagnosa"
+                    android:text="@string/referensi"/>
+                <TextView
+                    android:id="@+id/tv_referensi2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_marginTopTextViewDiagnosa"
+                    android:layout_marginBottom="@dimen/layout_marginBottomTextViewDiagnosa"
+                    android:layout_marginLeft="@dimen/layout_marginLeftTextViewDiagnosa"
+                    android:layout_marginRight="@dimen/layout_marginRightTextViewDiagnosa"
+                    android:text="@string/referensi"/>
+
+                <TextView
+                    android:id="@+id/tv_referens3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_marginTopTextViewDiagnosa"
+                    android:layout_marginBottom="@dimen/layout_marginBottomTextViewDiagnosa"
+                    android:layout_marginLeft="@dimen/layout_marginLeftTextViewDiagnosa"
+                    android:layout_marginRight="@dimen/layout_marginRightTextViewDiagnosa"
+                    android:text="@string/referensi"/>
 
             </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
