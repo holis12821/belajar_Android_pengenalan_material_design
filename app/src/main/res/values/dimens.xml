@@ -408,7 +408,8 @@
     <dimen name="paddingCardView">9dp</dimen>
 
     <dimen name="layout_marginToptextView">7dp</dimen>
-    <dimen name="layout_marginTopTextView">20dp</dimen>
+    <dimen name="layout_marginTopTextView">12dp</dimen>
+    <dimen name="layout_marginBottomTextView">12dp</dimen>
 
     <!--Margin for textView-->
     <dimen name="layout_marginTopTextViewDiagnosa">6dp</dimen>

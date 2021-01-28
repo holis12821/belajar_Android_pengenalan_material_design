@@ -54,10 +54,10 @@ class DetailDiagnosa : AppCompatActivity() {
         val persentase = intent.getStringExtra(PERSENTASE)
         val solusi = intent.getStringExtra(SOLUSI)
         /*print the text to result diagnosis*/
-        tvnama.text = name
-        tvtingkatstres.text = tingkatStres
-        tvpersentase.text = persentase
-        tvsolusi.text = solusi
+        tvnama.text = "Nama : $name"
+        tvtingkatstres.text = "Tingkat Stres : $tingkatStres"
+        tvpersentase.text = "Persentase : $persentase"
+        tvsolusi.text = "Solusi : $solusi"
       }
 
     private fun reference(){

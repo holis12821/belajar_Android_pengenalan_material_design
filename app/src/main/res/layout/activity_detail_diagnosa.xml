@@ -5,7 +5,7 @@
     android:id="@+id/container"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/grey"
+    android:background="@color/colorPrimaryDark"
     android:orientation="vertical"
     tools:context=".DetailDiagnosa">
 
@@ -31,6 +31,7 @@
             android:text="@string/hasil_diagnosa"
             android:gravity="center"
             android:layout_marginTop="@dimen/layout_marginTopTextView"
+            android:layout_marginBottom="@dimen/layout_marginBottomTextView"
             android:textColor="@color/white"
             android:textSize="@dimen/textSizeTextView"
             android:fontFamily="@font/jazz_music_bold"/>
@@ -122,6 +123,17 @@
                 android:layout_marginTop="@dimen/layout_marginToptextView_linear"
                 android:padding="@dimen/paddingLinearLayoutProfile"
                 tools:ignore="RtlHardcoded,UselessParent">
+
+                <TextView
+                    android:id="@+id/referensi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/layout_marginTopTextViewDiagnosa"
+                    android:layout_marginBottom="@dimen/layout_marginBottomTextViewDiagnosa"
+                    android:layout_marginLeft="@dimen/layout_marginLeftTextViewDiagnosa"
+                    android:layout_marginRight="@dimen/layout_marginRightTextViewDiagnosa"
+                    android:text="@string/referensi"/>
 
                 <TextView
                     android:id="@+id/tv_referensi1"
