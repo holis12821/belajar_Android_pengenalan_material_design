@@ -1,8 +1,5 @@
 package com.example.belajar_android_pengenalan_material_design;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -13,10 +10,11 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnCompleteListener;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
@@ -27,7 +25,6 @@ import com.rengwuxian.materialedittext.MaterialEditText;
 public class LoginActivity extends AppCompatActivity {
     private MaterialEditText email, password;
     private ProgressBar progressBar;
-    private TextView forgetPassword;
     private FirebaseAuth firebaseAuth;
     private FirebaseFirestore fStore;
     @Override
@@ -39,7 +36,7 @@ public class LoginActivity extends AppCompatActivity {
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
         progressBar = findViewById(R.id.progressBar);
-        forgetPassword = findViewById(R.id.forget);
+        TextView forgetPassword = findViewById(R.id.forget);
         firebaseAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
         /*set Up Register Button*/

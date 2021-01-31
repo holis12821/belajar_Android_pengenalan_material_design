@@ -1,4 +1,4 @@
-package com.example.belajar_android_pengenalan_material_design.fragmentusers;
+         package com.example.belajar_android_pengenalan_material_design.fragmentusers;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
@@ -21,7 +21,6 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.belajar_android_pengenalan_material_design.DetailDiagnosa;
@@ -42,7 +41,6 @@ import java.util.HashMap;
 public class HomeDiagnosaUsersFragment extends Fragment {
 
     private View itemView;
-    private TextView tv_tingkat_stres, tv_hasil, tv_solusi;
     private DecimalFormat precision;
     private String TingkatStres;
     private double Persentase;
@@ -90,67 +88,67 @@ public class HomeDiagnosaUsersFragment extends Fragment {
     private AutoCompleteTextView act_G19, act_G11, act_G42, act_G31, act_G14, act_G26, act_G22, act_G32, act_G01, act_G25;
 
     /*Rules Stres ringan 1 untuk nilai CF user*/
-    private final String[] Cf_UserG48 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG29 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG03 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG44 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG38 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG27 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG45 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
+    private final String[] Cf_UserG48 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG29 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG03 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG44 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG38 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG27 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG45 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
     /*Rules Stres Ringan 2 untuk nilai CF user*/
-    private final String[] Cf_UserG34 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG09 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG17 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG50 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
+    private final String[] Cf_UserG34 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG09 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG17 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG50 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
 
     /*Rules Stres Sedang 1 untuk nilai CF user*/
-    private final String[] Cf_UserG16 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG18 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG05 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG07 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG04 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG08 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG28 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
+    private final String[] Cf_UserG16 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG18 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG05 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG07 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG04 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG08 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG28 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
 
     /*Rules Stres Sedang 2 untuk nilai CF user*/
-    private final String[] Cf_UserG30 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG12 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG02 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG13 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG39 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG49 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG46 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG47 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
+    private final String[] Cf_UserG30 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG12 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG02 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG13 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG39 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG49 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG46 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG47 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
 
     /*Rules Stres Sedang 3 untuk nilai CF user*/
-    private final String[] Cf_UserG24 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG37 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG43 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG35 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG36 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG23 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
+    private final String[] Cf_UserG24 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG37 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG43 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG35 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG36 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG23 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
 
     /*Rules Stres Berat untuk nilai CF user*/
-    private final String[] Cf_UserG06 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG33 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG21 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG15 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG20 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG40 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG10 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG41 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
+    private final String[] Cf_UserG06 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG33 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG21 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG15 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG20 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG40 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG10 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG41 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
 
     /*Rules Stres Sangat Berat untuk nilai CF user*/
-    private final String[] Cf_UserG19 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG11 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG42 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG31 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG14 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG26 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG22 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG32 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG01 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
-    private final String[] Cf_UserG25 = {"", "0", "0.2", "0.4", "0.6", "0.8", "1"};
+    private final String[] Cf_UserG19 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG11 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG42 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG31 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG14 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG26 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG22 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG32 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG01 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG25 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
 
 
     /*Constructor*/
@@ -299,11 +297,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
         act_G01 = itemView.findViewById(R.id.AutoComplete_tv_G01);
         act_G25 = itemView.findViewById(R.id.AutoComplete_tv_G25);
 
-        /*Define TextView*/
-        tv_tingkat_stres = itemView.findViewById(R.id.tv_tingkat_stres);
-        tv_hasil = itemView.findViewById(R.id.tv_hasil);
-        tv_solusi = itemView.findViewById(R.id.tv_solusi);
-
+        /*Define Button for process*/
         Button btn_proses = itemView.findViewById(R.id.btn_simpan_diagnosa);
 
         /*Define Array Adapter agar ACT aktif*/
@@ -1532,17 +1526,162 @@ public class HomeDiagnosaUsersFragment extends Fragment {
     private void setUpCertaintyFactorRulesStresRingan1() {
         /*Rules Stres Ringan 1*/
         /*Disini perhitungan Certainty Factor*/
+        /*bobot nilai cf user*/
+        double _G48 = 0;
+        double _G29 = 0;
+        double _G03 = 0;
+        double _G44 = 0;
+        double _G38 = 0;
+        double _G27 = 0;
+        double _G45 = 0;
 
-        if (cb_iya_G48.isChecked() && cb_iya_G29.isChecked() && cb_iya_G03.isChecked() && cb_iya_G44.isChecked() && cb_iya_G38.isChecked() && cb_iya_G27.isChecked() && cb_iya_G45.isChecked()) {
+        if (cb_iya_G48.isChecked()
+                && cb_iya_G29.isChecked()
+                && cb_iya_G03.isChecked()
+                && cb_iya_G44.isChecked()
+                && cb_iya_G38.isChecked()
+                && cb_iya_G27.isChecked()
+                && cb_iya_G45.isChecked()) {
+            /*Mengambil nilai Autocomplete TextView serta mengcompare apakah cocok dengan objek yg disimpan pada array saat di klik pada act*/
+            /*G48*/
+            if (act_G48.getText().toString().equals("Sangat tidak tahu")){
+                _G48 = 0;
+            }
+            if (act_G48.getText().toString().equals("Tidak tahu")){
+                _G48 = 0.2;
+            }
+            if (act_G48.getText().toString().equals("Mungkin")){
+                _G48 = 0.4;
+            }
+            if (act_G48.getText().toString().equals("Kemungkinan besar")){
+                _G48 = 0.6;
+            }
+            if (act_G48.getText().toString().equals("Hampir pasti")){
+                _G48 = 0.8;
+            }
+            if (act_G48.getText().toString().equals("Pasti")){
+                _G48 = 1.0;
+            }
 
-            /*Mengambil nilai Autocomplete TextView yaitu CF user*/
-            double _G48 = Double.parseDouble(act_G48.getText().toString());
-            double _G29 = Double.parseDouble(act_G29.getText().toString());
-            double _G03 = Double.parseDouble(act_G03.getText().toString());
-            double _G44 = Double.parseDouble(act_G44.getText().toString());
-            double _G38 = Double.parseDouble(act_G38.getText().toString());
-            double _G27 = Double.parseDouble(act_G27.getText().toString());
-            double _G45 = Double.parseDouble(act_G45.getText().toString());
+           /*G29*/
+            if (act_G29.getText().toString().equals("Sangat tidak tahu")){
+                _G29 = 0;
+            }
+            if (act_G29.getText().toString().equals("Tidak tahu")){
+                _G29 = 0.2;
+            }
+            if (act_G29.getText().toString().equals("Mungkin")){
+                _G29 = 0.4;
+            }
+            if (act_G29.getText().toString().equals("Kemungkinan besar")){
+                _G29 = 0.6;
+            }
+            if (act_G29.getText().toString().equals("Hampir pasti")){
+                _G29 = 0.8;
+            }
+            if (act_G29.getText().toString().equals("Pasti")){
+                _G29 = 1.0;
+            }
+
+            /*G03*/
+            if (act_G03.getText().toString().equals("Sangat tidak tahu")){
+                _G03 = 0;
+            }
+            if (act_G03.getText().toString().equals("Tidak tahu")){
+                _G03 = 0.2;
+            }
+            if (act_G03.getText().toString().equals("Mungkin")){
+                _G03 = 0.4;
+            }
+            if (act_G03.getText().toString().equals("Kemungkinan besar")){
+                _G03 = 0.6;
+            }
+            if (act_G03.getText().toString().equals("Hampir pasti")){
+                _G03 = 0.8;
+            }
+            if (act_G03.getText().toString().equals("Pasti")){
+                _G03 = 1.0;
+            }
+
+            /*G44*/
+            if (act_G44.getText().toString().equals("Sangat tidak tahu")){
+                _G44 = 0;
+            }
+            if (act_G44.getText().toString().equals("Tidak tahu")){
+                _G44 = 0.2;
+            }
+            if (act_G44.getText().toString().equals("Mungkin")){
+                _G44 = 0.4;
+            }
+            if (act_G44.getText().toString().equals("Kemungkinan besar")){
+                _G44 = 0.6;
+            }
+            if (act_G44.getText().toString().equals("Hampir pasti")){
+                _G44 = 0.8;
+            }
+            if (act_G44.getText().toString().equals("Pasti")){
+                _G44 = 1.0;
+            }
+
+            /*G38*/
+            if (act_G38.getText().toString().equals("Sangat tidak tahu")){
+                _G38 = 0;
+            }
+            if (act_G38.getText().toString().equals("Tidak tahu")){
+                _G38 = 0.2;
+            }
+            if (act_G38.getText().toString().equals("Mungkin")){
+                _G38 = 0.4;
+            }
+            if (act_G38.getText().toString().equals("Kemungkinan besar")){
+                _G38 = 0.6;
+            }
+            if (act_G38.getText().toString().equals("Hampir pasti")){
+                _G38 = 0.8;
+            }
+            if (act_G38.getText().toString().equals("Pasti")){
+                _G38 = 1.0;
+            }
+
+            /*G27*/
+            if (act_G27.getText().toString().equals("Sangat tidak tahu")){
+                _G27 = 0;
+            }
+            if (act_G27.getText().toString().equals("Tidak tahu")){
+                _G27 = 0.2;
+            }
+            if (act_G27.getText().toString().equals("Mungkin")){
+                _G27 = 0.4;
+            }
+            if (act_G27.getText().toString().equals("Kemungkinan besar")){
+                _G27 = 0.6;
+            }
+            if (act_G27.getText().toString().equals("Hampir pasti")){
+                _G27 = 0.8;
+            }
+            if (act_G27.getText().toString().equals("Pasti")){
+                _G27 = 1.0;
+            }
+
+            /*_G45*/
+            if (act_G45.getText().toString().equals("Sangat tidak tahu")){
+                _G45 = 0;
+            }
+            if (act_G45.getText().toString().equals("Tidak tahu")){
+                _G45 = 0.2;
+            }
+            if (act_G45.getText().toString().equals("Mungkin")){
+                _G45 = 0.4;
+            }
+            if (act_G45.getText().toString().equals("Kemungkinan besar")){
+                _G45 = 0.6;
+            }
+            if (act_G45.getText().toString().equals("Hampir pasti")){
+                _G45 = 0.8;
+            }
+            if (act_G45.getText().toString().equals("Pasti")){
+                _G45 = 1.0;
+            }
 
             /*Membuat CFPakar*/
             final double CfPakar_G48 = 0.4;
@@ -1581,18 +1720,9 @@ public class HomeDiagnosaUsersFragment extends Fragment {
             /*Menghitung persentase dari hasil perhitungan metode CF*/
             double persentase = CfCombineCfOld_CF7 * 100;
             /*Kesimpulan*/
-            String tingkatStres = "Anda menderita Stres Ringan";
-
-            TingkatStres = tingkatStres;
-
-            tv_tingkat_stres.setText(tingkatStres);
-
-            Persentase = persentase;
-            tv_hasil.setText("dengan persentase tingkat kepercayaan yaitu = " + precision.format(persentase) + "%");
-
-            String solusi = "Tetaplah semangat dan yakin anda bisa mengatasi masalah dan stres anda dan selalu berusaha untuk mengatasi setiap masalah yang anda lalui.";
-            Solusi = solusi;
-            tv_solusi.setText("Solusi : " + solusi);
+            TingkatStres = "Anda menderita Stres Ringan";
+            Persentase = Double.parseDouble(precision.format(persentase));
+            Solusi = "Tetaplah semangat dan yakin anda bisa mengatasi masalah dan stres anda dan selalu berusaha untuk mengatasi setiap masalah yang anda lalui.";
         }
     }
 
@@ -1601,17 +1731,163 @@ public class HomeDiagnosaUsersFragment extends Fragment {
         /*Rules Stres Ringan 2*/
         /*Disini perhitungan Certainty Factor*/
 
-        if (cb_iya_G48.isChecked() && cb_iya_G29.isChecked() && cb_iya_G03.isChecked() &&
-                cb_G34.isChecked() && cb_G09.isChecked() && cb_G17.isChecked() && cb_G50.isChecked()) {
+        /*Inisialisasi variabel untuk cf user*/
+        double _G48 = 0;
+        double _G29 = 0;
+        double _G03 = 0;
+        double _G34 = 0;
+        double _G09 = 0;
+        double _G17 = 0;
+        double _G50 = 0;
 
-            /*Mengambil nilai Autocomplete TextView yaitu CF user*/
-            double _G48 = Double.parseDouble(act_G48.getText().toString());
-            double _G29 = Double.parseDouble(act_G29.getText().toString());
-            double _G03 = Double.parseDouble(act_G03.getText().toString());
-            double _G34 = Double.parseDouble(act_G34.getText().toString());
-            double _G09 = Double.parseDouble(act_G09.getText().toString());
-            double _G17 = Double.parseDouble(act_G17.getText().toString());
-            double _G50 = Double.parseDouble(act_G50.getText().toString());
+        if (cb_iya_G48.isChecked()
+                && cb_iya_G29.isChecked()
+                && cb_iya_G03.isChecked()
+                && cb_G34.isChecked()
+                && cb_G09.isChecked()
+                && cb_G17.isChecked()
+                && cb_G50.isChecked()) {
+
+            /*Mengambil nilai Autocomplete TextView serta mengcompare apakah cocok dengan objek yg disimpan pada array saat di klik pada act*/
+            /*G48*/
+            if (act_G48.getText().toString().equals("Sangat tidak tahu")){
+                _G48 = 0;
+            }
+            if (act_G48.getText().toString().equals("Tidak tahu")){
+                _G48 = 0.2;
+            }
+            if (act_G48.getText().toString().equals("Mungkin")){
+                _G48 = 0.4;
+            }
+            if (act_G48.getText().toString().equals("Kemungkinan besar")){
+                _G48 = 0.6;
+            }
+            if (act_G48.getText().toString().equals("Hampir pasti")){
+                _G48 = 0.8;
+            }
+            if (act_G48.getText().toString().equals("Pasti")){
+                _G48 = 1.0;
+            }
+
+            /*G29*/
+            if (act_G29.getText().toString().equals("Sangat tidak tahu")){
+                _G29 = 0;
+            }
+            if (act_G29.getText().toString().equals("Tidak tahu")){
+                _G29 = 0.2;
+            }
+            if (act_G29.getText().toString().equals("Mungkin")){
+                _G29 = 0.4;
+            }
+            if (act_G29.getText().toString().equals("Kemungkinan besar")){
+                _G29 = 0.6;
+            }
+            if (act_G29.getText().toString().equals("Hampir pasti")){
+                _G29 = 0.8;
+            }
+            if (act_G29.getText().toString().equals("Pasti")){
+                _G29 = 1.0;
+            }
+
+            /*G03*/
+            if (act_G03.getText().toString().equals("Sangat tidak tahu")){
+                _G03 = 0;
+            }
+            if (act_G03.getText().toString().equals("Tidak tahu")){
+                _G03 = 0.2;
+            }
+            if (act_G03.getText().toString().equals("Mungkin")){
+                _G03 = 0.4;
+            }
+            if (act_G03.getText().toString().equals("Kemungkinan besar")){
+                _G03 = 0.6;
+            }
+            if (act_G03.getText().toString().equals("Hampir pasti")){
+                _G03 = 0.8;
+            }
+            if (act_G03.getText().toString().equals("Pasti")){
+                _G03 = 1.0;
+            }
+
+            /*G34*/
+            if (act_G34.getText().toString().equals("Sangat tidak tahu")){
+                _G34 = 0;
+            }
+            if (act_G34.getText().toString().equals("Tidak tahu")){
+                _G34 = 0.2;
+            }
+            if (act_G34.getText().toString().equals("Mungkin")){
+                _G34 = 0.4;
+            }
+            if (act_G34.getText().toString().equals("Kemungkinan besar")){
+                _G34 = 0.6;
+            }
+            if (act_G34.getText().toString().equals("Hampir pasti")){
+                _G34 = 0.8;
+            }
+            if (act_G34.getText().toString().equals("Pasti")){
+                _G34 = 1.0;
+            }
+
+            /*G09*/
+            if (act_G09.getText().toString().equals("Sangat tidak tahu")){
+                _G09 = 0;
+            }
+            if (act_G09.getText().toString().equals("Tidak tahu")){
+                _G09 = 0.2;
+            }
+            if (act_G09.getText().toString().equals("Mungkin")){
+                _G09 = 0.4;
+            }
+            if (act_G09.getText().toString().equals("Kemungkinan besar")){
+                _G09 = 0.6;
+            }
+            if (act_G09.getText().toString().equals("Hampir pasti")){
+                _G09 = 0.8;
+            }
+            if (act_G09.getText().toString().equals("Pasti")){
+                _G09 = 1.0;
+            }
+
+            /*G17*/
+            if (act_G17.getText().toString().equals("Sangat tidak tahu")){
+                _G17 = 0;
+            }
+            if (act_G17.getText().toString().equals("Tidak tahu")){
+                _G17 = 0.2;
+            }
+            if (act_G17.getText().toString().equals("Mungkin")){
+                _G17 = 0.4;
+            }
+            if (act_G17.getText().toString().equals("Kemungkinan besar")){
+                _G17 = 0.6;
+            }
+            if (act_G17.getText().toString().equals("Hampir pasti")){
+                _G17 = 0.8;
+            }
+            if (act_G17.getText().toString().equals("Pasti")){
+                _G17 = 1.0;
+            }
+
+            /*_G50*/
+            if (act_G50.getText().toString().equals("Sangat tidak tahu")){
+                _G50 = 0;
+            }
+            if (act_G50.getText().toString().equals("Tidak tahu")){
+                _G50 = 0.2;
+            }
+            if (act_G50.getText().toString().equals("Mungkin")){
+                _G50 = 0.4;
+            }
+            if (act_G50.getText().toString().equals("Kemungkinan besar")){
+                _G50 = 0.6;
+            }
+            if (act_G50.getText().toString().equals("Hampir pasti")){
+                _G50 = 0.8;
+            }
+            if (act_G50.getText().toString().equals("Pasti")){
+                _G50 = 1.0;
+            }
 
             /*Membuat CFPakar*/
             final double CfPakar_G48 = 0.4;
@@ -1650,17 +1926,9 @@ public class HomeDiagnosaUsersFragment extends Fragment {
             double persentase = CfCombineCfOld_CF7 * 100;
 
             /*Kesimpulan*/
-            String tingkatStres = "Anda menderita Stres Ringan";
-            TingkatStres = tingkatStres;
-            tv_tingkat_stres.setText(tingkatStres);
-
-            Persentase = persentase;
-            tv_hasil.setText("dengan persentase tingkat kepercayaan yaitu = " + precision.format(persentase) + "%");
-
-            String solusi = "Tetaplah semangat dan yakin anda bisa mengatasi masalah dan stres anda dan selalu berusaha untuk mengatasi setiap masalah yang anda lalui serta semangatlah dalam situasi apapun.";
-            Solusi = solusi;
-            tv_solusi.setText("Solusi : " + solusi);
-
+            TingkatStres = "Anda menderita Stres Ringan";
+            Persentase = Double.parseDouble(precision.format(persentase));
+            Solusi = "Tetaplah semangat dan yakin anda bisa mengatasi masalah dan stres anda dan selalu berusaha untuk mengatasi setiap masalah yang anda lalui serta semangatlah dalam situasi apapun.";
         }
     }
 
@@ -1668,21 +1936,169 @@ public class HomeDiagnosaUsersFragment extends Fragment {
     private void setUpCertaintyFactorRulesStresSedang1() {
         /*Rules Stres Sedang 1*/
         /*Disini perhitungan Certainty Factor*/
-        if(cb_G16.isChecked() &&  cb_G18.isChecked() && cb_G05.isChecked() && cb_G07.isChecked()
-                && cb_G04.isChecked() &&
-                cb_G08.isChecked() && cb_G28.isChecked()){
 
-            /*Mengambil nilai Autocomplete TextView yaitu CF user*/
-            double _G16 = Double.parseDouble(act_G16.getText().toString());
-            double _G18 = Double.parseDouble(act_G18.getText().toString());
-            double _G05 = Double.parseDouble(act_G05.getText().toString());
-            double _G07 = Double.parseDouble(act_G07.getText().toString());
-            double _G04 = Double.parseDouble(act_G04.getText().toString());
-            double _G08 = Double.parseDouble(act_G08.getText().toString());
-            double _G28 = Double.parseDouble(act_G28.getText().toString());
+        /*Inisialisasi variabel untuk cf user*/
+        double _G16 = 0;
+        double _G18 = 0;
+        double _G05 = 0;
+        double _G07 = 0;
+        double _G04 = 0;
+        double _G08 = 0;
+        double _G28 = 0;
+
+
+        if(cb_G16.isChecked()
+                &&  cb_G18.isChecked()
+                && cb_G05.isChecked()
+                && cb_G07.isChecked()
+                && cb_G04.isChecked()
+                && cb_G08.isChecked()
+                && cb_G28.isChecked()){
+
+            /*Mengambil nilai act dengan kondisi if dan akan dicocokan atau di compare
+             * jika sama maka akan meruturn true dan kondisi terpenuhi*/
+            /*G16*/
+            if (act_G16.getText().toString().equals("Sangat tidak tahu")){
+                _G16 = 0;
+            }
+            if (act_G16.getText().toString().equals("Tidak tahu")){
+                _G16 = 0.2;
+            }
+            if (act_G16.getText().toString().equals("Mungkin")){
+                _G16 = 0.4;
+            }
+            if (act_G16.getText().toString().equals("Kemungkinan besar")){
+                _G16 = 0.6;
+            }
+            if (act_G16.getText().toString().equals("Hampir pasti")){
+                _G16 = 0.8;
+            }
+            if (act_G16.getText().toString().equals("Pasti")){
+                _G16 = 1.0;
+            }
+
+            /*G18*/
+            if (act_G18.getText().toString().equals("Sangat tidak tahu")){
+                _G18 = 0;
+            }
+            if (act_G18.getText().toString().equals("Tidak tahu")){
+                _G18 = 0.2;
+            }
+            if (act_G18.getText().toString().equals("Mungkin")){
+                _G18 = 0.4;
+            }
+            if (act_G18.getText().toString().equals("Kemungkinan besar")){
+                _G18 = 0.6;
+            }
+            if (act_G18.getText().toString().equals("Hampir pasti")){
+                _G18 = 0.8;
+            }
+            if (act_G18.getText().toString().equals("Pasti")){
+                _G18 = 1.0;
+            }
+
+            /*G05*/
+            if (act_G05.getText().toString().equals("Sangat tidak tahu")){
+                _G05 = 0;
+            }
+            if (act_G05.getText().toString().equals("Tidak tahu")){
+                _G05 = 0.2;
+            }
+            if (act_G05.getText().toString().equals("Mungkin")){
+                _G05 = 0.4;
+            }
+            if (act_G05.getText().toString().equals("Kemungkinan besar")){
+                _G05 = 0.6;
+            }
+            if (act_G05.getText().toString().equals("Hampir pasti")){
+                _G05 = 0.8;
+            }
+            if (act_G05.getText().toString().equals("Pasti")){
+                _G05 = 1.0;
+            }
+
+            /*G07*/
+            if (act_G07.getText().toString().equals("Sangat tidak tahu")){
+                _G07 = 0;
+            }
+            if (act_G07.getText().toString().equals("Tidak tahu")){
+                _G07 = 0.2;
+            }
+            if (act_G07.getText().toString().equals("Mungkin")){
+                _G07 = 0.4;
+            }
+            if (act_G07.getText().toString().equals("Kemungkinan besar")){
+                _G07 = 0.6;
+            }
+            if (act_G07.getText().toString().equals("Hampir pasti")){
+                _G07 = 0.8;
+            }
+            if (act_G07.getText().toString().equals("Pasti")){
+                _G07 = 1.0;
+            }
+
+            /*G04*/
+            if (act_G04.getText().toString().equals("Sangat tidak tahu")){
+                _G04 = 0;
+            }
+            if (act_G04.getText().toString().equals("Tidak tahu")){
+                _G04 = 0.2;
+            }
+            if (act_G04.getText().toString().equals("Mungkin")){
+                _G04 = 0.4;
+            }
+            if (act_G04.getText().toString().equals("Kemungkinan besar")){
+                _G04 = 0.6;
+            }
+            if (act_G04.getText().toString().equals("Hampir pasti")){
+                _G04 = 0.8;
+            }
+            if (act_G04.getText().toString().equals("Pasti")){
+                _G04 = 1.0;
+            }
+
+            /*G08*/
+            if (act_G08.getText().toString().equals("Sangat tidak tahu")){
+                _G08 = 0;
+            }
+            if (act_G08.getText().toString().equals("Tidak tahu")){
+                _G08 = 0.2;
+            }
+            if (act_G08.getText().toString().equals("Mungkin")){
+                _G08 = 0.4;
+            }
+            if (act_G08.getText().toString().equals("Kemungkinan besar")){
+                _G08 = 0.6;
+            }
+            if (act_G08.getText().toString().equals("Hampir pasti")){
+                _G08 = 0.8;
+            }
+            if (act_G08.getText().toString().equals("Pasti")){
+                _G08 = 1.0;
+            }
+
+            /*G28*/
+            if (act_G28.getText().toString().equals("Sangat tidak tahu")){
+                _G28 = 0;
+            }
+            if (act_G28.getText().toString().equals("Tidak tahu")){
+                _G28 = 0.2;
+            }
+            if (act_G28.getText().toString().equals("Mungkin")){
+                _G28 = 0.4;
+            }
+            if (act_G28.getText().toString().equals("Kemungkinan besar")){
+                _G28 = 0.6;
+            }
+            if (act_G28.getText().toString().equals("Hampir pasti")){
+                _G28 = 0.8;
+            }
+            if (act_G28.getText().toString().equals("Pasti")){
+                _G28 = 1.0;
+            }
 
             /*Membuat CFPakar*/
-            final double CfPakar_G16 =  1.0;
+            final double CfPakar_G16 = 1.0;
             final double CfPakar_G18 = 1.0;
             final double CfPakar_G05 = 0.4;
             final double CfPakar_G07 = 0.6;
@@ -1698,7 +2114,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
             double  resultCount_G07_CF4 = CfPakar_G07 * _G07;
             double  resultCount_G04_CF5 = CfPakar_G04 * _G04;
             double  resultCount_G08_CF6 = CfPakar_G08 * _G08;
-            double resultCount_G28_CF7 = CfPakar_G28 * _G28;
+            double resultCount_G28_CF7 = CfPakar_G28 *  _G28;
 
             /*Mensetting Format Decimal untuk mengambil 2 angka decimal dibelakang koma*/
             precision = new DecimalFormat("#.##");
@@ -1717,17 +2133,10 @@ public class HomeDiagnosaUsersFragment extends Fragment {
             /*Menghitung persentase dari hasil perhitungan metode CF*/
             double persentase = CfCombineCfOld_CF7 * 100;
 
-            /*Kesimpulan*/
-            String tingkatStres = "Anda Menderita Stres Sedang";
-            TingkatStres = tingkatStres;
-            tv_tingkat_stres.setText(tingkatStres);
-
-            Persentase = persentase;
-            tv_hasil.setText("dengan persentase tingkat kepercayaan yaitu = " + precision.format(persentase) + "%");
-
-            String solusi = "Tenangkanlah diri anda sejenak dan berusahalah untuk memanajemen waktu dengan benar sehingga ketika anda dikejar deadline tugas akhir anda dapat dengan cepat menyelesaikannya.";
-            Solusi = solusi;
-            tv_solusi.setText("Solusi : " + solusi);
+            /*Conclution*/
+            TingkatStres = "Anda Menderita Stres Sedang";
+            Persentase = Double.parseDouble(precision.format(persentase));
+            Solusi = "Tenangkanlah diri anda sejenak dan berusahalah untuk memanajemen waktu dengan benar sehingga ketika anda dikejar deadline tugas akhir anda dapat dengan cepat menyelesaikannya.";
         }
     }
 
@@ -1735,20 +2144,207 @@ public class HomeDiagnosaUsersFragment extends Fragment {
     private void setUpCertaintyFactorRulesStresSedang2(){
         /*Rules Stres Sedang 2*/
         /*Disini perhitungan Certainty Factor*/
-        if (cb_G16.isChecked() && cb_G30.isChecked() && cb_G12.isChecked()
-                &&  cb_G02.isChecked() && cb_G13.isChecked() && cb_G39.isChecked() && cb_G49.isChecked()
-                && cb_G46.isChecked() && cb_G47.isChecked()){
 
-            /*Mengambil nilai Autocomplete TextView yaitu CF user*/
-            double _G16 = Double.parseDouble(act_G16.getText().toString());
-            double _G30 = Double.parseDouble(act_G30.getText().toString());
-            double _G12 = Double.parseDouble(act_G12.getText().toString());
-            double _G02 = Double.parseDouble(act_G02.getText().toString());
-            double _G13 = Double.parseDouble(act_G13.getText().toString());
-            double _G39 = Double.parseDouble(act_G39.getText().toString());
-            double _G49 = Double.parseDouble(act_G49.getText().toString());
-            double _G46 = Double.parseDouble(act_G46.getText().toString());
-            double _G47 = Double.parseDouble(act_G47.getText().toString());
+        /*Inisialisasi bobot untuk cf user*/
+        double _G16 = 0;
+        double _G30 = 0;
+        double _G12 = 0;
+        double _G02 = 0;
+        double _G13 = 0;
+        double _G39 = 0;
+        double _G49 = 0;
+        double _G46 = 0;
+        double _G47 = 0;
+
+        if (cb_G16.isChecked()
+                && cb_G30.isChecked()
+                && cb_G12.isChecked()
+                &&  cb_G02.isChecked()
+                && cb_G13.isChecked()
+                && cb_G39.isChecked()
+                && cb_G49.isChecked()
+                && cb_G46.isChecked()
+                && cb_G47.isChecked()){
+
+            /*G16*/
+            if (act_G16.getText().toString().equals("Sangat tidak tahu")){
+                _G16 = 0;
+            }
+            if (act_G16.getText().toString().equals("Tidak tahu")){
+                _G16 = 0.2;
+            }
+            if (act_G16.getText().toString().equals("Mungkin")){
+                _G16 = 0.4;
+            }
+            if (act_G16.getText().toString().equals("Kemungkinan besar")){
+                _G16 = 0.6;
+            }
+            if (act_G16.getText().toString().equals("Hampir pasti")){
+                _G16 = 0.8;
+            }
+            if (act_G16.getText().toString().equals("Pasti")){
+                _G16 = 1.0;
+            }
+
+            /*G30*/
+            if (act_G30.getText().toString().equals("Sangat tidak tahu")){
+                _G30 = 0;
+            }
+            if (act_G30.getText().toString().equals("Tidak tahu")){
+                _G30 = 0.2;
+            }
+            if (act_G30.getText().toString().equals("Mungkin")){
+                _G30 = 0.4;
+            }
+            if (act_G30.getText().toString().equals("Kemungkinan besar")){
+                _G30 = 0.6;
+            }
+            if (act_G30.getText().toString().equals("Hampir pasti")){
+                _G30 = 0.8;
+            }
+            if (act_G30.getText().toString().equals("Pasti")){
+                _G30 = 1.0;
+            }
+
+            /*G12*/
+            if (act_G12.getText().toString().equals("Sangat tidak tahu")){
+                _G12 = 0;
+            }
+            if (act_G12.getText().toString().equals("Tidak tahu")){
+                _G12 = 0.2;
+            }
+            if (act_G12.getText().toString().equals("Mungkin")){
+                _G12 = 0.4;
+            }
+            if (act_G12.getText().toString().equals("Kemungkinan besar")){
+                _G12 = 0.6;
+            }
+            if (act_G12.getText().toString().equals("Hampir pasti")){
+                _G12 = 0.8;
+            }
+            if (act_G12.getText().toString().equals("Pasti")){
+                _G12 = 1.0;
+            }
+
+            /*G02*/
+            if (act_G02.getText().toString().equals("Sangat tidak tahu")){
+                _G02 = 0;
+            }
+            if (act_G02.getText().toString().equals("Tidak tahu")){
+                _G02 = 0.2;
+            }
+            if (act_G02.getText().toString().equals("Mungkin")){
+                _G02= 0.4;
+            }
+            if (act_G02.getText().toString().equals("Kemungkinan besar")){
+                _G02 = 0.6;
+            }
+            if (act_G02.getText().toString().equals("Hampir pasti")){
+                _G02 = 0.8;
+            }
+            if (act_G02.getText().toString().equals("Pasti")){
+                _G02 = 1.0;
+            }
+
+            /*G13*/
+            if (act_G13.getText().toString().equals("Sangat tidak tahu")){
+                _G13 = 0;
+            }
+            if (act_G13.getText().toString().equals("Tidak tahu")){
+                _G13 = 0.2;
+            }
+            if (act_G13.getText().toString().equals("Mungkin")){
+                _G13 = 0.4;
+            }
+            if (act_G13.getText().toString().equals("Kemungkinan besar")){
+                _G13 = 0.6;
+            }
+            if (act_G13.getText().toString().equals("Hampir pasti")){
+                _G13 = 0.8;
+            }
+            if (act_G13.getText().toString().equals("Pasti")){
+                _G13 = 1.0;
+            }
+
+            /*G39*/
+            if (act_G39.getText().toString().equals("Sangat tidak tahu")){
+                _G39 = 0;
+            }
+            if (act_G39.getText().toString().equals("Tidak tahu")){
+                _G39 = 0.2;
+            }
+            if (act_G39.getText().toString().equals("Mungkin")){
+                _G39 = 0.4;
+            }
+            if (act_G39.getText().toString().equals("Kemungkinan besar")){
+                _G39 = 0.6;
+            }
+            if (act_G39.getText().toString().equals("Hampir pasti")){
+                _G39 = 0.8;
+            }
+            if (act_G39.getText().toString().equals("Pasti")){
+                _G39 = 1.0;
+            }
+
+            /*G49*/
+            if (act_G49.getText().toString().equals("Sangat tidak tahu")){
+                _G49 = 0;
+            }
+            if (act_G49.getText().toString().equals("Tidak tahu")){
+                _G49 = 0.2;
+            }
+            if (act_G49.getText().toString().equals("Mungkin")){
+                _G49 = 0.4;
+            }
+            if (act_G49.getText().toString().equals("Kemungkinan besar")){
+                _G49 = 0.6;
+            }
+            if (act_G49.getText().toString().equals("Hampir pasti")){
+                _G49 = 0.8;
+            }
+            if (act_G49.getText().toString().equals("Pasti")){
+                _G49 = 1.0;
+            }
+
+            /*G46*/
+            if (act_G46.getText().toString().equals("Sangat tidak tahu")){
+                _G46 = 0;
+            }
+            if (act_G46.getText().toString().equals("Tidak tahu")){
+                _G46 = 0.2;
+            }
+            if (act_G46.getText().toString().equals("Mungkin")){
+                _G46 = 0.4;
+            }
+            if (act_G46.getText().toString().equals("Kemungkinan besar")){
+                _G46 = 0.6;
+            }
+            if (act_G46.getText().toString().equals("Hampir pasti")){
+                _G46 = 0.8;
+            }
+            if (act_G46.getText().toString().equals("Pasti")){
+                _G46 = 1.0;
+            }
+
+            /*G47*/
+            if (act_G47.getText().toString().equals("Sangat tidak tahu")){
+                _G47 = 0;
+            }
+            if (act_G47.getText().toString().equals("Tidak tahu")){
+                _G47 = 0.2;
+            }
+            if (act_G47.getText().toString().equals("Mungkin")){
+                _G47 = 0.4;
+            }
+            if (act_G47.getText().toString().equals("Kemungkinan besar")){
+                _G47 = 0.6;
+            }
+            if (act_G47.getText().toString().equals("Hampir pasti")){
+                _G47 = 0.8;
+            }
+            if (act_G47.getText().toString().equals("Pasti")){
+                _G47 = 1.0;
+            }
 
             /*Membuat CFPakar*/
             final double CfPakar_G16 =  1.0;
@@ -1793,37 +2389,175 @@ public class HomeDiagnosaUsersFragment extends Fragment {
             double persentase = CfCombineCfOld_CF9 * 100;
 
             /*Kesimpulan*/
-            String tingkatStres = "Anda menderita Stres Sedang";
-            TingkatStres = tingkatStres;
-            tv_tingkat_stres.setText(tingkatStres);
-
+            TingkatStres = "Anda menderita Stres Sedang";
             /*Persentase*/
-            Persentase = persentase;
-            tv_hasil.setText("dengan persentase tingkat kepercayaan yaitu = " + precision.format(persentase) + "%");
-
-            String solusi = "Tenangkanlah diri anda sejenak dan berusahalah untuk memanajemen waktu dengan benar dan buatlah daftar agenda yang akan anda lakukan, buatlah sedetail mungkin agar anda dapat memanajemen waktu dengan seksama sehingga stres yang sedang anda alami dapat anda atasi.";
-            Solusi = solusi;
-            tv_solusi.setText("Solusi : " + solusi);
+            Persentase = Double.parseDouble(precision.format(persentase));
+            Solusi = "Tenangkanlah diri anda sejenak dan berusahalah untuk memanajemen waktu dengan benar dan buatlah daftar agenda yang akan anda lakukan, buatlah sedetail mungkin agar anda dapat memanajemen waktu dengan seksama sehingga stres yang sedang anda alami dapat anda atasi.";
         }
-
-
     }
 
     @SuppressLint("SetTextI18n")
     private void setUpCertaintyFactorRulesStresSedang3(){
         /*Rules Stres Sedang 3*/
         /*Disini perhitungan Certainty Factor*/
-        if (cb_G16.isChecked() && cb_G24.isChecked() && cb_G37.isChecked() && cb_G43.isChecked()
-                && cb_G35.isChecked() && cb_G36.isChecked() && cb_G23.isChecked()){
 
-            /*Mengambil nilai Autocomplete TextView yaitu CF user*/
-            double _G16 = Double.parseDouble(act_G16.getText().toString());
-            double _G24 = Double.parseDouble(act_G24.getText().toString());
-            double _G37 = Double.parseDouble(act_G37.getText().toString());
-            double _G43 = Double.parseDouble(act_G43.getText().toString());
-            double _G35 = Double.parseDouble(act_G35.getText().toString());
-            double _G36 = Double.parseDouble(act_G36.getText().toString());
-            double _G23 = Double.parseDouble(act_G23.getText().toString());
+        /*Inisialisasi bobot cf user*/
+        double _G16 = 0;
+        double _G24 = 0;
+        double _G37 = 0;
+        double _G43 = 0;
+        double _G35 = 0;
+        double _G36 = 0;
+        double _G23 = 0;
+
+        if (cb_G16.isChecked()
+                && cb_G24.isChecked()
+                && cb_G37.isChecked()
+                && cb_G43.isChecked()
+                && cb_G35.isChecked()
+                && cb_G36.isChecked()
+                && cb_G23.isChecked()){
+
+            /*Kondisi if untuk mengcompare apakah sama dengan array pada act*/
+            /*G16*/
+            if (act_G16.getText().toString().equals("Sangat tidak tahu")){
+                _G16 = 0;
+            }
+            if (act_G16.getText().toString().equals("Tidak tahu")){
+                _G16 = 0.2;
+            }
+            if (act_G16.getText().toString().equals("Mungkin")){
+                _G16 = 0.4;
+            }
+            if (act_G16.getText().toString().equals("Kemungkinan besar")){
+                _G16 = 0.6;
+            }
+            if (act_G16.getText().toString().equals("Hampir pasti")){
+                _G16 = 0.8;
+            }
+            if (act_G16.getText().toString().equals("Pasti")){
+                _G16 = 1.0;
+            }
+
+            /*G24*/
+            if (act_G24.getText().toString().equals("Sangat tidak tahu")){
+                _G24 = 0;
+            }
+            if (act_G24.getText().toString().equals("Tidak tahu")){
+                _G24 = 0.2;
+            }
+            if (act_G24.getText().toString().equals("Mungkin")){
+                _G24 = 0.4;
+            }
+            if (act_G24.getText().toString().equals("Kemungkinan besar")){
+                _G24 = 0.6;
+            }
+            if (act_G24.getText().toString().equals("Hampir pasti")){
+                _G24 = 0.8;
+            }
+            if (act_G24.getText().toString().equals("Pasti")){
+                _G24 = 1.0;
+            }
+
+            /*G37*/
+            if (act_G37.getText().toString().equals("Sangat tidak tahu")){
+                _G37 = 0;
+            }
+            if (act_G37.getText().toString().equals("Tidak tahu")){
+                _G37 = 0.2;
+            }
+            if (act_G37.getText().toString().equals("Mungkin")){
+                _G37 = 0.4;
+            }
+            if (act_G37.getText().toString().equals("Kemungkinan besar")){
+                _G37 = 0.6;
+            }
+            if (act_G37.getText().toString().equals("Hampir pasti")){
+                _G37 = 0.8;
+            }
+            if (act_G37.getText().toString().equals("Pasti")){
+                _G37 = 1.0;
+            }
+
+            /*G43*/
+            if (act_G43.getText().toString().equals("Sangat tidak tahu")){
+                _G43 = 0;
+            }
+            if (act_G43.getText().toString().equals("Tidak tahu")){
+                _G43 = 0.2;
+            }
+            if (act_G43.getText().toString().equals("Mungkin")){
+                _G43 = 0.4;
+            }
+            if (act_G43.getText().toString().equals("Kemungkinan besar")){
+                _G43 = 0.6;
+            }
+            if (act_G43.getText().toString().equals("Hampir pasti")){
+                _G43 = 0.8;
+            }
+            if (act_G43.getText().toString().equals("Pasti")){
+                _G43 = 1.0;
+            }
+
+            /*G35*/
+            if (act_G35.getText().toString().equals("Sangat tidak tahu")){
+                _G35 = 0;
+            }
+            if (act_G35.getText().toString().equals("Tidak tahu")){
+                _G35 = 0.2;
+            }
+            if (act_G35.getText().toString().equals("Mungkin")){
+                _G35 = 0.4;
+            }
+            if (act_G35.getText().toString().equals("Kemungkinan besar")){
+                _G35 = 0.6;
+            }
+            if (act_G35.getText().toString().equals("Hampir pasti")){
+                _G35 = 0.8;
+            }
+            if (act_G35.getText().toString().equals("Pasti")){
+                _G35 = 1.0;
+            }
+
+            /*G36*/
+            if (act_G36.getText().toString().equals("Sangat tidak tahu")){
+                _G36 = 0;
+            }
+            if (act_G36.getText().toString().equals("Tidak tahu")){
+                _G36 = 0.2;
+            }
+            if (act_G36.getText().toString().equals("Mungkin")){
+                _G36 = 0.4;
+            }
+            if (act_G36.getText().toString().equals("Kemungkinan besar")){
+                _G36 = 0.6;
+            }
+            if (act_G36.getText().toString().equals("Hampir pasti")){
+                _G36 = 0.8;
+            }
+            if (act_G36.getText().toString().equals("Pasti")){
+                _G36 = 1.0;
+            }
+
+            /*G23*/
+            if (act_G23.getText().toString().equals("Sangat tidak tahu")){
+                _G23 = 0;
+            }
+            if (act_G23.getText().toString().equals("Tidak tahu")){
+                _G23 = 0.2;
+            }
+            if (act_G23.getText().toString().equals("Mungkin")){
+                _G23 = 0.4;
+            }
+            if (act_G23.getText().toString().equals("Kemungkinan besar")){
+                _G23 = 0.6;
+            }
+            if (act_G23.getText().toString().equals("Hampir pasti")){
+                _G23 = 0.8;
+            }
+            if (act_G23.getText().toString().equals("Pasti")){
+                _G23 = 1.0;
+            }
 
             /*Membuat CFPakar*/
             final double CfPakar_G16 = 1.0;
@@ -1862,16 +2596,9 @@ public class HomeDiagnosaUsersFragment extends Fragment {
             double persentase = CfCombineCfOld_CF7 * 100;
 
             /*Kesimpulan*/
-            String tingkatStres = "Anda  menderita Stres Sedang";
-            TingkatStres = tingkatStres;
-            tv_tingkat_stres.setText(tingkatStres);
-
-            Persentase = persentase;
-            tv_hasil.setText("dengan persentase tingkat kepercayaan yaitu = " + precision.format(persentase) + "%");
-
-            String solusi = "Tenangkanlah diri anda sejenak dan berusahalah untuk memanajemen waktu dengan benar dan buatlah daftar agenda yang akan anda lakukan, buatlah sedetail mungkin agar anda dapat memanajemen waktu dengan seksama sehingga stres yang sedang anda alami dapat anda atasi.";
-            Solusi = solusi;
-            tv_solusi.setText("Solusi : " + solusi);
+            TingkatStres = "Anda  menderita Stres Sedang";
+            Persentase = Double.parseDouble(precision.format(persentase));
+            Solusi = "Tenangkanlah diri anda sejenak dan berusahalah untuk memanajemen waktu dengan benar dan buatlah daftar agenda yang akan anda lakukan, buatlah sedetail mungkin agar anda dapat memanajemen waktu dengan seksama sehingga stres yang sedang anda alami dapat anda atasi.";
         }
     }
 
@@ -1879,18 +2606,185 @@ public class HomeDiagnosaUsersFragment extends Fragment {
     private void setUpCertaintyFactorRulesStresBerat(){
         /*Rules Stres Berat*/
         /*Disini perhitungan Certainty Factor*/
-        if(cb_G06.isChecked() && cb_G33.isChecked() && cb_G21.isChecked() && cb_G15.isChecked() && cb_G20.isChecked()
-                && cb_G40.isChecked() && cb_G10.isChecked() && cb_G41.isChecked()){
 
-            /*Mengambil nilai Autocomplete TextView yaitu CF user*/
-            double _G06 = Double.parseDouble(act_G06.getText().toString());
-            double _G33 = Double.parseDouble(act_G33.getText().toString());
-            double _G21 = Double.parseDouble(act_G21.getText().toString());
-            double _G15 = Double.parseDouble(act_G15.getText().toString());
-            double _G20 = Double.parseDouble(act_G20.getText().toString());
-            double _G40 = Double.parseDouble(act_G40.getText().toString());
-            double _G10 = Double.parseDouble(act_G10.getText().toString());
-            double _G41 = Double.parseDouble(act_G41.getText().toString());
+        /*Inisialisasi bobot CF User*/
+        double _G06 = 0;
+        double _G33 = 0;
+        double _G21 = 0;
+        double _G15 = 0;
+        double _G20 = 0;
+        double _G40 = 0;
+        double _G10 = 0;
+        double _G41 = 0;
+
+        if(cb_G06.isChecked()
+                && cb_G33.isChecked()
+                && cb_G21.isChecked()
+                && cb_G15.isChecked()
+                && cb_G20.isChecked()
+                && cb_G40.isChecked()
+                && cb_G10.isChecked()
+                && cb_G41.isChecked()){
+
+            /*G06*/
+            if (act_G06.getText().toString().equals("Sangat tidak tahu")){
+                _G06 = 0;
+            }
+            if (act_G06.getText().toString().equals("Tidak tahu")){
+                _G06 = 0.2;
+            }
+            if (act_G06.getText().toString().equals("Mungkin")){
+                _G06 = 0.4;
+            }
+            if (act_G06.getText().toString().equals("Kemungkinan besar")){
+                _G06 = 0.6;
+            }
+            if (act_G06.getText().toString().equals("Hampir pasti")){
+                _G06 = 0.8;
+            }
+            if (act_G06.getText().toString().equals("Pasti")){
+                _G06 = 1.0;
+            }
+
+            /*G33*/
+            if (act_G33.getText().toString().equals("Sangat tidak tahu")){
+                _G33 = 0;
+            }
+            if (act_G33.getText().toString().equals("Tidak tahu")){
+                _G33 = 0.2;
+            }
+            if (act_G33.getText().toString().equals("Mungkin")){
+                _G33 = 0.4;
+            }
+            if (act_G33.getText().toString().equals("Kemungkinan besar")){
+                _G33 = 0.6;
+            }
+            if (act_G33.getText().toString().equals("Hampir pasti")){
+                _G33 = 0.8;
+            }
+            if (act_G33.getText().toString().equals("Pasti")){
+                _G33 = 1.0;
+            }
+
+            /*G21*/
+            if (act_G21.getText().toString().equals("Sangat tidak tahu")){
+                _G21 = 0;
+            }
+            if (act_G21.getText().toString().equals("Tidak tahu")){
+                _G21 = 0.2;
+            }
+            if (act_G21.getText().toString().equals("Mungkin")){
+                _G21 = 0.4;
+            }
+            if (act_G21.getText().toString().equals("Kemungkinan besar")){
+                _G21 = 0.6;
+            }
+            if (act_G21.getText().toString().equals("Hampir pasti")){
+                _G21 = 0.8;
+            }
+            if (act_G21.getText().toString().equals("Pasti")){
+                _G21 = 1.0;
+            }
+
+            /*G15*/
+            if (act_G15.getText().toString().equals("Sangat tidak tahu")){
+                _G15 = 0;
+            }
+            if (act_G15.getText().toString().equals("Tidak tahu")){
+                _G15 = 0.2;
+            }
+            if (act_G15.getText().toString().equals("Mungkin")){
+                _G15 = 0.4;
+            }
+            if (act_G15.getText().toString().equals("Kemungkinan besar")){
+                _G15 = 0.6;
+            }
+            if (act_G15.getText().toString().equals("Hampir pasti")){
+                _G15 = 0.8;
+            }
+            if (act_G15.getText().toString().equals("Pasti")){
+                _G15 = 1.0;
+            }
+
+            /*G20*/
+            if (act_G20.getText().toString().equals("Sangat tidak tahu")){
+                _G20 = 0;
+            }
+            if (act_G20.getText().toString().equals("Tidak tahu")){
+                _G20 = 0.2;
+            }
+            if (act_G20.getText().toString().equals("Mungkin")){
+                _G20 = 0.4;
+            }
+            if (act_G20.getText().toString().equals("Kemungkinan besar")){
+                _G20 = 0.6;
+            }
+            if (act_G20.getText().toString().equals("Hampir pasti")){
+                _G20 = 0.8;
+            }
+            if (act_G20.getText().toString().equals("Pasti")){
+                _G20 = 1.0;
+            }
+
+            /*G40*/
+            if (act_G40.getText().toString().equals("Sangat tidak tahu")){
+                _G40 = 0;
+            }
+            if (act_G40.getText().toString().equals("Tidak tahu")){
+                _G40 = 0.2;
+            }
+            if (act_G40.getText().toString().equals("Mungkin")){
+                _G40 = 0.4;
+            }
+            if (act_G40.getText().toString().equals("Kemungkinan besar")){
+                _G40 = 0.6;
+            }
+            if (act_G40.getText().toString().equals("Hampir pasti")){
+                _G40 = 0.8;
+            }
+            if (act_G40.getText().toString().equals("Pasti")){
+                _G40 = 1.0;
+            }
+
+            /*G10*/
+            if (act_G10.getText().toString().equals("Sangat tidak tahu")){
+                _G10 = 0;
+            }
+            if (act_G10.getText().toString().equals("Tidak tahu")){
+                _G10 = 0.2;
+            }
+            if (act_G10.getText().toString().equals("Mungkin")){
+                _G10 = 0.4;
+            }
+            if (act_G10.getText().toString().equals("Kemungkinan besar")){
+                _G10 = 0.6;
+            }
+            if (act_G10.getText().toString().equals("Hampir pasti")){
+                _G10 = 0.8;
+            }
+            if (act_G10.getText().toString().equals("Pasti")){
+                _G10 = 1.0;
+            }
+
+            /*G41*/
+            if (act_G41.getText().toString().equals("Sangat tidak tahu")){
+                _G41 = 0;
+            }
+            if (act_G41.getText().toString().equals("Tidak tahu")){
+                _G41 = 0.2;
+            }
+            if (act_G41.getText().toString().equals("Mungkin")){
+                _G41 = 0.4;
+            }
+            if (act_G41.getText().toString().equals("Kemungkinan besar")){
+                _G41 = 0.6;
+            }
+            if (act_G41.getText().toString().equals("Hampir pasti")){
+                _G41 = 0.8;
+            }
+            if (act_G41.getText().toString().equals("Pasti")){
+                _G41 = 1.0;
+            }
 
             /*Membuat CFPakar*/
             final double CfPakar_G06 = 0.4;
@@ -1932,16 +2826,9 @@ public class HomeDiagnosaUsersFragment extends Fragment {
             double persentase = CfCombineCfOld_CF8 * 100;
 
             /*Kesimpulan*/
-            String tingkatStres = "Anda  menderita Stres Berat";
-            TingkatStres = tingkatStres;
-            tv_tingkat_stres.setText(tingkatStres);
-
-            Persentase = persentase;
-            tv_hasil.setText("dengan persentase tingkat kepercayaan yaitu = " + precision.format(persentase) + "%");
-
-            String solusi = "Anda harus tahu bahwa banyak orang-orang disekitar anda yang mensupport anda, kegagalan bukanlah sesuatu yang sangat menyeramkan, bangkit dan jangan pernah meyerah karna kegagalan adalah awal dari kesuksesan !!!.";
-            Solusi = solusi;
-            tv_solusi.setText("Solusi : " + solusi);
+            TingkatStres = "Anda  menderita Stres Berat";
+            Persentase = Double.parseDouble(precision.format(persentase));
+            Solusi = "Anda harus tahu bahwa banyak orang-orang disekitar anda yang mensupport anda, kegagalan bukanlah sesuatu yang sangat menyeramkan, bangkit dan jangan pernah meyerah karna kegagalan adalah awal dari kesuksesan !!!.";
         }
 
     }
@@ -1950,20 +2837,229 @@ public class HomeDiagnosaUsersFragment extends Fragment {
     private void setUpCertaintyFactorRulesStresSangatBerat(){
         /*Rules Stres Sangat Berat*/
         /*Disini perhitungan Certainty Factor*/
-        if (cb_G19.isChecked() && cb_G11.isChecked() && cb_G42.isChecked() && cb_G31.isChecked() &&
-                cb_G14.isChecked() && cb_G26.isChecked() && cb_G22.isChecked() && cb_G32.isChecked() && cb_G01.isChecked() && cb_G25.isChecked()){
 
-            /*Mengambil nilai Autocomplete TextView yaitu CF user*/
-            double _G19 = Double.parseDouble(act_G19.getText().toString());
-            double _G11 = Double.parseDouble(act_G11.getText().toString());
-            double _G42 = Double.parseDouble(act_G42.getText().toString());
-            double _G31 = Double.parseDouble(act_G31.getText().toString());
-            double _G14 = Double.parseDouble(act_G14.getText().toString());
-            double _G26 = Double.parseDouble(act_G26.getText().toString());
-            double _G22 =  Double.parseDouble(act_G22.getText().toString());
-            double _G32 = Double.parseDouble(act_G32.getText().toString());
-            double _G01 = Double.parseDouble(act_G01.getText().toString());
-            double _G25 = Double.parseDouble(act_G25.getText().toString());
+        /*Inisialisasi bobot cf user*/
+        double _G19 = 0;
+        double _G11 = 0;
+        double _G42 = 0;
+        double _G31 = 0;
+        double _G14 = 0;
+        double _G26 = 0;
+        double _G22 = 0;
+        double _G32 = 0;
+        double _G01 = 0;
+        double _G25 = 0;
+
+        if (cb_G19.isChecked()
+                && cb_G11.isChecked()
+                && cb_G42.isChecked()
+                && cb_G31.isChecked()
+                && cb_G14.isChecked()
+                && cb_G26.isChecked()
+                && cb_G22.isChecked()
+                && cb_G32.isChecked()
+                && cb_G01.isChecked()
+                && cb_G25.isChecked()){
+
+            /*G19*/
+            if (act_G19.getText().toString().equals("Sangat tidak tahu")){
+                _G19 = 0;
+            }
+            if (act_G19.getText().toString().equals("Tidak tahu")){
+                _G19 = 0.2;
+            }
+            if (act_G19.getText().toString().equals("Mungkin")){
+                _G19 = 0.4;
+            }
+            if (act_G19.getText().toString().equals("Kemungkinan besar")){
+                _G19 = 0.6;
+            }
+            if (act_G19.getText().toString().equals("Hampir pasti")){
+                _G19 = 0.8;
+            }
+            if (act_G19.getText().toString().equals("Pasti")){
+                _G19 = 1.0;
+            }
+
+            /*G11*/
+            if (act_G11.getText().toString().equals("Sangat tidak tahu")){
+                _G11 = 0;
+            }
+            if (act_G11.getText().toString().equals("Tidak tahu")){
+                _G11 = 0.2;
+            }
+            if (act_G11.getText().toString().equals("Mungkin")){
+                _G11 = 0.4;
+            }
+            if (act_G11.getText().toString().equals("Kemungkinan besar")){
+                _G11 = 0.6;
+            }
+            if (act_G11.getText().toString().equals("Hampir pasti")){
+                _G11 = 0.8;
+            }
+            if (act_G11.getText().toString().equals("Pasti")){
+                _G11 = 1.0;
+            }
+
+            /*G42*/
+            if (act_G42.getText().toString().equals("Sangat tidak tahu")){
+                _G42 = 0;
+            }
+            if (act_G42.getText().toString().equals("Tidak tahu")){
+                _G42 = 0.2;
+            }
+            if (act_G42.getText().toString().equals("Mungkin")){
+                _G42 = 0.4;
+            }
+            if (act_G42.getText().toString().equals("Kemungkinan besar")){
+                _G42 = 0.6;
+            }
+            if (act_G42.getText().toString().equals("Hampir pasti")){
+                _G42 = 0.8;
+            }
+            if (act_G42.getText().toString().equals("Pasti")){
+                _G42 = 1.0;
+            }
+
+            /*G31*/
+            if (act_G31.getText().toString().equals("Sangat tidak tahu")){
+                _G31 = 0;
+            }
+            if (act_G31.getText().toString().equals("Tidak tahu")){
+                _G31 = 0.2;
+            }
+            if (act_G31.getText().toString().equals("Mungkin")){
+                _G31= 0.4;
+            }
+            if (act_G31.getText().toString().equals("Kemungkinan besar")){
+                _G31 = 0.6;
+            }
+            if (act_G31.getText().toString().equals("Hampir pasti")){
+                _G31 = 0.8;
+            }
+            if (act_G31.getText().toString().equals("Pasti")){
+                _G31 = 1.0;
+            }
+
+            /*G14*/
+            if (act_G14.getText().toString().equals("Sangat tidak tahu")){
+                _G14 = 0;
+            }
+            if (act_G14.getText().toString().equals("Tidak tahu")){
+                _G14 = 0.2;
+            }
+            if (act_G14.getText().toString().equals("Mungkin")){
+                _G14= 0.4;
+            }
+            if (act_G14.getText().toString().equals("Kemungkinan besar")){
+                _G14 = 0.6;
+            }
+            if (act_G14.getText().toString().equals("Hampir pasti")){
+                _G14 = 0.8;
+            }
+            if (act_G14.getText().toString().equals("Pasti")){
+                _G14 = 1.0;
+            }
+
+            /*G26*/
+            if (act_G26.getText().toString().equals("Sangat tidak tahu")){
+                _G26 = 0;
+            }
+            if (act_G26.getText().toString().equals("Tidak tahu")){
+                _G26 = 0.2;
+            }
+            if (act_G26.getText().toString().equals("Mungkin")){
+                _G26= 0.4;
+            }
+            if (act_G26.getText().toString().equals("Kemungkinan besar")){
+                _G26 = 0.6;
+            }
+            if (act_G26.getText().toString().equals("Hampir pasti")){
+                _G26 = 0.8;
+            }
+            if (act_G26.getText().toString().equals("Pasti")){
+                _G26 = 1.0;
+            }
+
+            /*G22*/
+            if (act_G22.getText().toString().equals("Sangat tidak tahu")){
+                _G22 = 0;
+            }
+            if (act_G22.getText().toString().equals("Tidak tahu")){
+                _G22 = 0.2;
+            }
+            if (act_G22.getText().toString().equals("Mungkin")){
+                _G22= 0.4;
+            }
+            if (act_G22.getText().toString().equals("Kemungkinan besar")){
+                _G22 = 0.6;
+            }
+            if (act_G22.getText().toString().equals("Hampir pasti")){
+                _G22 = 0.8;
+            }
+            if (act_G22.getText().toString().equals("Pasti")){
+                _G22 = 1.0;
+            }
+
+            /*G32*/
+            if (act_G32.getText().toString().equals("Sangat tidak tahu")){
+                _G32 = 0;
+            }
+            if (act_G32.getText().toString().equals("Tidak tahu")){
+                _G32 = 0.2;
+            }
+            if (act_G32.getText().toString().equals("Mungkin")){
+                _G32= 0.4;
+            }
+            if (act_G32.getText().toString().equals("Kemungkinan besar")){
+                _G32 = 0.6;
+            }
+            if (act_G32.getText().toString().equals("Hampir pasti")){
+                _G32 = 0.8;
+            }
+            if (act_G32.getText().toString().equals("Pasti")){
+                _G32 = 1.0;
+            }
+
+            /*G01*/
+            if (act_G01.getText().toString().equals("Sangat tidak tahu")){
+                _G01 = 0;
+            }
+            if (act_G01.getText().toString().equals("Tidak tahu")){
+                _G01 = 0.2;
+            }
+            if (act_G01.getText().toString().equals("Mungkin")){
+                _G01 = 0.4;
+            }
+            if (act_G01.getText().toString().equals("Kemungkinan besar")){
+                _G01 = 0.6;
+            }
+            if (act_G01.getText().toString().equals("Hampir pasti")){
+                _G01 = 0.8;
+            }
+            if (act_G01.getText().toString().equals("Pasti")){
+                _G01 = 1.0;
+            }
+
+            /*G25*/
+            if (act_G25.getText().toString().equals("Sangat tidak tahu")){
+                _G25 = 0;
+            }
+            if (act_G25.getText().toString().equals("Tidak tahu")){
+                _G25 = 0.2;
+            }
+            if (act_G25.getText().toString().equals("Mungkin")){
+                _G25 = 0.4;
+            }
+            if (act_G25.getText().toString().equals("Kemungkinan besar")){
+                _G25 = 0.6;
+            }
+            if (act_G25.getText().toString().equals("Hampir pasti")){
+                _G25 = 0.8;
+            }
+            if (act_G25.getText().toString().equals("Pasti")){
+                _G25 = 1.0;
+            }
 
             /*Membuat CFPakar*/
             final double CfPakar_G19 = 0.8;
@@ -2011,16 +3107,9 @@ public class HomeDiagnosaUsersFragment extends Fragment {
             double persentase = CfCombineCfOld_CF10 * 100;
 
             /*Kesimpulan*/
-            String tingkatStres = "Anda  menderita Stres Sangat Berat";
-            TingkatStres = tingkatStres;
-            tv_tingkat_stres.setText(tingkatStres);
-
-            Persentase = persentase;
-            tv_hasil.setText("dengan persentase tingkat kepercayaan yaitu = " + precision.format(persentase) + "%");
-
-            String solusi = "Anda harus menghubungi Psikolog untuk berkonsultasi tentang Stres Sangat Berat yang anda alami, Silahkah anda ke menu chat dan mintalah request chat kepada Psikolog yang tersedia, Terimakasih ):";
-            Solusi = solusi;
-            tv_solusi.setText("Solusi : " + solusi);
+            TingkatStres = "Anda  menderita Stres Sangat Berat";
+            Persentase = Double.parseDouble(precision.format(persentase));
+            Solusi = "Anda harus menghubungi Psikolog untuk berkonsultasi tentang Stres Sangat Berat yang anda alami, Silahkah anda ke menu chat dan mintalah request chat kepada Psikolog yang tersedia, Terimakasih ):";
 
         }
     }
@@ -2078,12 +3167,12 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                         //Buat Array List yang digunakan untuk menampung kumpulan data
                         Intent intent = new Intent(getActivity(), DetailDiagnosa.class);
                         /*Buat Model Data*/
-                         intent.putExtra(DetailDiagnosa.NAMA, hashMap.get("nama"));
-                         intent.putExtra(DetailDiagnosa.TINGKAT_STRES, hashMap.get("tingkat_stres"));
-                         intent.putExtra(DetailDiagnosa.PERSENTASE, hashMap.get("persentase"));
-                         intent.putExtra(DetailDiagnosa.SOLUSI, hashMap.get("solusi"));
-                         /*Start Activity*/
-                         startActivity(intent);
+                        intent.putExtra(DetailDiagnosa.NAMA, hashMap.get("nama"));
+                        intent.putExtra(DetailDiagnosa.TINGKAT_STRES, hashMap.get("tingkat_stres"));
+                        intent.putExtra(DetailDiagnosa.PERSENTASE, hashMap.get("persentase"));
+                        intent.putExtra(DetailDiagnosa.SOLUSI, hashMap.get("solusi"));
+                        /*Start Activity*/
+                        startActivity(intent);
 
                     }
                 }).addOnFailureListener(new OnFailureListener() {

@@ -58,7 +58,7 @@ class DetailDiagnosa : AppCompatActivity() {
         /*print the text to result diagnosis*/
         tvnama.text = "Nama : $name"
         tvtingkatstres.text = "Tingkat Stres : $tingkatStres"
-        tvpersentase.text = "Persentase : $persentase"
+        tvpersentase.text = "Persentase : $persentase %"
         tvsolusi.text = "Solusi : $solusi"
       }
 

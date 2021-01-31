@@ -25,7 +25,7 @@ public class FragmentDataGejalaUser extends Fragment {
 
     private View view;
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
-    private CollectionReference gejalaRef = db.collection("gejala_stres");
+    private final CollectionReference gejalaRef = db.collection("gejala_stres");
 
     private GejalaAdapter adapter;
 

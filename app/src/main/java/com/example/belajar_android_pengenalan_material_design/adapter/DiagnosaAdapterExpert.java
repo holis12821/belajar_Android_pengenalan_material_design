@@ -38,7 +38,7 @@ public class DiagnosaAdapterExpert extends FirestoreRecyclerAdapter<UserDiagnosa
             diagnosaViewHolder.tv_universitas.setText("Institusi : " + userDiagnosa.getUniversitas());
             diagnosaViewHolder.tv_tingkat_stres.setText("Tingkat Stres : " + userDiagnosa.getTingkat_stres());
             diagnosaViewHolder.tv_solusi.setText("Solusi : " + userDiagnosa.getSolusi());
-            diagnosaViewHolder.tv_persentase.setText("Persentase : " + userDiagnosa.getPersentase());
+            diagnosaViewHolder.tv_persentase.setText("Persentase : " + userDiagnosa.getPersentase() + "%");
 
             diagnosaViewHolder.cardView.setOnClickListener(new View.OnClickListener() {
                 @Override

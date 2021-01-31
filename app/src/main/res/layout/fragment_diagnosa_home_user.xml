@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:paddingBottom="@dimen/padding_Bottom_RelativeLayout"
     tools:context="com.example.belajar_android_pengenalan_material_design.fragmentusers.HomeDiagnosaUsersFragment">
@@ -19,50 +18,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardUseCompatPadding="true"
-                app:cardCornerRadius="@dimen/corner_radius_CardViewDiagnosa"
-                app:cardElevation="@dimen/CardElevation_CardView"
-                android:layout_marginBottom="@dimen/layout_marginBottom_CardView_Diagnosa"
-                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
-                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
-                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
-                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa">
-
-                <RelativeLayout
-                    android:id="@+id/linear2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="@dimen/padding_LinearLayout">
-                    <TextView
-                        android:id="@+id/tv_tingkat_stres"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/panduan1"
-                        android:textSize="@dimen/TextView_judul_size"/>
-                    <TextView
-                        android:id="@+id/tv_hasil"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/panduan2"
-                        android:layout_marginTop="@dimen/layout_marginTop_hasil"
-                        android:layout_below="@+id/tv_tingkat_stres"
-                        android:textSize="@dimen/TextView_judul_size"/>
-                    <TextView
-                        android:id="@+id/tv_solusi"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/panduan3"
-                        android:layout_marginTop="@dimen/layout_marginTop_hasil"
-                        android:layout_below="@+id/tv_hasil"
-                        android:textSize="@dimen/TextView_judul_size"/>
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
 
             <EditText
                 android:id="@+id/edt_NPM"
@@ -1187,9 +1142,11 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:background="@drawable/custom_button"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/white"
         android:layout_marginRight="@dimen/layout_marginRight_BtnDiagnosa"
         android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true" />
+        android:backgroundTint="@color/colorAccent"
+        android:layout_alignParentEnd="true"
+        tools:ignore="UnusedAttribute" />
 
 </RelativeLayout>
