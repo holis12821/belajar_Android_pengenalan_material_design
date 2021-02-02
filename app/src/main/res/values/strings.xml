@@ -78,6 +78,7 @@
 
     <!--Item Menu-->
     <string name="action_changePassword">Change Password</string>
+    <string name="action_location">Lokasi Psikolog Clarity</string>
     <string name="action_Logout">Logout</string>
 
     <!--Define Manifest to Change Password-->
@@ -136,7 +137,7 @@
     <string name="Edit_Text_NPM">NPM : </string>
     <string name="EditTextName">Nama : </string>
     <string name="Jurusan">Jurusan : </string>
-    <string name="Universitas">Universitas : </string>
+    <string name="Universitas">Instansi : </string>
     <!--Gejala stres-->
     <string name="judul">Anda diminta untuk memilih lebih dari satu gejala yang sesuai dengan
     pengalaman pribadi anda tentang stres yang dialami selama menyusun tugas akhir.Terdapat 50 gejala stres sesuai tingkatannya
@@ -249,6 +250,9 @@
     <string name="detail_Diagnosa">Detail Diagnosa</string>
 
     <string name="referensi">Referensi</string>
+    <string name="status">hey i'm using the apps</string>
+    <string name="stres">stress</string>
+    <string name="title_activity_maps">Map</string>
 
 
 </resources>

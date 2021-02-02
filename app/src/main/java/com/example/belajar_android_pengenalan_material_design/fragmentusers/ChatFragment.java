@@ -10,8 +10,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.belajar_android_pengenalan_material_design.R;
+import com.example.belajar_android_pengenalan_material_design.model.Contacts;
+import com.firebase.ui.database.FirebaseRecyclerOptions;
 
-public class   ChatFragment extends Fragment {
+public class ChatFragment extends Fragment {
 
     private View view;
     private RecyclerView chatList;
@@ -31,5 +33,12 @@ public class   ChatFragment extends Fragment {
         chatList.setLayoutManager(new LinearLayoutManager(getContext()));
 
         return view;
+    }
+
+    /*Activity dimulai*/
+    @Override
+    public void onStart() {
+        super.onStart();
+
     }
 }

@@ -157,7 +157,7 @@
     <dimen name="layout_marginRight_TextView_Copyright">176dp</dimen>
     <dimen name="layout_marginTop_TextView_StartActivity">190dp</dimen>
     <dimen name="layout_marginTop_TextView_StartActivity_copyright">310dp</dimen>
-    <dimen name="layout_marginTop_TextView_StartActivity_copyright2">380dp</dimen>
+    <dimen name="layout_marginTop_TextView_StartActivity_copyright2">370dp</dimen>
     <dimen name="layout_marginTop_TextView_StartActivity_copyright3">235dp</dimen>
     <dimen name="layout_marginLeft_TextView_CopyRight">100dp</dimen>
     <dimen name="textSize_TextView_Describe">11.5sp</dimen>
@@ -252,6 +252,7 @@
 
     <!--Padding LinearLayout-->
     <dimen name="paddingLinearLayout">20dp</dimen>
+    <dimen name="paddingCustomButon">12dp</dimen>
 
     <!--margin bottom button-->
     <dimen name="layout_marginTop_button_simpan">26dp</dimen>
@@ -388,7 +389,7 @@
     <dimen name="ImageButton_layout_width">60dp</dimen>
     <dimen name="layout_marginRight_chat_btn">13dp</dimen>
     <dimen name="layout_marginBottom_chat">13dp</dimen>
-    <dimen name="layout_marginTop_chat">21.5dp</dimen>
+    <dimen name="layout_marginTop_chat">15.5dp</dimen>
     <dimen name="paddingLeft_send">12dp</dimen>
     <dimen name="padding_Right_send">15dp</dimen>
 
@@ -420,4 +421,21 @@
     <dimen name="layout_marginLeftTextViewDiagnosa">6dp</dimen>
 
     <dimen name="layout_marginToptextView_linear">25dp</dimen>
+
+    <dimen name="layout_marginTopStatus">25dp</dimen>
+    <dimen name="layout_marginTopStatus2">22dp</dimen>
+    <dimen name="textSizeStatus">18sp</dimen>
+    <dimen name="layout_marginLeftStatus">17dp</dimen>
+    <dimen name="layout_marginRightStatus">17dp</dimen>
+    <dimen name="button_marginLeft">65dp</dimen>
+    <dimen name="button_marginRight">65dp</dimen>
+
+    <dimen name="textSizeSendMessage">19sp</dimen>
+
+    <dimen name="layout_marginTopButtonRequest">189dp</dimen>
+
+    <dimen name="layout_width_imgStress">177dp</dimen>
+    <dimen name="layout_height_imgStress">177dp</dimen>
+
+    <dimen name="layout_marginTopTextViewKet1">20dp</dimen>
 </resources>

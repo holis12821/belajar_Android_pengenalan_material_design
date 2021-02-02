@@ -68,7 +68,7 @@ public class StartActivity extends AppCompatActivity {
         setContentView(R.layout.activity_start);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("");
+        getSupportActionBar().setTitle("Profile");
         /*Initialize imageList in the onCreate StartActivity */
         imagesList = new ArrayList<>();
         userName = findViewById(R.id.username);
@@ -82,6 +82,7 @@ public class StartActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 usersData = dataSnapshot.getValue(UsersData.class);
+                assert usersData != null;
                 userName.setText(usersData.getUsername());
                 /*Conditional If*/
                 if (usersData.getImageURL().equals("default")){

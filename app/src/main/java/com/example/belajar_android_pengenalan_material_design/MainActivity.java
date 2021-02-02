@@ -18,8 +18,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
-    private SlidingTabLayout mSlidingTabLayout;
-    private ViewPager mViewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,10 +29,10 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         /*Define ViewPager*/
-        mViewPager = findViewById(R.id.vp_tabs);
+        ViewPager mViewPager = findViewById(R.id.vp_tabs);
         mViewPager.setAdapter(new MyAdapter(getSupportFragmentManager()));
         /*Define SlidingTabLayout*/
-        mSlidingTabLayout = findViewById(R.id.stl_tabs);
+        SlidingTabLayout mSlidingTabLayout = findViewById(R.id.stl_tabs);
         /*Call Back Method in Activity Main*/
         mSlidingTabLayout.setDistributeEvenly(true);
         mSlidingTabLayout.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
@@ -76,9 +74,9 @@ public class MainActivity extends AppCompatActivity {
         else if (id == R.id.changePsw) {
             startActivity(new Intent(MainActivity.this, ChangePasswordActivity.class));
         }
-        /*else if (id == R.id.about_developer){
-
-        }*/
+        else if (id == R.id.about_developer){
+            startActivity(new Intent(MainActivity.this, MapsActivity.class));
+        }
         else if(id == R.id.logout){
             /*Define Firebase to logout user*/
              FirebaseAuth.getInstance().signOut();

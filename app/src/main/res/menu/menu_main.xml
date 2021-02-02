@@ -10,14 +10,19 @@
         android:icon="@drawable/ic_baseline_account_circle_24" />
 
     <item
+        android:id="@+id/about_developer"
+        android:orderInCategory="100"
+        android:title="@string/about_developer"
+        app:showAsAction="never" />
+    <item
         android:id="@+id/changePsw"
         android:orderInCategory="100"
         android:title="@string/action_changePassword"
         app:showAsAction="never" />
     <item
-        android:id="@+id/about_developer"
+        android:id="@+id/location"
         android:orderInCategory="100"
-        android:title="@string/about_developer"
+        android:title="@string/action_location"
         app:showAsAction="never" />
     <item
         android:id="@+id/logout"

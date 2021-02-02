@@ -88,67 +88,67 @@ public class HomeDiagnosaUsersFragment extends Fragment {
     private AutoCompleteTextView act_G19, act_G11, act_G42, act_G31, act_G14, act_G26, act_G22, act_G32, act_G01, act_G25;
 
     /*Rules Stres ringan 1 untuk nilai CF user*/
-    private final String[] Cf_UserG48 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG29 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG03 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG44 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG38 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG27 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG45 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG48 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG29 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG03 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG44 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG38 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG27 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG45 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
     /*Rules Stres Ringan 2 untuk nilai CF user*/
-    private final String[] Cf_UserG34 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG09 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG17 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG50 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG34 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG09 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG17 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG50 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
 
     /*Rules Stres Sedang 1 untuk nilai CF user*/
-    private final String[] Cf_UserG16 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG18 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG05 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG07 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG04 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG08 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG28 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG16 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG18 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG05 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG07 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG04 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG08 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG28 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
 
     /*Rules Stres Sedang 2 untuk nilai CF user*/
-    private final String[] Cf_UserG30 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG12 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG02 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG13 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG39 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG49 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG46 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG47 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG30 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG12 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG02 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG13 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG39 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG49 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG46 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG47 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
 
     /*Rules Stres Sedang 3 untuk nilai CF user*/
-    private final String[] Cf_UserG24 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG37 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG43 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG35 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG36 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG23 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG24 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG37 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG43 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG35 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG36 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG23 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
 
     /*Rules Stres Berat untuk nilai CF user*/
-    private final String[] Cf_UserG06 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG33 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG21 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG15 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG20 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG40 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG10 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG41 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG06 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG33 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG21 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG15 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG20 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG40 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG10 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG41 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
 
     /*Rules Stres Sangat Berat untuk nilai CF user*/
-    private final String[] Cf_UserG19 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG11 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG42 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG31 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG14 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG26 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG22 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG32 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG01 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
-    private final String[] Cf_UserG25 = {"Sangat tidak tahu", "Tidak tahu", "Mungkin", "Kemungkinan besar", "Hampir pasti", "Pasti"};
+    private final String[] Cf_UserG19 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG11 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG42 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG31 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG14 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG26 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG22 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG32 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG01 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
+    private final String[] Cf_UserG25 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
 
 
     /*Constructor*/
@@ -1723,6 +1723,8 @@ public class HomeDiagnosaUsersFragment extends Fragment {
             TingkatStres = "Anda menderita Stres Ringan";
             Persentase = Double.parseDouble(precision.format(persentase));
             Solusi = "Tetaplah semangat dan yakin anda bisa mengatasi masalah dan stres anda dan selalu berusaha untuk mengatasi setiap masalah yang anda lalui.";
+        } else{
+            Toast.makeText(getContext(), "Gagal melakukan diagnosa karena kondisi tidak terpenuhi", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -1929,6 +1931,8 @@ public class HomeDiagnosaUsersFragment extends Fragment {
             TingkatStres = "Anda menderita Stres Ringan";
             Persentase = Double.parseDouble(precision.format(persentase));
             Solusi = "Tetaplah semangat dan yakin anda bisa mengatasi masalah dan stres anda dan selalu berusaha untuk mengatasi setiap masalah yang anda lalui serta semangatlah dalam situasi apapun.";
+        } else{
+            Toast.makeText(getContext(), "Gagal melakukan diagnosa karena kondisi tidak terpenuhi", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -2137,6 +2141,8 @@ public class HomeDiagnosaUsersFragment extends Fragment {
             TingkatStres = "Anda Menderita Stres Sedang";
             Persentase = Double.parseDouble(precision.format(persentase));
             Solusi = "Tenangkanlah diri anda sejenak dan berusahalah untuk memanajemen waktu dengan benar sehingga ketika anda dikejar deadline tugas akhir anda dapat dengan cepat menyelesaikannya.";
+        } else{
+            Toast.makeText(getContext(), "Gagal melakukan diagnosa karena kondisi tidak terpenuhi", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -2393,6 +2399,8 @@ public class HomeDiagnosaUsersFragment extends Fragment {
             /*Persentase*/
             Persentase = Double.parseDouble(precision.format(persentase));
             Solusi = "Tenangkanlah diri anda sejenak dan berusahalah untuk memanajemen waktu dengan benar dan buatlah daftar agenda yang akan anda lakukan, buatlah sedetail mungkin agar anda dapat memanajemen waktu dengan seksama sehingga stres yang sedang anda alami dapat anda atasi.";
+        } else{
+            Toast.makeText(getContext(), "Gagal melakukan diagnosa karena kondisi tidak terpenuhi", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -2599,6 +2607,8 @@ public class HomeDiagnosaUsersFragment extends Fragment {
             TingkatStres = "Anda  menderita Stres Sedang";
             Persentase = Double.parseDouble(precision.format(persentase));
             Solusi = "Tenangkanlah diri anda sejenak dan berusahalah untuk memanajemen waktu dengan benar dan buatlah daftar agenda yang akan anda lakukan, buatlah sedetail mungkin agar anda dapat memanajemen waktu dengan seksama sehingga stres yang sedang anda alami dapat anda atasi.";
+        } else{
+            Toast.makeText(getContext(), "Gagal melakukan diagnosa karena kondisi tidak terpenuhi", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -2829,8 +2839,9 @@ public class HomeDiagnosaUsersFragment extends Fragment {
             TingkatStres = "Anda  menderita Stres Berat";
             Persentase = Double.parseDouble(precision.format(persentase));
             Solusi = "Anda harus tahu bahwa banyak orang-orang disekitar anda yang mensupport anda, kegagalan bukanlah sesuatu yang sangat menyeramkan, bangkit dan jangan pernah meyerah karna kegagalan adalah awal dari kesuksesan !!!.";
+        } else{
+            Toast.makeText(getContext(), "Gagal melakukan diagnosa karena kondisi tidak terpenuhi", Toast.LENGTH_SHORT).show();
         }
-
     }
 
     @SuppressLint("SetTextI18n")
@@ -3111,6 +3122,8 @@ public class HomeDiagnosaUsersFragment extends Fragment {
             Persentase = Double.parseDouble(precision.format(persentase));
             Solusi = "Anda harus menghubungi Psikolog untuk berkonsultasi tentang Stres Sangat Berat yang anda alami, Silahkah anda ke menu chat dan mintalah request chat kepada Psikolog yang tersedia, Terimakasih ):";
 
+        } else{
+            Toast.makeText(getContext(), "Gagal melakukan diagnosa karena kondisi tidak terpenuhi", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -3184,7 +3197,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
 
             }
         } catch (Exception e) {
-            Toast.makeText(itemView.getContext(), "Failure Error, Isilah Biodata Anda Terlebih Dahulu Pada Menu Tombol Floating Action Button !!!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(itemView.getContext(), "Failure Error, Isilah data sesuai aturan sistem!!!", Toast.LENGTH_SHORT).show();
         }
     }
 

@@ -22,7 +22,7 @@
             android:id="@+id/profileImage"
             app:civ_border_width="@dimen/civ_border_width"
             android:layout_gravity="center"
-            android:src="@mipmap/ic_launcher"
+            android:src="@drawable/profile_image"
             app:civ_border_color="@android:color/white"
             android:layout_centerHorizontal="true"
             android:paddingTop="@dimen/paddingTop_CircleImageView"/>

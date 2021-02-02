@@ -38,11 +38,9 @@ public class IntroActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         /*Make  the Activity on Full Screen*/
-
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
         /*When this activity is about to be launch we need to check if its opened before or not*/
         if (restorePrefData()){
             Intent loginActivity = new Intent(getApplicationContext(), LoginActivity.class);
