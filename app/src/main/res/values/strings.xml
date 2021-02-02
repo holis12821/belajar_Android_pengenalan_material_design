@@ -245,12 +245,12 @@
     <string name="update_profile">Update</string>
     <string name="type_message_here">Type Message Here</string>
 
-    <string name="hasil_diagnosa">Hasil Diagnosa Tingkat Stres Mahasiswa Tingkat Akhir"</string>
+    <string name="hasil_diagnosa">Hasil Diagnosa Tingkat Stres Mahasiswa Tingkat Akhir</string>
 
     <string name="detail_Diagnosa">Detail Diagnosa</string>
 
     <string name="referensi">Referensi</string>
-    <string name="status" tools:ignore="StringEscaping">hey i'm using the apps</string>
+    <string name="status">hey im using the apps</string>
     <string name="stres">stress</string>
     <string name="title_activity_maps">Map</string>
 
