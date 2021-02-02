@@ -3171,6 +3171,8 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                             intent.putExtra(DetailDiagnosa.SOLUSI, hashMap.get("solusi"));
                             /*Start Activity*/
                             startActivity(intent);
+                        } else {
+                            Toast.makeText(getContext(), "Gagal menampilkan data", Toast.LENGTH_SHORT).show();
                         }
                     }
                 }).addOnFailureListener(new OnFailureListener() {
