@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Aplikasi_Sistem_Pakar</string>
     <!--Strings used for icon in the Toolbar-->
     <string name="action_settings">Settings</string>
@@ -250,7 +250,7 @@
     <string name="detail_Diagnosa">Detail Diagnosa</string>
 
     <string name="referensi">Referensi</string>
-    <string name="status">hey i'm using the apps</string>
+    <string name="status" tools:ignore="StringEscaping">hey i'm using the apps</string>
     <string name="stres">stress</string>
     <string name="title_activity_maps">Map</string>
 
