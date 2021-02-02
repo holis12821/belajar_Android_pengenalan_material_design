@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         else if (id == R.id.changePsw) {
             startActivity(new Intent(MainActivity.this, ChangePasswordActivity.class));
         }
-        else if (id == R.id.about_developer){
+        else if (id == R.id.location){
             startActivity(new Intent(MainActivity.this, MapsActivity.class));
         }
         else if(id == R.id.logout){
