@@ -3160,7 +3160,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                         hashMap.get("persentase"))).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
-                        /*Condition if, if you data complete successfuly, then show data*/
+                        /*Condition if, if you data complete successful, then show data*/
                         if (task.isSuccessful()){
                             Toast.makeText(getContext(), "Diagnosa dan biodata berhasil  disimpan", Toast.LENGTH_SHORT).show();
                             /*Create the intent to send data*/
