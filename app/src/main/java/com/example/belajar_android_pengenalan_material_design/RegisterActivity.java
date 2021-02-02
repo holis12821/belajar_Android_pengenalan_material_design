@@ -115,7 +115,6 @@ public class RegisterActivity extends AppCompatActivity {
         /*Checkbox Validation*/
         if (isExpert.isChecked() || isUser.isChecked()){
             Toast.makeText(this, "Select The Account Type", Toast.LENGTH_SHORT).show();
-            return;
         }
 
     }

@@ -26,8 +26,9 @@ import android.widget.Toast;
 import com.example.belajar_android_pengenalan_material_design.DetailDiagnosa;
 import com.example.belajar_android_pengenalan_material_design.R;
 import com.example.belajar_android_pengenalan_material_design.model.UserDiagnosa;
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
@@ -1723,8 +1724,6 @@ public class HomeDiagnosaUsersFragment extends Fragment {
             TingkatStres = "Anda menderita Stres Ringan";
             Persentase = Double.parseDouble(precision.format(persentase));
             Solusi = "Tetaplah semangat dan yakin anda bisa mengatasi masalah dan stres anda dan selalu berusaha untuk mengatasi setiap masalah yang anda lalui.";
-        } else{
-            Toast.makeText(getContext(), "Gagal melakukan diagnosa karena kondisi tidak terpenuhi", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -1931,8 +1930,6 @@ public class HomeDiagnosaUsersFragment extends Fragment {
             TingkatStres = "Anda menderita Stres Ringan";
             Persentase = Double.parseDouble(precision.format(persentase));
             Solusi = "Tetaplah semangat dan yakin anda bisa mengatasi masalah dan stres anda dan selalu berusaha untuk mengatasi setiap masalah yang anda lalui serta semangatlah dalam situasi apapun.";
-        } else{
-            Toast.makeText(getContext(), "Gagal melakukan diagnosa karena kondisi tidak terpenuhi", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -2141,8 +2138,6 @@ public class HomeDiagnosaUsersFragment extends Fragment {
             TingkatStres = "Anda Menderita Stres Sedang";
             Persentase = Double.parseDouble(precision.format(persentase));
             Solusi = "Tenangkanlah diri anda sejenak dan berusahalah untuk memanajemen waktu dengan benar sehingga ketika anda dikejar deadline tugas akhir anda dapat dengan cepat menyelesaikannya.";
-        } else{
-            Toast.makeText(getContext(), "Gagal melakukan diagnosa karena kondisi tidak terpenuhi", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -2399,8 +2394,6 @@ public class HomeDiagnosaUsersFragment extends Fragment {
             /*Persentase*/
             Persentase = Double.parseDouble(precision.format(persentase));
             Solusi = "Tenangkanlah diri anda sejenak dan berusahalah untuk memanajemen waktu dengan benar dan buatlah daftar agenda yang akan anda lakukan, buatlah sedetail mungkin agar anda dapat memanajemen waktu dengan seksama sehingga stres yang sedang anda alami dapat anda atasi.";
-        } else{
-            Toast.makeText(getContext(), "Gagal melakukan diagnosa karena kondisi tidak terpenuhi", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -2607,8 +2600,6 @@ public class HomeDiagnosaUsersFragment extends Fragment {
             TingkatStres = "Anda  menderita Stres Sedang";
             Persentase = Double.parseDouble(precision.format(persentase));
             Solusi = "Tenangkanlah diri anda sejenak dan berusahalah untuk memanajemen waktu dengan benar dan buatlah daftar agenda yang akan anda lakukan, buatlah sedetail mungkin agar anda dapat memanajemen waktu dengan seksama sehingga stres yang sedang anda alami dapat anda atasi.";
-        } else{
-            Toast.makeText(getContext(), "Gagal melakukan diagnosa karena kondisi tidak terpenuhi", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -2839,8 +2830,6 @@ public class HomeDiagnosaUsersFragment extends Fragment {
             TingkatStres = "Anda  menderita Stres Berat";
             Persentase = Double.parseDouble(precision.format(persentase));
             Solusi = "Anda harus tahu bahwa banyak orang-orang disekitar anda yang mensupport anda, kegagalan bukanlah sesuatu yang sangat menyeramkan, bangkit dan jangan pernah meyerah karna kegagalan adalah awal dari kesuksesan !!!.";
-        } else{
-            Toast.makeText(getContext(), "Gagal melakukan diagnosa karena kondisi tidak terpenuhi", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -3121,9 +3110,6 @@ public class HomeDiagnosaUsersFragment extends Fragment {
             TingkatStres = "Anda  menderita Stres Sangat Berat";
             Persentase = Double.parseDouble(precision.format(persentase));
             Solusi = "Anda harus menghubungi Psikolog untuk berkonsultasi tentang Stres Sangat Berat yang anda alami, Silahkah anda ke menu chat dan mintalah request chat kepada Psikolog yang tersedia, Terimakasih ):";
-
-        } else{
-            Toast.makeText(getContext(), "Gagal melakukan diagnosa karena kondisi tidak terpenuhi", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -3171,30 +3157,29 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 /*menambahkan data hashMap pada FirebaseFireStore*/
                 df.set(new UserDiagnosa(hashMap.get("key"), hashMap.get("npm"), hashMap.get("nama"), hashMap.get("jenis_kelamin"),
                         hashMap.get("jurusan"), hashMap.get("universitas"), hashMap.get("tingkat_stres"), hashMap.get("solusi"),
-                        hashMap.get("persentase"))).addOnSuccessListener(new OnSuccessListener<Void>() {
+                        hashMap.get("persentase"))).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
-                    public void onSuccess(Void aVoid) {
-                        Toast.makeText(getContext(), "Diagnosa dan biodata berhasil  disimpan", Toast.LENGTH_SHORT).show();
-                        /*Menggunakan moveWithObjectIntent.putExtra(MoveWithObjectReceiver.EXTRA_PERSON, personPojo);*/
-                        /*Menggunakan intent dengan array list sebagai media penampung kumpulan data pada objek yang akan dikirim ke activity lain*/
-                        //Buat Array List yang digunakan untuk menampung kumpulan data
-                        Intent intent = new Intent(getActivity(), DetailDiagnosa.class);
-                        /*Buat Model Data*/
-                        intent.putExtra(DetailDiagnosa.NAMA, hashMap.get("nama"));
-                        intent.putExtra(DetailDiagnosa.TINGKAT_STRES, hashMap.get("tingkat_stres"));
-                        intent.putExtra(DetailDiagnosa.PERSENTASE, hashMap.get("persentase"));
-                        intent.putExtra(DetailDiagnosa.SOLUSI, hashMap.get("solusi"));
-                        /*Start Activity*/
-                        startActivity(intent);
-
+                    public void onComplete(@NonNull Task<Void> task) {
+                        /*Condition if, if you data complete, then show data*/
+                        if (task.isSuccessful()){
+                            Toast.makeText(getContext(), "Diagnosa dan biodata berhasil  disimpan", Toast.LENGTH_SHORT).show();
+                            /*Buat intent untuk mengirimkan data*/
+                            Intent intent = new Intent(getActivity(), DetailDiagnosa.class);
+                            intent.putExtra(DetailDiagnosa.NAMA, hashMap.get("nama"));
+                            intent.putExtra(DetailDiagnosa.TINGKAT_STRES, hashMap.get("tingkat_stres"));
+                            intent.putExtra(DetailDiagnosa.PERSENTASE, hashMap.get("persentase"));
+                            intent.putExtra(DetailDiagnosa.SOLUSI, hashMap.get("solusi"));
+                            /*Start Activity*/
+                            startActivity(intent);
+                        }
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
+                        /*if you data not a complete, then show your error from toast*/
                         Toast.makeText(getContext(), "Diagnosa dan biodata  gagal tersimpan", Toast.LENGTH_SHORT).show();
                     }
                 });
-
             }
         } catch (Exception e) {
             Toast.makeText(itemView.getContext(), "Failure Error, Isilah data sesuai aturan sistem!!!", Toast.LENGTH_SHORT).show();
