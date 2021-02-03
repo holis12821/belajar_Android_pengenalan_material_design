@@ -1545,142 +1545,142 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 && cb_iya_G45.isChecked()) {
             /*Mengambil nilai Autocomplete TextView serta mengcompare apakah cocok dengan objek yg disimpan pada array saat di klik pada act*/
             /*G48*/
-            if (act_G48.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G48.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G48 = 0;
             }
-            if (act_G48.getText().toString().equals("Tidak tahu")){
+            if (act_G48.getText().toString().equals("Tidak tahu : 0.2")){
                 _G48 = 0.2;
             }
-            if (act_G48.getText().toString().equals("Mungkin")){
+            if (act_G48.getText().toString().equals("Mungkin : 0.4")){
                 _G48 = 0.4;
             }
-            if (act_G48.getText().toString().equals("Kemungkinan besar")){
+            if (act_G48.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G48 = 0.6;
             }
-            if (act_G48.getText().toString().equals("Hampir pasti")){
+            if (act_G48.getText().toString().equals("Hampir pasti : 0.8")){
                 _G48 = 0.8;
             }
-            if (act_G48.getText().toString().equals("Pasti")){
+            if (act_G48.getText().toString().equals("Pasti : 1.0")){
                 _G48 = 1.0;
             }
 
            /*G29*/
-            if (act_G29.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G29.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G29 = 0;
             }
-            if (act_G29.getText().toString().equals("Tidak tahu")){
+            if (act_G29.getText().toString().equals("Tidak tahu : 0.2")){
                 _G29 = 0.2;
             }
-            if (act_G29.getText().toString().equals("Mungkin")){
+            if (act_G29.getText().toString().equals("Mungkin : 0.4")){
                 _G29 = 0.4;
             }
-            if (act_G29.getText().toString().equals("Kemungkinan besar")){
+            if (act_G29.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G29 = 0.6;
             }
-            if (act_G29.getText().toString().equals("Hampir pasti")){
+            if (act_G29.getText().toString().equals("Hampir pasti : 0.8")){
                 _G29 = 0.8;
             }
-            if (act_G29.getText().toString().equals("Pasti")){
+            if (act_G29.getText().toString().equals("Pasti : 1.0")){
                 _G29 = 1.0;
             }
 
             /*G03*/
-            if (act_G03.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G03.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G03 = 0;
             }
-            if (act_G03.getText().toString().equals("Tidak tahu")){
+            if (act_G03.getText().toString().equals("Tidak tahu : 0.2")){
                 _G03 = 0.2;
             }
-            if (act_G03.getText().toString().equals("Mungkin")){
+            if (act_G03.getText().toString().equals("Mungkin : 0.4")){
                 _G03 = 0.4;
             }
-            if (act_G03.getText().toString().equals("Kemungkinan besar")){
+            if (act_G03.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G03 = 0.6;
             }
-            if (act_G03.getText().toString().equals("Hampir pasti")){
+            if (act_G03.getText().toString().equals("Hampir pasti : 0.8")){
                 _G03 = 0.8;
             }
-            if (act_G03.getText().toString().equals("Pasti")){
+            if (act_G03.getText().toString().equals("Pasti : 1.0")){
                 _G03 = 1.0;
             }
 
             /*G44*/
-            if (act_G44.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G44.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G44 = 0;
             }
-            if (act_G44.getText().toString().equals("Tidak tahu")){
+            if (act_G44.getText().toString().equals("Tidak tahu : 0.2")){
                 _G44 = 0.2;
             }
-            if (act_G44.getText().toString().equals("Mungkin")){
+            if (act_G44.getText().toString().equals("Mungkin : 0.4")){
                 _G44 = 0.4;
             }
-            if (act_G44.getText().toString().equals("Kemungkinan besar")){
+            if (act_G44.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G44 = 0.6;
             }
-            if (act_G44.getText().toString().equals("Hampir pasti")){
+            if (act_G44.getText().toString().equals("Hampir pasti : 0.8")){
                 _G44 = 0.8;
             }
-            if (act_G44.getText().toString().equals("Pasti")){
+            if (act_G44.getText().toString().equals("Pasti : 1.0")){
                 _G44 = 1.0;
             }
 
             /*G38*/
-            if (act_G38.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G38.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G38 = 0;
             }
-            if (act_G38.getText().toString().equals("Tidak tahu")){
+            if (act_G38.getText().toString().equals("Tidak tahu : 0.2")){
                 _G38 = 0.2;
             }
-            if (act_G38.getText().toString().equals("Mungkin")){
+            if (act_G38.getText().toString().equals("Mungkin : 0.4")){
                 _G38 = 0.4;
             }
-            if (act_G38.getText().toString().equals("Kemungkinan besar")){
+            if (act_G38.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G38 = 0.6;
             }
-            if (act_G38.getText().toString().equals("Hampir pasti")){
+            if (act_G38.getText().toString().equals("Hampir pasti : 0.8")){
                 _G38 = 0.8;
             }
-            if (act_G38.getText().toString().equals("Pasti")){
+            if (act_G38.getText().toString().equals("Pasti : 1.0")){
                 _G38 = 1.0;
             }
 
             /*G27*/
-            if (act_G27.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G27.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G27 = 0;
             }
-            if (act_G27.getText().toString().equals("Tidak tahu")){
+            if (act_G27.getText().toString().equals("Tidak tahu : 0.2")){
                 _G27 = 0.2;
             }
-            if (act_G27.getText().toString().equals("Mungkin")){
+            if (act_G27.getText().toString().equals("Mungkin : 0.4")){
                 _G27 = 0.4;
             }
-            if (act_G27.getText().toString().equals("Kemungkinan besar")){
+            if (act_G27.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G27 = 0.6;
             }
-            if (act_G27.getText().toString().equals("Hampir pasti")){
+            if (act_G27.getText().toString().equals("Hampir pasti : 0.8")){
                 _G27 = 0.8;
             }
-            if (act_G27.getText().toString().equals("Pasti")){
+            if (act_G27.getText().toString().equals("Pasti : 1.0")){
                 _G27 = 1.0;
             }
 
             /*_G45*/
-            if (act_G45.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G45.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G45 = 0;
             }
-            if (act_G45.getText().toString().equals("Tidak tahu")){
+            if (act_G45.getText().toString().equals("Tidak tahu : 0.2")){
                 _G45 = 0.2;
             }
-            if (act_G45.getText().toString().equals("Mungkin")){
+            if (act_G45.getText().toString().equals("Mungkin : 0.4")){
                 _G45 = 0.4;
             }
-            if (act_G45.getText().toString().equals("Kemungkinan besar")){
+            if (act_G45.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G45 = 0.6;
             }
-            if (act_G45.getText().toString().equals("Hampir pasti")){
+            if (act_G45.getText().toString().equals("Hampir pasti : 0.8")){
                 _G45 = 0.8;
             }
-            if (act_G45.getText().toString().equals("Pasti")){
+            if (act_G45.getText().toString().equals("Pasti : 1.0")){
                 _G45 = 1.0;
             }
 
@@ -1751,142 +1751,142 @@ public class HomeDiagnosaUsersFragment extends Fragment {
 
             /*Mengambil nilai Autocomplete TextView serta mengcompare apakah cocok dengan objek yg disimpan pada array saat di klik pada act*/
             /*G48*/
-            if (act_G48.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G48.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G48 = 0;
             }
-            if (act_G48.getText().toString().equals("Tidak tahu")){
+            if (act_G48.getText().toString().equals("Tidak tahu : 0.2")){
                 _G48 = 0.2;
             }
-            if (act_G48.getText().toString().equals("Mungkin")){
+            if (act_G48.getText().toString().equals("Mungkin : 0.4")){
                 _G48 = 0.4;
             }
-            if (act_G48.getText().toString().equals("Kemungkinan besar")){
+            if (act_G48.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G48 = 0.6;
             }
-            if (act_G48.getText().toString().equals("Hampir pasti")){
+            if (act_G48.getText().toString().equals("Hampir pasti : 0.8")){
                 _G48 = 0.8;
             }
-            if (act_G48.getText().toString().equals("Pasti")){
+            if (act_G48.getText().toString().equals("Pasti : 1.0")){
                 _G48 = 1.0;
             }
 
             /*G29*/
-            if (act_G29.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G29.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G29 = 0;
             }
-            if (act_G29.getText().toString().equals("Tidak tahu")){
+            if (act_G29.getText().toString().equals("Tidak tahu : 0.2")){
                 _G29 = 0.2;
             }
-            if (act_G29.getText().toString().equals("Mungkin")){
+            if (act_G29.getText().toString().equals("Mungkin : 0.4")){
                 _G29 = 0.4;
             }
-            if (act_G29.getText().toString().equals("Kemungkinan besar")){
+            if (act_G29.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G29 = 0.6;
             }
-            if (act_G29.getText().toString().equals("Hampir pasti")){
+            if (act_G29.getText().toString().equals("Hampir pasti : 0.8")){
                 _G29 = 0.8;
             }
-            if (act_G29.getText().toString().equals("Pasti")){
+            if (act_G29.getText().toString().equals("Pasti : 1.0")){
                 _G29 = 1.0;
             }
 
             /*G03*/
-            if (act_G03.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G03.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G03 = 0;
             }
-            if (act_G03.getText().toString().equals("Tidak tahu")){
+            if (act_G03.getText().toString().equals("Tidak tahu : 0.2")){
                 _G03 = 0.2;
             }
-            if (act_G03.getText().toString().equals("Mungkin")){
+            if (act_G03.getText().toString().equals("Mungkin : 0.4")){
                 _G03 = 0.4;
             }
-            if (act_G03.getText().toString().equals("Kemungkinan besar")){
+            if (act_G03.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G03 = 0.6;
             }
-            if (act_G03.getText().toString().equals("Hampir pasti")){
+            if (act_G03.getText().toString().equals("Hampir pasti : 0.8")){
                 _G03 = 0.8;
             }
-            if (act_G03.getText().toString().equals("Pasti")){
+            if (act_G03.getText().toString().equals("Pasti : 1.0")){
                 _G03 = 1.0;
             }
 
             /*G34*/
-            if (act_G34.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G34.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G34 = 0;
             }
-            if (act_G34.getText().toString().equals("Tidak tahu")){
+            if (act_G34.getText().toString().equals("Tidak tahu : 0.2")){
                 _G34 = 0.2;
             }
-            if (act_G34.getText().toString().equals("Mungkin")){
+            if (act_G34.getText().toString().equals("Mungkin : 0.4")){
                 _G34 = 0.4;
             }
-            if (act_G34.getText().toString().equals("Kemungkinan besar")){
+            if (act_G34.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G34 = 0.6;
             }
-            if (act_G34.getText().toString().equals("Hampir pasti")){
+            if (act_G34.getText().toString().equals("Hampir pasti : 0.8")){
                 _G34 = 0.8;
             }
-            if (act_G34.getText().toString().equals("Pasti")){
+            if (act_G34.getText().toString().equals("Pasti : 1.0")){
                 _G34 = 1.0;
             }
 
             /*G09*/
-            if (act_G09.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G09.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G09 = 0;
             }
-            if (act_G09.getText().toString().equals("Tidak tahu")){
+            if (act_G09.getText().toString().equals("Tidak tahu : 0.2")){
                 _G09 = 0.2;
             }
-            if (act_G09.getText().toString().equals("Mungkin")){
+            if (act_G09.getText().toString().equals("Mungkin : 0.4")){
                 _G09 = 0.4;
             }
-            if (act_G09.getText().toString().equals("Kemungkinan besar")){
+            if (act_G09.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G09 = 0.6;
             }
-            if (act_G09.getText().toString().equals("Hampir pasti")){
+            if (act_G09.getText().toString().equals("Hampir pasti : 0.8")){
                 _G09 = 0.8;
             }
-            if (act_G09.getText().toString().equals("Pasti")){
+            if (act_G09.getText().toString().equals("Pasti : 1.0")){
                 _G09 = 1.0;
             }
 
             /*G17*/
-            if (act_G17.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G17.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G17 = 0;
             }
-            if (act_G17.getText().toString().equals("Tidak tahu")){
+            if (act_G17.getText().toString().equals("Tidak tahu : 0.2")){
                 _G17 = 0.2;
             }
-            if (act_G17.getText().toString().equals("Mungkin")){
+            if (act_G17.getText().toString().equals("Mungkin : 0.4")){
                 _G17 = 0.4;
             }
-            if (act_G17.getText().toString().equals("Kemungkinan besar")){
+            if (act_G17.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G17 = 0.6;
             }
-            if (act_G17.getText().toString().equals("Hampir pasti")){
+            if (act_G17.getText().toString().equals("Hampir pasti : 0.8")){
                 _G17 = 0.8;
             }
-            if (act_G17.getText().toString().equals("Pasti")){
+            if (act_G17.getText().toString().equals("Pasti : 1.0")){
                 _G17 = 1.0;
             }
 
             /*_G50*/
-            if (act_G50.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G50.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G50 = 0;
             }
-            if (act_G50.getText().toString().equals("Tidak tahu")){
+            if (act_G50.getText().toString().equals("Tidak tahu : 0.2")){
                 _G50 = 0.2;
             }
-            if (act_G50.getText().toString().equals("Mungkin")){
+            if (act_G50.getText().toString().equals("Mungkin : 0.4")){
                 _G50 = 0.4;
             }
-            if (act_G50.getText().toString().equals("Kemungkinan besar")){
+            if (act_G50.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G50 = 0.6;
             }
-            if (act_G50.getText().toString().equals("Hampir pasti")){
+            if (act_G50.getText().toString().equals("Hampir pasti : 0.8")){
                 _G50 = 0.8;
             }
-            if (act_G50.getText().toString().equals("Pasti")){
+            if (act_G50.getText().toString().equals("Pasti : 1.0")){
                 _G50 = 1.0;
             }
 
@@ -1959,142 +1959,142 @@ public class HomeDiagnosaUsersFragment extends Fragment {
             /*Mengambil nilai act dengan kondisi if dan akan dicocokan atau di compare
              * jika sama maka akan meruturn true dan kondisi terpenuhi*/
             /*G16*/
-            if (act_G16.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G16.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G16 = 0;
             }
-            if (act_G16.getText().toString().equals("Tidak tahu")){
+            if (act_G16.getText().toString().equals("Tidak tahu : 0.2")){
                 _G16 = 0.2;
             }
-            if (act_G16.getText().toString().equals("Mungkin")){
+            if (act_G16.getText().toString().equals("Mungkin : 0.4")){
                 _G16 = 0.4;
             }
-            if (act_G16.getText().toString().equals("Kemungkinan besar")){
+            if (act_G16.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G16 = 0.6;
             }
-            if (act_G16.getText().toString().equals("Hampir pasti")){
+            if (act_G16.getText().toString().equals("Hampir pasti : 0.8")){
                 _G16 = 0.8;
             }
-            if (act_G16.getText().toString().equals("Pasti")){
+            if (act_G16.getText().toString().equals("Pasti : 1.0")){
                 _G16 = 1.0;
             }
 
             /*G18*/
-            if (act_G18.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G18.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G18 = 0;
             }
-            if (act_G18.getText().toString().equals("Tidak tahu")){
+            if (act_G18.getText().toString().equals("Tidak tahu : 0.2")){
                 _G18 = 0.2;
             }
-            if (act_G18.getText().toString().equals("Mungkin")){
+            if (act_G18.getText().toString().equals("Mungkin : 0.4")){
                 _G18 = 0.4;
             }
-            if (act_G18.getText().toString().equals("Kemungkinan besar")){
+            if (act_G18.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G18 = 0.6;
             }
-            if (act_G18.getText().toString().equals("Hampir pasti")){
+            if (act_G18.getText().toString().equals("Hampir pasti : 0.8")){
                 _G18 = 0.8;
             }
-            if (act_G18.getText().toString().equals("Pasti")){
+            if (act_G18.getText().toString().equals("Pasti : 1.0")){
                 _G18 = 1.0;
             }
 
             /*G05*/
-            if (act_G05.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G05.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G05 = 0;
             }
-            if (act_G05.getText().toString().equals("Tidak tahu")){
+            if (act_G05.getText().toString().equals("Tidak tahu : 0.2")){
                 _G05 = 0.2;
             }
-            if (act_G05.getText().toString().equals("Mungkin")){
+            if (act_G05.getText().toString().equals("Mungkin : 0.4")){
                 _G05 = 0.4;
             }
-            if (act_G05.getText().toString().equals("Kemungkinan besar")){
+            if (act_G05.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G05 = 0.6;
             }
-            if (act_G05.getText().toString().equals("Hampir pasti")){
+            if (act_G05.getText().toString().equals("Hampir pasti : 0.8")){
                 _G05 = 0.8;
             }
-            if (act_G05.getText().toString().equals("Pasti")){
+            if (act_G05.getText().toString().equals("Pasti : 1.0")){
                 _G05 = 1.0;
             }
 
             /*G07*/
-            if (act_G07.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G07.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G07 = 0;
             }
-            if (act_G07.getText().toString().equals("Tidak tahu")){
+            if (act_G07.getText().toString().equals("Tidak tahu : 0.2")){
                 _G07 = 0.2;
             }
-            if (act_G07.getText().toString().equals("Mungkin")){
+            if (act_G07.getText().toString().equals("Mungkin : 0.4")){
                 _G07 = 0.4;
             }
-            if (act_G07.getText().toString().equals("Kemungkinan besar")){
+            if (act_G07.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G07 = 0.6;
             }
-            if (act_G07.getText().toString().equals("Hampir pasti")){
+            if (act_G07.getText().toString().equals("Hampir pasti : 0.8")){
                 _G07 = 0.8;
             }
-            if (act_G07.getText().toString().equals("Pasti")){
+            if (act_G07.getText().toString().equals("Pasti : 1.0")){
                 _G07 = 1.0;
             }
 
             /*G04*/
-            if (act_G04.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G04.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G04 = 0;
             }
-            if (act_G04.getText().toString().equals("Tidak tahu")){
+            if (act_G04.getText().toString().equals("Tidak tahu : 0.2")){
                 _G04 = 0.2;
             }
-            if (act_G04.getText().toString().equals("Mungkin")){
+            if (act_G04.getText().toString().equals("Mungkin : 0.4")){
                 _G04 = 0.4;
             }
-            if (act_G04.getText().toString().equals("Kemungkinan besar")){
+            if (act_G04.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G04 = 0.6;
             }
-            if (act_G04.getText().toString().equals("Hampir pasti")){
+            if (act_G04.getText().toString().equals("Hampir pasti : 0.8")){
                 _G04 = 0.8;
             }
-            if (act_G04.getText().toString().equals("Pasti")){
+            if (act_G04.getText().toString().equals("Pasti : 1.0")){
                 _G04 = 1.0;
             }
 
             /*G08*/
-            if (act_G08.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G08.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G08 = 0;
             }
-            if (act_G08.getText().toString().equals("Tidak tahu")){
+            if (act_G08.getText().toString().equals("Tidak tahu : 0.2")){
                 _G08 = 0.2;
             }
-            if (act_G08.getText().toString().equals("Mungkin")){
+            if (act_G08.getText().toString().equals("Mungkin : 0.4")){
                 _G08 = 0.4;
             }
-            if (act_G08.getText().toString().equals("Kemungkinan besar")){
+            if (act_G08.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G08 = 0.6;
             }
-            if (act_G08.getText().toString().equals("Hampir pasti")){
+            if (act_G08.getText().toString().equals("Hampir pasti : 0.8")){
                 _G08 = 0.8;
             }
-            if (act_G08.getText().toString().equals("Pasti")){
+            if (act_G08.getText().toString().equals("Pasti : 1.0")){
                 _G08 = 1.0;
             }
 
             /*G28*/
-            if (act_G28.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G28.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G28 = 0;
             }
-            if (act_G28.getText().toString().equals("Tidak tahu")){
+            if (act_G28.getText().toString().equals("Tidak tahu : 0.2")){
                 _G28 = 0.2;
             }
-            if (act_G28.getText().toString().equals("Mungkin")){
+            if (act_G28.getText().toString().equals("Mungkin : 0.4")){
                 _G28 = 0.4;
             }
-            if (act_G28.getText().toString().equals("Kemungkinan besar")){
+            if (act_G28.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G28 = 0.6;
             }
-            if (act_G28.getText().toString().equals("Hampir pasti")){
+            if (act_G28.getText().toString().equals("Hampir pasti : 0.8")){
                 _G28 = 0.8;
             }
-            if (act_G28.getText().toString().equals("Pasti")){
+            if (act_G28.getText().toString().equals("Pasti : 1.0")){
                 _G28 = 1.0;
             }
 
@@ -2168,182 +2168,182 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 && cb_G47.isChecked()){
 
             /*G16*/
-            if (act_G16.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G16.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G16 = 0;
             }
-            if (act_G16.getText().toString().equals("Tidak tahu")){
+            if (act_G16.getText().toString().equals("Tidak tahu : 0.2")){
                 _G16 = 0.2;
             }
-            if (act_G16.getText().toString().equals("Mungkin")){
+            if (act_G16.getText().toString().equals("Mungkin : 0.4")){
                 _G16 = 0.4;
             }
-            if (act_G16.getText().toString().equals("Kemungkinan besar")){
+            if (act_G16.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G16 = 0.6;
             }
-            if (act_G16.getText().toString().equals("Hampir pasti")){
+            if (act_G16.getText().toString().equals("Hampir pasti : 0.8")){
                 _G16 = 0.8;
             }
-            if (act_G16.getText().toString().equals("Pasti")){
+            if (act_G16.getText().toString().equals("Pasti : 1.0")){
                 _G16 = 1.0;
             }
 
             /*G30*/
-            if (act_G30.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G30.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G30 = 0;
             }
-            if (act_G30.getText().toString().equals("Tidak tahu")){
+            if (act_G30.getText().toString().equals("Tidak tahu : 0.2")){
                 _G30 = 0.2;
             }
-            if (act_G30.getText().toString().equals("Mungkin")){
+            if (act_G30.getText().toString().equals("Mungkin : 0.4")){
                 _G30 = 0.4;
             }
-            if (act_G30.getText().toString().equals("Kemungkinan besar")){
+            if (act_G30.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G30 = 0.6;
             }
-            if (act_G30.getText().toString().equals("Hampir pasti")){
+            if (act_G30.getText().toString().equals("Hampir pasti : 0.8")){
                 _G30 = 0.8;
             }
-            if (act_G30.getText().toString().equals("Pasti")){
+            if (act_G30.getText().toString().equals("Pasti : 1.0")){
                 _G30 = 1.0;
             }
 
             /*G12*/
-            if (act_G12.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G12.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G12 = 0;
             }
-            if (act_G12.getText().toString().equals("Tidak tahu")){
+            if (act_G12.getText().toString().equals("Tidak tahu : 0.2")){
                 _G12 = 0.2;
             }
-            if (act_G12.getText().toString().equals("Mungkin")){
+            if (act_G12.getText().toString().equals("Mungkin : 0.4")){
                 _G12 = 0.4;
             }
-            if (act_G12.getText().toString().equals("Kemungkinan besar")){
+            if (act_G12.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G12 = 0.6;
             }
-            if (act_G12.getText().toString().equals("Hampir pasti")){
+            if (act_G12.getText().toString().equals("Hampir pasti : 0.8")){
                 _G12 = 0.8;
             }
-            if (act_G12.getText().toString().equals("Pasti")){
+            if (act_G12.getText().toString().equals("Pasti : 1.0")){
                 _G12 = 1.0;
             }
 
             /*G02*/
-            if (act_G02.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G02.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G02 = 0;
             }
-            if (act_G02.getText().toString().equals("Tidak tahu")){
+            if (act_G02.getText().toString().equals("Tidak tahu : 0.2")){
                 _G02 = 0.2;
             }
-            if (act_G02.getText().toString().equals("Mungkin")){
+            if (act_G02.getText().toString().equals("Mungkin : 0.4")){
                 _G02= 0.4;
             }
-            if (act_G02.getText().toString().equals("Kemungkinan besar")){
+            if (act_G02.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G02 = 0.6;
             }
-            if (act_G02.getText().toString().equals("Hampir pasti")){
+            if (act_G02.getText().toString().equals("Hampir pasti : 0.8")){
                 _G02 = 0.8;
             }
-            if (act_G02.getText().toString().equals("Pasti")){
+            if (act_G02.getText().toString().equals("Pasti : 1.0")){
                 _G02 = 1.0;
             }
 
             /*G13*/
-            if (act_G13.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G13.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G13 = 0;
             }
-            if (act_G13.getText().toString().equals("Tidak tahu")){
+            if (act_G13.getText().toString().equals("Tidak tahu : 0.2")){
                 _G13 = 0.2;
             }
-            if (act_G13.getText().toString().equals("Mungkin")){
+            if (act_G13.getText().toString().equals("Mungkin : 0.4")){
                 _G13 = 0.4;
             }
-            if (act_G13.getText().toString().equals("Kemungkinan besar")){
+            if (act_G13.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G13 = 0.6;
             }
-            if (act_G13.getText().toString().equals("Hampir pasti")){
+            if (act_G13.getText().toString().equals("Hampir pasti : 0.8")){
                 _G13 = 0.8;
             }
-            if (act_G13.getText().toString().equals("Pasti")){
+            if (act_G13.getText().toString().equals("Pasti : 1.0")){
                 _G13 = 1.0;
             }
 
             /*G39*/
-            if (act_G39.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G39.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G39 = 0;
             }
-            if (act_G39.getText().toString().equals("Tidak tahu")){
+            if (act_G39.getText().toString().equals("Tidak tahu : 0.2")){
                 _G39 = 0.2;
             }
-            if (act_G39.getText().toString().equals("Mungkin")){
+            if (act_G39.getText().toString().equals("Mungkin : 0.4")){
                 _G39 = 0.4;
             }
-            if (act_G39.getText().toString().equals("Kemungkinan besar")){
+            if (act_G39.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G39 = 0.6;
             }
-            if (act_G39.getText().toString().equals("Hampir pasti")){
+            if (act_G39.getText().toString().equals("Hampir pasti : 0.8")){
                 _G39 = 0.8;
             }
-            if (act_G39.getText().toString().equals("Pasti")){
+            if (act_G39.getText().toString().equals("Pasti : 1.0")){
                 _G39 = 1.0;
             }
 
             /*G49*/
-            if (act_G49.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G49.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G49 = 0;
             }
-            if (act_G49.getText().toString().equals("Tidak tahu")){
+            if (act_G49.getText().toString().equals("Tidak tahu : 0.2")){
                 _G49 = 0.2;
             }
-            if (act_G49.getText().toString().equals("Mungkin")){
+            if (act_G49.getText().toString().equals("Mungkin : 0.4")){
                 _G49 = 0.4;
             }
-            if (act_G49.getText().toString().equals("Kemungkinan besar")){
+            if (act_G49.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G49 = 0.6;
             }
-            if (act_G49.getText().toString().equals("Hampir pasti")){
+            if (act_G49.getText().toString().equals("Hampir pasti : 0.8")){
                 _G49 = 0.8;
             }
-            if (act_G49.getText().toString().equals("Pasti")){
+            if (act_G49.getText().toString().equals("Pasti : 1.0")){
                 _G49 = 1.0;
             }
 
             /*G46*/
-            if (act_G46.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G46.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G46 = 0;
             }
-            if (act_G46.getText().toString().equals("Tidak tahu")){
+            if (act_G46.getText().toString().equals("Tidak tahu : 0.2")){
                 _G46 = 0.2;
             }
-            if (act_G46.getText().toString().equals("Mungkin")){
+            if (act_G46.getText().toString().equals("Mungkin : 0.4")){
                 _G46 = 0.4;
             }
-            if (act_G46.getText().toString().equals("Kemungkinan besar")){
+            if (act_G46.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G46 = 0.6;
             }
-            if (act_G46.getText().toString().equals("Hampir pasti")){
+            if (act_G46.getText().toString().equals("Hampir pasti : 0.8")){
                 _G46 = 0.8;
             }
-            if (act_G46.getText().toString().equals("Pasti")){
+            if (act_G46.getText().toString().equals("Pasti : 1.0")){
                 _G46 = 1.0;
             }
 
             /*G47*/
-            if (act_G47.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G47.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G47 = 0;
             }
-            if (act_G47.getText().toString().equals("Tidak tahu")){
+            if (act_G47.getText().toString().equals("Tidak tahu : 0.2")){
                 _G47 = 0.2;
             }
-            if (act_G47.getText().toString().equals("Mungkin")){
+            if (act_G47.getText().toString().equals("Mungkin : 0.4")){
                 _G47 = 0.4;
             }
-            if (act_G47.getText().toString().equals("Kemungkinan besar")){
+            if (act_G47.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G47 = 0.6;
             }
-            if (act_G47.getText().toString().equals("Hampir pasti")){
+            if (act_G47.getText().toString().equals("Hampir pasti : 0.8")){
                 _G47 = 0.8;
             }
-            if (act_G47.getText().toString().equals("Pasti")){
+            if (act_G47.getText().toString().equals("Pasti : 1.0")){
                 _G47 = 1.0;
             }
 
@@ -2421,142 +2421,142 @@ public class HomeDiagnosaUsersFragment extends Fragment {
 
             /*Kondisi if untuk mengcompare apakah sama dengan array pada act*/
             /*G16*/
-            if (act_G16.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G16.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G16 = 0;
             }
-            if (act_G16.getText().toString().equals("Tidak tahu")){
+            if (act_G16.getText().toString().equals("Tidak tahu : 0.2")){
                 _G16 = 0.2;
             }
-            if (act_G16.getText().toString().equals("Mungkin")){
+            if (act_G16.getText().toString().equals("Mungkin : 0.4")){
                 _G16 = 0.4;
             }
-            if (act_G16.getText().toString().equals("Kemungkinan besar")){
+            if (act_G16.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G16 = 0.6;
             }
-            if (act_G16.getText().toString().equals("Hampir pasti")){
+            if (act_G16.getText().toString().equals("Hampir pasti : 0.8")){
                 _G16 = 0.8;
             }
-            if (act_G16.getText().toString().equals("Pasti")){
+            if (act_G16.getText().toString().equals("Pasti : 1.0")){
                 _G16 = 1.0;
             }
 
             /*G24*/
-            if (act_G24.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G24.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G24 = 0;
             }
-            if (act_G24.getText().toString().equals("Tidak tahu")){
+            if (act_G24.getText().toString().equals("Tidak tahu : 0.2")){
                 _G24 = 0.2;
             }
-            if (act_G24.getText().toString().equals("Mungkin")){
+            if (act_G24.getText().toString().equals("Mungkin : 0.4")){
                 _G24 = 0.4;
             }
-            if (act_G24.getText().toString().equals("Kemungkinan besar")){
+            if (act_G24.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G24 = 0.6;
             }
-            if (act_G24.getText().toString().equals("Hampir pasti")){
+            if (act_G24.getText().toString().equals("Hampir pasti : 0.8")){
                 _G24 = 0.8;
             }
-            if (act_G24.getText().toString().equals("Pasti")){
+            if (act_G24.getText().toString().equals("Pasti : 1.0")){
                 _G24 = 1.0;
             }
 
             /*G37*/
-            if (act_G37.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G37.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G37 = 0;
             }
-            if (act_G37.getText().toString().equals("Tidak tahu")){
+            if (act_G37.getText().toString().equals("Tidak tahu : 0.2")){
                 _G37 = 0.2;
             }
-            if (act_G37.getText().toString().equals("Mungkin")){
+            if (act_G37.getText().toString().equals("Mungkin : 0.4")){
                 _G37 = 0.4;
             }
-            if (act_G37.getText().toString().equals("Kemungkinan besar")){
+            if (act_G37.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G37 = 0.6;
             }
-            if (act_G37.getText().toString().equals("Hampir pasti")){
+            if (act_G37.getText().toString().equals("Hampir pasti : 0.8")){
                 _G37 = 0.8;
             }
-            if (act_G37.getText().toString().equals("Pasti")){
+            if (act_G37.getText().toString().equals("Pasti : 1.0")){
                 _G37 = 1.0;
             }
 
             /*G43*/
-            if (act_G43.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G43.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G43 = 0;
             }
-            if (act_G43.getText().toString().equals("Tidak tahu")){
+            if (act_G43.getText().toString().equals("Tidak tahu : 0.2")){
                 _G43 = 0.2;
             }
-            if (act_G43.getText().toString().equals("Mungkin")){
+            if (act_G43.getText().toString().equals("Mungkin : 0.4")){
                 _G43 = 0.4;
             }
-            if (act_G43.getText().toString().equals("Kemungkinan besar")){
+            if (act_G43.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G43 = 0.6;
             }
-            if (act_G43.getText().toString().equals("Hampir pasti")){
+            if (act_G43.getText().toString().equals("Hampir pasti : 0.8")){
                 _G43 = 0.8;
             }
-            if (act_G43.getText().toString().equals("Pasti")){
+            if (act_G43.getText().toString().equals("Pasti : 1.0")){
                 _G43 = 1.0;
             }
 
             /*G35*/
-            if (act_G35.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G35.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G35 = 0;
             }
-            if (act_G35.getText().toString().equals("Tidak tahu")){
+            if (act_G35.getText().toString().equals("Tidak tahu : 0.2")){
                 _G35 = 0.2;
             }
-            if (act_G35.getText().toString().equals("Mungkin")){
+            if (act_G35.getText().toString().equals("Mungkin : 0.4")){
                 _G35 = 0.4;
             }
-            if (act_G35.getText().toString().equals("Kemungkinan besar")){
+            if (act_G35.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G35 = 0.6;
             }
-            if (act_G35.getText().toString().equals("Hampir pasti")){
+            if (act_G35.getText().toString().equals("Hampir pasti : 0.8")){
                 _G35 = 0.8;
             }
-            if (act_G35.getText().toString().equals("Pasti")){
+            if (act_G35.getText().toString().equals("Pasti : 1.0")){
                 _G35 = 1.0;
             }
 
             /*G36*/
-            if (act_G36.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G36.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G36 = 0;
             }
-            if (act_G36.getText().toString().equals("Tidak tahu")){
+            if (act_G36.getText().toString().equals("Tidak tahu : 0.2")){
                 _G36 = 0.2;
             }
-            if (act_G36.getText().toString().equals("Mungkin")){
+            if (act_G36.getText().toString().equals("Mungkin : 0.4")){
                 _G36 = 0.4;
             }
-            if (act_G36.getText().toString().equals("Kemungkinan besar")){
+            if (act_G36.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G36 = 0.6;
             }
-            if (act_G36.getText().toString().equals("Hampir pasti")){
+            if (act_G36.getText().toString().equals("Hampir pasti : 0.8")){
                 _G36 = 0.8;
             }
-            if (act_G36.getText().toString().equals("Pasti")){
+            if (act_G36.getText().toString().equals("Pasti : 1.0")){
                 _G36 = 1.0;
             }
 
             /*G23*/
-            if (act_G23.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G23.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G23 = 0;
             }
-            if (act_G23.getText().toString().equals("Tidak tahu")){
+            if (act_G23.getText().toString().equals("Tidak tahu : 0.2")){
                 _G23 = 0.2;
             }
-            if (act_G23.getText().toString().equals("Mungkin")){
+            if (act_G23.getText().toString().equals("Mungkin : 0.4")){
                 _G23 = 0.4;
             }
-            if (act_G23.getText().toString().equals("Kemungkinan besar")){
+            if (act_G23.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G23 = 0.6;
             }
-            if (act_G23.getText().toString().equals("Hampir pasti")){
+            if (act_G23.getText().toString().equals("Hampir pasti : 0.8")){
                 _G23 = 0.8;
             }
-            if (act_G23.getText().toString().equals("Pasti")){
+            if (act_G23.getText().toString().equals("Pasti : 1.0")){
                 _G23 = 1.0;
             }
 
@@ -2628,162 +2628,162 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 && cb_G41.isChecked()){
 
             /*G06*/
-            if (act_G06.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G06.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G06 = 0;
             }
-            if (act_G06.getText().toString().equals("Tidak tahu")){
+            if (act_G06.getText().toString().equals("Tidak tahu : 0.2")){
                 _G06 = 0.2;
             }
-            if (act_G06.getText().toString().equals("Mungkin")){
+            if (act_G06.getText().toString().equals("Mungkin : 0.4")){
                 _G06 = 0.4;
             }
-            if (act_G06.getText().toString().equals("Kemungkinan besar")){
+            if (act_G06.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G06 = 0.6;
             }
-            if (act_G06.getText().toString().equals("Hampir pasti")){
+            if (act_G06.getText().toString().equals("Hampir pasti : 0.8")){
                 _G06 = 0.8;
             }
-            if (act_G06.getText().toString().equals("Pasti")){
+            if (act_G06.getText().toString().equals("Pasti : 1.0")){
                 _G06 = 1.0;
             }
 
             /*G33*/
-            if (act_G33.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G33.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G33 = 0;
             }
-            if (act_G33.getText().toString().equals("Tidak tahu")){
+            if (act_G33.getText().toString().equals("Tidak tahu : 0.2")){
                 _G33 = 0.2;
             }
-            if (act_G33.getText().toString().equals("Mungkin")){
+            if (act_G33.getText().toString().equals("Mungkin : 0.4")){
                 _G33 = 0.4;
             }
-            if (act_G33.getText().toString().equals("Kemungkinan besar")){
+            if (act_G33.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G33 = 0.6;
             }
-            if (act_G33.getText().toString().equals("Hampir pasti")){
+            if (act_G33.getText().toString().equals("Hampir pasti : 0.8")){
                 _G33 = 0.8;
             }
-            if (act_G33.getText().toString().equals("Pasti")){
+            if (act_G33.getText().toString().equals("Pasti : 1.0")){
                 _G33 = 1.0;
             }
 
             /*G21*/
-            if (act_G21.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G21.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G21 = 0;
             }
-            if (act_G21.getText().toString().equals("Tidak tahu")){
+            if (act_G21.getText().toString().equals("Tidak tahu : 0.2")){
                 _G21 = 0.2;
             }
-            if (act_G21.getText().toString().equals("Mungkin")){
+            if (act_G21.getText().toString().equals("Mungkin : 0.4")){
                 _G21 = 0.4;
             }
-            if (act_G21.getText().toString().equals("Kemungkinan besar")){
+            if (act_G21.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G21 = 0.6;
             }
-            if (act_G21.getText().toString().equals("Hampir pasti")){
+            if (act_G21.getText().toString().equals("Hampir pasti : 0.8")){
                 _G21 = 0.8;
             }
-            if (act_G21.getText().toString().equals("Pasti")){
+            if (act_G21.getText().toString().equals("Pasti : 1.0")){
                 _G21 = 1.0;
             }
 
             /*G15*/
-            if (act_G15.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G15.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G15 = 0;
             }
-            if (act_G15.getText().toString().equals("Tidak tahu")){
+            if (act_G15.getText().toString().equals("Tidak tahu : 0.2")){
                 _G15 = 0.2;
             }
-            if (act_G15.getText().toString().equals("Mungkin")){
+            if (act_G15.getText().toString().equals("Mungkin : 0.4")){
                 _G15 = 0.4;
             }
-            if (act_G15.getText().toString().equals("Kemungkinan besar")){
+            if (act_G15.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G15 = 0.6;
             }
-            if (act_G15.getText().toString().equals("Hampir pasti")){
+            if (act_G15.getText().toString().equals("Hampir pasti : 0.8")){
                 _G15 = 0.8;
             }
-            if (act_G15.getText().toString().equals("Pasti")){
+            if (act_G15.getText().toString().equals("Pasti : 1.0")){
                 _G15 = 1.0;
             }
 
             /*G20*/
-            if (act_G20.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G20.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G20 = 0;
             }
-            if (act_G20.getText().toString().equals("Tidak tahu")){
+            if (act_G20.getText().toString().equals("Tidak tahu : 0.2")){
                 _G20 = 0.2;
             }
-            if (act_G20.getText().toString().equals("Mungkin")){
+            if (act_G20.getText().toString().equals("Mungkin : 0.4")){
                 _G20 = 0.4;
             }
-            if (act_G20.getText().toString().equals("Kemungkinan besar")){
+            if (act_G20.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G20 = 0.6;
             }
-            if (act_G20.getText().toString().equals("Hampir pasti")){
+            if (act_G20.getText().toString().equals("Hampir pasti : 0.8")){
                 _G20 = 0.8;
             }
-            if (act_G20.getText().toString().equals("Pasti")){
+            if (act_G20.getText().toString().equals("Pasti : 1.0")){
                 _G20 = 1.0;
             }
 
             /*G40*/
-            if (act_G40.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G40.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G40 = 0;
             }
-            if (act_G40.getText().toString().equals("Tidak tahu")){
+            if (act_G40.getText().toString().equals("Tidak tahu : 0.2")){
                 _G40 = 0.2;
             }
-            if (act_G40.getText().toString().equals("Mungkin")){
+            if (act_G40.getText().toString().equals("Mungkin : 0.4")){
                 _G40 = 0.4;
             }
-            if (act_G40.getText().toString().equals("Kemungkinan besar")){
+            if (act_G40.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G40 = 0.6;
             }
-            if (act_G40.getText().toString().equals("Hampir pasti")){
+            if (act_G40.getText().toString().equals("Hampir pasti : 0.8")){
                 _G40 = 0.8;
             }
-            if (act_G40.getText().toString().equals("Pasti")){
+            if (act_G40.getText().toString().equals("Pasti : 1.0")){
                 _G40 = 1.0;
             }
 
             /*G10*/
-            if (act_G10.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G10.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G10 = 0;
             }
-            if (act_G10.getText().toString().equals("Tidak tahu")){
+            if (act_G10.getText().toString().equals("Tidak tahu : 0.2")){
                 _G10 = 0.2;
             }
-            if (act_G10.getText().toString().equals("Mungkin")){
+            if (act_G10.getText().toString().equals("Mungkin : 0.4")){
                 _G10 = 0.4;
             }
-            if (act_G10.getText().toString().equals("Kemungkinan besar")){
+            if (act_G10.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G10 = 0.6;
             }
-            if (act_G10.getText().toString().equals("Hampir pasti")){
+            if (act_G10.getText().toString().equals("Hampir pasti : 0.8")){
                 _G10 = 0.8;
             }
-            if (act_G10.getText().toString().equals("Pasti")){
+            if (act_G10.getText().toString().equals("Pasti : 1.0")){
                 _G10 = 1.0;
             }
 
             /*G41*/
-            if (act_G41.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G41.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G41 = 0;
             }
-            if (act_G41.getText().toString().equals("Tidak tahu")){
+            if (act_G41.getText().toString().equals("Tidak tahu : 0.2")){
                 _G41 = 0.2;
             }
-            if (act_G41.getText().toString().equals("Mungkin")){
+            if (act_G41.getText().toString().equals("Mungkin : 0.4")){
                 _G41 = 0.4;
             }
-            if (act_G41.getText().toString().equals("Kemungkinan besar")){
+            if (act_G41.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G41 = 0.6;
             }
-            if (act_G41.getText().toString().equals("Hampir pasti")){
+            if (act_G41.getText().toString().equals("Hampir pasti : 0.8")){
                 _G41 = 0.8;
             }
-            if (act_G41.getText().toString().equals("Pasti")){
+            if (act_G41.getText().toString().equals("Pasti : 1.0")){
                 _G41 = 1.0;
             }
 
@@ -2862,202 +2862,202 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 && cb_G25.isChecked()){
 
             /*G19*/
-            if (act_G19.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G19.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G19 = 0;
             }
-            if (act_G19.getText().toString().equals("Tidak tahu")){
+            if (act_G19.getText().toString().equals("Tidak tahu : 0.2")){
                 _G19 = 0.2;
             }
-            if (act_G19.getText().toString().equals("Mungkin")){
+            if (act_G19.getText().toString().equals("Mungkin : 0.4")){
                 _G19 = 0.4;
             }
-            if (act_G19.getText().toString().equals("Kemungkinan besar")){
+            if (act_G19.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G19 = 0.6;
             }
-            if (act_G19.getText().toString().equals("Hampir pasti")){
+            if (act_G19.getText().toString().equals("Hampir pasti : 0.8")){
                 _G19 = 0.8;
             }
-            if (act_G19.getText().toString().equals("Pasti")){
+            if (act_G19.getText().toString().equals("Pasti : 1.0")){
                 _G19 = 1.0;
             }
 
             /*G11*/
-            if (act_G11.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G11.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G11 = 0;
             }
-            if (act_G11.getText().toString().equals("Tidak tahu")){
+            if (act_G11.getText().toString().equals("Tidak tahu : 0.2")){
                 _G11 = 0.2;
             }
-            if (act_G11.getText().toString().equals("Mungkin")){
+            if (act_G11.getText().toString().equals("Mungkin : 0.4")){
                 _G11 = 0.4;
             }
-            if (act_G11.getText().toString().equals("Kemungkinan besar")){
+            if (act_G11.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G11 = 0.6;
             }
-            if (act_G11.getText().toString().equals("Hampir pasti")){
+            if (act_G11.getText().toString().equals("Hampir pasti : 0.8")){
                 _G11 = 0.8;
             }
-            if (act_G11.getText().toString().equals("Pasti")){
+            if (act_G11.getText().toString().equals("Pasti : 1.0")){
                 _G11 = 1.0;
             }
 
             /*G42*/
-            if (act_G42.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G42.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G42 = 0;
             }
-            if (act_G42.getText().toString().equals("Tidak tahu")){
+            if (act_G42.getText().toString().equals("Tidak tahu : 0.2")){
                 _G42 = 0.2;
             }
-            if (act_G42.getText().toString().equals("Mungkin")){
+            if (act_G42.getText().toString().equals("Mungkin : 0.4")){
                 _G42 = 0.4;
             }
-            if (act_G42.getText().toString().equals("Kemungkinan besar")){
+            if (act_G42.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G42 = 0.6;
             }
-            if (act_G42.getText().toString().equals("Hampir pasti")){
+            if (act_G42.getText().toString().equals("Hampir pasti : 0.8")){
                 _G42 = 0.8;
             }
-            if (act_G42.getText().toString().equals("Pasti")){
+            if (act_G42.getText().toString().equals("Pasti : 1.0")){
                 _G42 = 1.0;
             }
 
             /*G31*/
-            if (act_G31.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G31.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G31 = 0;
             }
-            if (act_G31.getText().toString().equals("Tidak tahu")){
+            if (act_G31.getText().toString().equals("Tidak tahu : 0.2")){
                 _G31 = 0.2;
             }
-            if (act_G31.getText().toString().equals("Mungkin")){
+            if (act_G31.getText().toString().equals("Mungkin : 0.4")){
                 _G31= 0.4;
             }
-            if (act_G31.getText().toString().equals("Kemungkinan besar")){
+            if (act_G31.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G31 = 0.6;
             }
-            if (act_G31.getText().toString().equals("Hampir pasti")){
+            if (act_G31.getText().toString().equals("Hampir pasti : 0.8")){
                 _G31 = 0.8;
             }
-            if (act_G31.getText().toString().equals("Pasti")){
+            if (act_G31.getText().toString().equals("Pasti : 1.0")){
                 _G31 = 1.0;
             }
 
             /*G14*/
-            if (act_G14.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G14.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G14 = 0;
             }
-            if (act_G14.getText().toString().equals("Tidak tahu")){
+            if (act_G14.getText().toString().equals("Tidak tahu : 0.2")){
                 _G14 = 0.2;
             }
-            if (act_G14.getText().toString().equals("Mungkin")){
+            if (act_G14.getText().toString().equals("Mungkin : 0.4")){
                 _G14= 0.4;
             }
-            if (act_G14.getText().toString().equals("Kemungkinan besar")){
+            if (act_G14.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G14 = 0.6;
             }
-            if (act_G14.getText().toString().equals("Hampir pasti")){
+            if (act_G14.getText().toString().equals("Hampir pasti : 0.8")){
                 _G14 = 0.8;
             }
-            if (act_G14.getText().toString().equals("Pasti")){
+            if (act_G14.getText().toString().equals("Pasti : 1.0")){
                 _G14 = 1.0;
             }
 
             /*G26*/
-            if (act_G26.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G26.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G26 = 0;
             }
-            if (act_G26.getText().toString().equals("Tidak tahu")){
+            if (act_G26.getText().toString().equals("Tidak tahu : 0.2")){
                 _G26 = 0.2;
             }
-            if (act_G26.getText().toString().equals("Mungkin")){
+            if (act_G26.getText().toString().equals("Mungkin : 0.4")){
                 _G26= 0.4;
             }
-            if (act_G26.getText().toString().equals("Kemungkinan besar")){
+            if (act_G26.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G26 = 0.6;
             }
-            if (act_G26.getText().toString().equals("Hampir pasti")){
+            if (act_G26.getText().toString().equals("Hampir pasti : 0.8")){
                 _G26 = 0.8;
             }
-            if (act_G26.getText().toString().equals("Pasti")){
+            if (act_G26.getText().toString().equals("Pasti : 1.0")){
                 _G26 = 1.0;
             }
 
             /*G22*/
-            if (act_G22.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G22.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G22 = 0;
             }
-            if (act_G22.getText().toString().equals("Tidak tahu")){
+            if (act_G22.getText().toString().equals("Tidak tahu : 0.2")){
                 _G22 = 0.2;
             }
-            if (act_G22.getText().toString().equals("Mungkin")){
+            if (act_G22.getText().toString().equals("Mungkin : 0.4")){
                 _G22= 0.4;
             }
-            if (act_G22.getText().toString().equals("Kemungkinan besar")){
+            if (act_G22.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G22 = 0.6;
             }
-            if (act_G22.getText().toString().equals("Hampir pasti")){
+            if (act_G22.getText().toString().equals("Hampir pasti : 0.8")){
                 _G22 = 0.8;
             }
-            if (act_G22.getText().toString().equals("Pasti")){
+            if (act_G22.getText().toString().equals("Pasti : 1.0")){
                 _G22 = 1.0;
             }
 
             /*G32*/
-            if (act_G32.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G32.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G32 = 0;
             }
-            if (act_G32.getText().toString().equals("Tidak tahu")){
+            if (act_G32.getText().toString().equals("Tidak tahu : 0.2")){
                 _G32 = 0.2;
             }
-            if (act_G32.getText().toString().equals("Mungkin")){
+            if (act_G32.getText().toString().equals("Mungkin : 0.4")){
                 _G32= 0.4;
             }
-            if (act_G32.getText().toString().equals("Kemungkinan besar")){
+            if (act_G32.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G32 = 0.6;
             }
-            if (act_G32.getText().toString().equals("Hampir pasti")){
+            if (act_G32.getText().toString().equals("Hampir pasti : 0.8")){
                 _G32 = 0.8;
             }
-            if (act_G32.getText().toString().equals("Pasti")){
+            if (act_G32.getText().toString().equals("Pasti : 1.0")){
                 _G32 = 1.0;
             }
 
             /*G01*/
-            if (act_G01.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G01.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G01 = 0;
             }
-            if (act_G01.getText().toString().equals("Tidak tahu")){
+            if (act_G01.getText().toString().equals("Tidak tahu : 0.2")){
                 _G01 = 0.2;
             }
-            if (act_G01.getText().toString().equals("Mungkin")){
+            if (act_G01.getText().toString().equals("Mungkin : 0.4")){
                 _G01 = 0.4;
             }
-            if (act_G01.getText().toString().equals("Kemungkinan besar")){
+            if (act_G01.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G01 = 0.6;
             }
-            if (act_G01.getText().toString().equals("Hampir pasti")){
+            if (act_G01.getText().toString().equals("Hampir pasti : 0.8")){
                 _G01 = 0.8;
             }
-            if (act_G01.getText().toString().equals("Pasti")){
+            if (act_G01.getText().toString().equals("Pasti : 1.0")){
                 _G01 = 1.0;
             }
 
             /*G25*/
-            if (act_G25.getText().toString().equals("Sangat tidak tahu")){
+            if (act_G25.getText().toString().equals("Sangat tidak tahu : 0")){
                 _G25 = 0;
             }
-            if (act_G25.getText().toString().equals("Tidak tahu")){
+            if (act_G25.getText().toString().equals("Tidak tahu : 0.2")){
                 _G25 = 0.2;
             }
-            if (act_G25.getText().toString().equals("Mungkin")){
+            if (act_G25.getText().toString().equals("Mungkin : 0.4")){
                 _G25 = 0.4;
             }
-            if (act_G25.getText().toString().equals("Kemungkinan besar")){
+            if (act_G25.getText().toString().equals("Kemungkinan besar : 0.6")){
                 _G25 = 0.6;
             }
-            if (act_G25.getText().toString().equals("Hampir pasti")){
+            if (act_G25.getText().toString().equals("Hampir pasti : 0.8")){
                 _G25 = 0.8;
             }
-            if (act_G25.getText().toString().equals("Pasti")){
+            if (act_G25.getText().toString().equals("Pasti : 1.0")){
                 _G25 = 1.0;
             }
 
