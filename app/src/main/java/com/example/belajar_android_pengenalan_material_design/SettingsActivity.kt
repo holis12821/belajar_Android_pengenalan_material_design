@@ -52,7 +52,7 @@ class SettingsActivity : AppCompatActivity() {
                     profilMap["name"] = setUsername
                     profilMap["status"] = setStatus
                     /*add data to  DatabaseReference*/
-                    dbRef.child("user").child(currentUserId)
+                    dbRef.child("Users").child(currentUserId)
                             .setValue(profilMap).addOnCompleteListener {
                                 /*Conditional if*/
                                 if (it.isSuccessful){
