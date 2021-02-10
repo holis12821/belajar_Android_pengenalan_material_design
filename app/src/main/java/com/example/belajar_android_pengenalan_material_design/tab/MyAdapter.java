@@ -11,7 +11,7 @@ import com.example.belajar_android_pengenalan_material_design.fragmentusers.Home
 
 public class MyAdapter  extends FragmentPagerAdapter {
     /*define field class*/
-    private final String[] titles = {"Diagnosa User","Contact","Chat"};
+    private final String[] titles = {"Diagnosa User","Chat"};
     /*Define Constructor*/
     public MyAdapter(FragmentManager fm){
         super(fm);
