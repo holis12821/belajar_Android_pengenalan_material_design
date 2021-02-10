@@ -11,7 +11,7 @@ import com.example.belajar_android_pengenalan_material_design.fragmentusers.Home
 
 public class MyAdapter  extends FragmentPagerAdapter {
     /*define field class*/
-    private String[] titles = {"Diagnosa User","Contact","Chat"};
+    private final String[] titles = {"Diagnosa User","Contact","Chat"};
     /*Define Constructor*/
     public MyAdapter(FragmentManager fm){
         super(fm);
@@ -28,9 +28,6 @@ public class MyAdapter  extends FragmentPagerAdapter {
             frag = new HomeDiagnosaUsersFragment();
         }
         else if (position == 1){
-            frag = new ContactFragment();
-        }
-        else if (position == 2){
             frag = new ChatFragment();
         }
         Bundle b = new Bundle();
