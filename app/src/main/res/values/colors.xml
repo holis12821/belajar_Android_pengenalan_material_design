@@ -42,4 +42,6 @@
     <!--Menambahkan warna grey-->
     <color name="grey">#808080</color>
     <color name="white">#FFFFFF</color>
+
+    <color name="civBorderColor">#18a3fe</color>
 </resources>

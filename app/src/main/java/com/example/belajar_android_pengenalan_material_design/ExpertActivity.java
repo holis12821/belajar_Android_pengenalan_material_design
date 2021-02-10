@@ -18,9 +18,6 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class ExpertActivity extends AppCompatActivity {
-    /*Define Field in the class ExpertActivity*/
-    private SlidingTabLayout mSlidingTabLayout;
-    private ViewPager mViewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,10 +28,11 @@ public class ExpertActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         /*Define ViewPager*/
-        mViewPager = findViewById(R.id.vp_tabs);
+        ViewPager mViewPager = findViewById(R.id.vp_tabs);
         mViewPager.setAdapter(new MyAdapterExpert(getSupportFragmentManager()));
         /*Define SlidingTabLayout*/
-        mSlidingTabLayout = findViewById(R.id.stl_tabs);
+        /*Define Field in the class ExpertActivity*/
+        SlidingTabLayout mSlidingTabLayout = findViewById(R.id.stl_tabs);
         /*Call Back Method in Activity Main*/
         mSlidingTabLayout.setDistributeEvenly(true);
         mSlidingTabLayout.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
@@ -69,7 +67,10 @@ public class ExpertActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.changePsw) {
+        if (id ==  R.id.settings){
+            startActivity(new Intent(ExpertActivity.this, SettingsActivity.class));
+        }
+        else if (id == R.id.changePsw) {
             startActivity(new Intent(ExpertActivity.this, ChangePasswordActivity.class));
         }
         /*else if(id == R.id.about_developer){
