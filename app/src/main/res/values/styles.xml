@@ -133,7 +133,7 @@
         <item name="android:background">@android:color/white</item>
     </style>
 
-    <style name="AppTheme.NoActionBar">
+    <style name="imageCrop" parent="Base.Theme.AppCompat">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>

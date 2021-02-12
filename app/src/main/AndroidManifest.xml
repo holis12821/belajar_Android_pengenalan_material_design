@@ -10,6 +10,11 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <!--Access permission to local storage-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo_apps"
@@ -92,10 +97,14 @@
             android:label="@string/title_activity_maps"
             android:theme="@style/AppTheme_maps"
             android:windowSoftInputMode="adjustResize|stateHidden" />
-        <activity android:name=".SettingsActivity"
+        <activity
+            android:name=".SettingsActivity"
             android:label="@string/settings"
             android:theme="@style/AppTheme_settings"
             android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/imageCrop"/>
     </application>
 
 </manifest>
