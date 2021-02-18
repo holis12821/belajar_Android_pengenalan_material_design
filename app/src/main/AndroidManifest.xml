@@ -104,7 +104,9 @@
             android:windowSoftInputMode="adjustResize|stateHidden"/>
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
-            android:theme="@style/imageCrop"/>
+            android:label="@string/crop"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:theme="@style/Base.Theme.AppCompat"/>
     </application>
 
 </manifest>

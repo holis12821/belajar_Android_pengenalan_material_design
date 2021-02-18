@@ -454,7 +454,7 @@
 
     <dimen name="textSizeButton">20sp</dimen>
 
-    <dimen name="layout_width_LottieAnimationView">120dp</dimen>
-    <dimen name="layout_height_LottieAnimationView">120dp</dimen>
+    <dimen name="layout_width_LottieAnimationView">150dp</dimen>
+    <dimen name="layout_height_LottieAnimationView">150dp</dimen>
 
 </resources>

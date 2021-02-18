@@ -89,69 +89,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
     private AutoCompleteTextView act_G19, act_G11, act_G42, act_G31, act_G14, act_G26, act_G22, act_G32, act_G01, act_G25;
 
     /*Rules Stres ringan 1 untuk nilai CF user*/
-    private final String[] Cf_UserG48 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG29 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG03 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG44 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG38 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG27 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG45 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    /*Rules Stres Ringan 2 untuk nilai CF user*/
-    private final String[] Cf_UserG34 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG09 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG17 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG50 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-
-    /*Rules Stres Sedang 1 untuk nilai CF user*/
-    private final String[] Cf_UserG16 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG18 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG05 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG07 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG04 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG08 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG28 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-
-    /*Rules Stres Sedang 2 untuk nilai CF user*/
-    private final String[] Cf_UserG30 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG12 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG02 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG13 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG39 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG49 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG46 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG47 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-
-    /*Rules Stres Sedang 3 untuk nilai CF user*/
-    private final String[] Cf_UserG24 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG37 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG43 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG35 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG36 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG23 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-
-    /*Rules Stres Berat untuk nilai CF user*/
-    private final String[] Cf_UserG06 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG33 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG21 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG15 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG20 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG40 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG10 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG41 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-
-    /*Rules Stres Sangat Berat untuk nilai CF user*/
-    private final String[] Cf_UserG19 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG11 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG42 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG31 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG14 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG26 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG22 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG32 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG01 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-    private final String[] Cf_UserG25 = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
-
-
+    private final String[] Cf_User = {"Sangat tidak tahu : 0", "Tidak tahu : 0.2", "Mungkin : 0.4", "Kemungkinan besar : 0.6", "Hampir pasti : 0.8", "Pasti : 1.0"};
     /*Constructor*/
     public HomeDiagnosaUsersFragment() {
         // Required empty public constructor
@@ -305,258 +243,258 @@ public class HomeDiagnosaUsersFragment extends Fragment {
         /*agar user bisa memilih bobot cf user*/
         /*Rules Stres Ringan 1*/
         /*G48*/
-        final ArrayAdapter<String> adapter_G48 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG48);
+        final ArrayAdapter<String> adapter_G48 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G48.setThreshold(1);
         act_G48.setAdapter(adapter_G48);
 
         /*G29*/
-        final ArrayAdapter<String> adapter_G29 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG29);
+        final ArrayAdapter<String> adapter_G29 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G29.setThreshold(1);
         act_G29.setAdapter(adapter_G29);
 
         /*G03*/
-        final ArrayAdapter<String> adapter_G03 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG03);
+        final ArrayAdapter<String> adapter_G03 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G03.setThreshold(1);
         act_G03.setAdapter(adapter_G03);
 
         /*G44*/
-        final ArrayAdapter<String> adapter_G44 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG44);
+        final ArrayAdapter<String> adapter_G44 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G44.setThreshold(1);
         act_G44.setAdapter(adapter_G44);
 
         /*G38*/
-        final ArrayAdapter<String> adapter_G38 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG38);
+        final ArrayAdapter<String> adapter_G38 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G38.setThreshold(1);
         act_G38.setAdapter(adapter_G38);
 
         /*G27*/
-        final ArrayAdapter<String> adapter_G27 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG27);
+        final ArrayAdapter<String> adapter_G27 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G27.setThreshold(1);
         act_G27.setAdapter(adapter_G27);
 
         /*G45*/
-        final ArrayAdapter<String> adapter_G45 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG45);
+        final ArrayAdapter<String> adapter_G45 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G45.setThreshold(1);
         act_G45.setAdapter(adapter_G45);
 
         /*membuat Adapter act Rules stres ringan 2*/
         /*G34*/
-        final ArrayAdapter<String> adapter_G34 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG34);
+        final ArrayAdapter<String> adapter_G34 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G34.setThreshold(1);
         act_G34.setAdapter(adapter_G34);
 
         /*G09*/
-        final ArrayAdapter<String> adapter_G09 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG09);
+        final ArrayAdapter<String> adapter_G09 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G09.setThreshold(1);
         act_G09.setAdapter(adapter_G09);
 
         /*G17*/
-        final ArrayAdapter<String> adapter_G17 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG17);
+        final ArrayAdapter<String> adapter_G17 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G17.setThreshold(1);
         act_G17.setAdapter(adapter_G17);
 
         /*G50*/
-        final ArrayAdapter<String> adapter_G50 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG50);
+        final ArrayAdapter<String> adapter_G50 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G50.setThreshold(1);
         act_G50.setAdapter(adapter_G50);
 
         /*Membuat Adapter act Rules Stres Sedang 1*/
         /*G16*/
-        final ArrayAdapter<String> adapter_G16 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG16);
+        final ArrayAdapter<String> adapter_G16 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G16.setThreshold(1);
         act_G16.setAdapter(adapter_G16);
 
         /*G18*/
-        final ArrayAdapter<String> adapter_G18 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG18);
+        final ArrayAdapter<String> adapter_G18 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G18.setThreshold(1);
         act_G18.setAdapter(adapter_G18);
 
         /*G05*/
-        final ArrayAdapter<String> adapter_G05 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG05);
+        final ArrayAdapter<String> adapter_G05 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G05.setThreshold(1);
         act_G05.setAdapter(adapter_G05);
 
         /*G07*/
-        final ArrayAdapter<String> adapter_G07 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG07);
+        final ArrayAdapter<String> adapter_G07 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G07.setThreshold(1);
         act_G07.setAdapter(adapter_G07);
 
         /*G04*/
-        final ArrayAdapter<String> adapter_G04 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG04);
+        final ArrayAdapter<String> adapter_G04 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G04.setThreshold(1);
         act_G04.setAdapter(adapter_G04);
 
         /*G08*/
-        final ArrayAdapter<String> adapter_G08 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG08);
+        final ArrayAdapter<String> adapter_G08 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G08.setThreshold(1);
         act_G08.setAdapter(adapter_G08);
 
         /*G28*/
-        final ArrayAdapter<String> adapter_G28 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG28);
+        final ArrayAdapter<String> adapter_G28 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G28.setThreshold(1);
         act_G28.setAdapter(adapter_G28);
 
         /*membuat Adapter act Rules stres sedang 2*/
         /*G30*/
-        final ArrayAdapter<String> adapter_G30 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG30);
+        final ArrayAdapter<String> adapter_G30 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G30.setThreshold(1);
         act_G30.setAdapter(adapter_G30);
 
         /*G12*/
-        final ArrayAdapter<String> adapter_G12 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG12);
+        final ArrayAdapter<String> adapter_G12 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G12.setThreshold(1);
         act_G12.setAdapter(adapter_G12);
 
         /*G02*/
-        final ArrayAdapter<String> adapter_G02 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG02);
+        final ArrayAdapter<String> adapter_G02 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G02.setThreshold(1);
         act_G02.setAdapter(adapter_G02);
 
         /*G13*/
-        final ArrayAdapter<String> adapter_G13 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG13);
+        final ArrayAdapter<String> adapter_G13 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G13.setThreshold(1);
         act_G13.setAdapter(adapter_G13);
 
         /*G39*/
-        final ArrayAdapter<String> adapter_G39 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG39);
+        final ArrayAdapter<String> adapter_G39 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G39.setThreshold(1);
         act_G39.setAdapter(adapter_G39);
 
         /*G49*/
-        final ArrayAdapter<String> adapter_G49 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG49);
+        final ArrayAdapter<String> adapter_G49 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G49.setThreshold(1);
         act_G49.setAdapter(adapter_G49);
 
         /*G46*/
-        final ArrayAdapter<String> adapter_G46 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG46);
+        final ArrayAdapter<String> adapter_G46 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G46.setThreshold(1);
         act_G46.setAdapter(adapter_G46);
 
         /*G47*/
-        final ArrayAdapter<String> adapter_G47 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG47);
+        final ArrayAdapter<String> adapter_G47 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G47.setThreshold(1);
         act_G47.setAdapter(adapter_G47);
 
         /*membuat Adapter act Rules stres sedang 3*/
         /*G24*/
-        final ArrayAdapter<String> adapter_G24 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG24);
+        final ArrayAdapter<String> adapter_G24 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G24.setThreshold(1);
         act_G24.setAdapter(adapter_G24);
 
         /*G37*/
-        final ArrayAdapter<String> adapter_G37 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG37);
+        final ArrayAdapter<String> adapter_G37 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G37.setThreshold(1);
         act_G37.setAdapter(adapter_G37);
 
         /*G43*/
-        final ArrayAdapter<String> adapter_G43 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG43);
+        final ArrayAdapter<String> adapter_G43 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G43.setThreshold(1);
         act_G43.setAdapter(adapter_G43);
 
         /*G35*/
-        final ArrayAdapter<String> adapter_G35 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG35);
+        final ArrayAdapter<String> adapter_G35 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G35.setThreshold(1);
         act_G35.setAdapter(adapter_G35);
 
         /*G36*/
-        final ArrayAdapter<String> adapter_G36 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG36);
+        final ArrayAdapter<String> adapter_G36 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G36.setThreshold(1);
         act_G36.setAdapter(adapter_G36);
 
         /*G23*/
-        final ArrayAdapter<String> adapter_G23 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG23);
+        final ArrayAdapter<String> adapter_G23 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G23.setThreshold(1);
         act_G23.setAdapter(adapter_G23);
 
         /*membuat Adapter act Rules stres berat*/
         /*G06*/
-        final ArrayAdapter<String> adapter_G06 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG06);
+        final ArrayAdapter<String> adapter_G06 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G06.setThreshold(1);
         act_G06.setAdapter(adapter_G06);
 
         /*G33*/
-        final ArrayAdapter<String> adapter_G33 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG33);
+        final ArrayAdapter<String> adapter_G33 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G33.setThreshold(1);
         act_G33.setAdapter(adapter_G33);
 
         /*G21*/
-        final ArrayAdapter<String> adapter_G21 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG21);
+        final ArrayAdapter<String> adapter_G21 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G21.setThreshold(1);
         act_G21.setAdapter(adapter_G21);
 
         /*G15*/
-        final ArrayAdapter<String> adapter_G15 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG15);
+        final ArrayAdapter<String> adapter_G15 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G15.setThreshold(1);
         act_G15.setAdapter(adapter_G15);
 
         /*G20*/
-        final ArrayAdapter<String> adapter_G20 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG20);
+        final ArrayAdapter<String> adapter_G20 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G20.setThreshold(1);
         act_G20.setAdapter(adapter_G20);
 
         /*G40*/
-        final ArrayAdapter<String> adapter_G40 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG40);
+        final ArrayAdapter<String> adapter_G40 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G40.setThreshold(1);
         act_G40.setAdapter(adapter_G40);
 
         /*G10*/
-        final ArrayAdapter<String> adapter_G10 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG10);
+        final ArrayAdapter<String> adapter_G10 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G10.setThreshold(1);
         act_G10.setAdapter(adapter_G10);
 
         /*G41*/
-        final ArrayAdapter<String> adapter_G41 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG41);
+        final ArrayAdapter<String> adapter_G41 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G41.setThreshold(1);
         act_G41.setAdapter(adapter_G41);
 
         /*membuat Adapter act Rules stres sangat berat*/
         /*G19*/
-        final ArrayAdapter<String> adapter_G19 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG19);
+        final ArrayAdapter<String> adapter_G19 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G19.setThreshold(1);
         act_G19.setAdapter(adapter_G19);
 
         /*G11*/
-        final ArrayAdapter<String> adapter_G11 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG11);
+        final ArrayAdapter<String> adapter_G11 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G11.setThreshold(1);
         act_G11.setAdapter(adapter_G11);
 
         /*G42*/
-        final  ArrayAdapter<String> adapter_G42 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG42);
+        final  ArrayAdapter<String> adapter_G42 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G42.setThreshold(1);
         act_G42.setAdapter(adapter_G42);
 
         /*G31*/
-        final ArrayAdapter<String> adapter_G31 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG31);
+        final ArrayAdapter<String> adapter_G31 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G31.setThreshold(1);
         act_G31.setAdapter(adapter_G31);
 
         /*G14*/
-        final ArrayAdapter<String> adapter_G14 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG14);
+        final ArrayAdapter<String> adapter_G14 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G14.setThreshold(1);
         act_G14.setAdapter(adapter_G14);
 
         /*G26*/
-        final ArrayAdapter<String> adapter_G26 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG26);
+        final ArrayAdapter<String> adapter_G26 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G26.setThreshold(1);
         act_G26.setAdapter(adapter_G26);
 
         /*G22*/
-        final ArrayAdapter<String> adapter_G22 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG22);
+        final ArrayAdapter<String> adapter_G22 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G22.setThreshold(1);
         act_G22.setAdapter(adapter_G22);
 
         /*G32*/
-        final ArrayAdapter<String> adapter_G32 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG32);
+        final ArrayAdapter<String> adapter_G32 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G32.setThreshold(1);
         act_G32.setAdapter(adapter_G32);
 
         /*G01*/
-        final ArrayAdapter<String> adapter_G01 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG01);
+        final ArrayAdapter<String> adapter_G01 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G01.setThreshold(1);
         act_G01.setAdapter(adapter_G01);
 
         /*G25*/
-        final ArrayAdapter<String> adapter_G25 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_UserG25);
+        final ArrayAdapter<String> adapter_G25 = new ArrayAdapter<>(itemView.getContext(), android.R.layout.select_dialog_item, Cf_User);
         act_G25.setThreshold(1);
         act_G25.setAdapter(adapter_G25);
 
@@ -569,7 +507,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih Nilai Gejala 1").setAdapter(adapter_G48, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G48.setText(Cf_UserG48[which]);
+                        act_G48.setText(Cf_User[which]);
                         dialog.dismiss();
                     }
                 }).create().show();
@@ -582,7 +520,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih Nilai Gejala 2").setAdapter(adapter_G29, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G29.setText(Cf_UserG29[which]);
+                        act_G29.setText(Cf_User[which]);
                         dialog.dismiss();
                     }
                 }).create().show();
@@ -596,7 +534,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih Nilai Gejala 3").setAdapter(adapter_G03, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G03.setText(Cf_UserG03[which]);
+                        act_G03.setText(Cf_User[which]);
                         dialog.dismiss();
                     }
                 }).create().show();
@@ -610,7 +548,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih Nilai Gejala 4").setAdapter(adapter_G44, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G44.setText(Cf_UserG44[which]);
+                        act_G44.setText(Cf_User[which]);
                         dialog.dismiss();
                     }
                 }).create().show();
@@ -624,7 +562,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih Nilai Gejala 5").setAdapter(adapter_G38, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G38.setText(Cf_UserG38[which]);
+                        act_G38.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -637,7 +575,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih Nilai Gejala 6").setAdapter(adapter_G27, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G27.setText(Cf_UserG27[which]);
+                        act_G27.setText(Cf_User[which]);
 
                     }
                 }).create().show();
@@ -651,7 +589,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 7").setAdapter(adapter_G45, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G45.setText(Cf_UserG45[which]);
+                        act_G45.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -665,7 +603,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 8").setAdapter(adapter_G34, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G34.setText(Cf_UserG34[which]);
+                        act_G34.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -677,7 +615,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 9").setAdapter(adapter_G09, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G09.setText(Cf_UserG09[which]);
+                        act_G09.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -690,7 +628,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 10").setAdapter(adapter_G17, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G17.setText(Cf_UserG17[which]);
+                        act_G17.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -703,7 +641,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 11").setAdapter(adapter_G50, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G50.setText(Cf_UserG50[which]);
+                        act_G50.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -717,7 +655,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 12").setAdapter(adapter_G16, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G16.setText(Cf_UserG16[which]);
+                        act_G16.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -730,7 +668,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 13").setAdapter(adapter_G18, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G18.setText(Cf_UserG18[which]);
+                        act_G18.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -743,7 +681,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 14").setAdapter(adapter_G05, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G05.setText(Cf_UserG05[which]);
+                        act_G05.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -756,7 +694,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 15").setAdapter(adapter_G07, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G07.setText(Cf_UserG07[which]);
+                        act_G07.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -769,7 +707,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 16").setAdapter(adapter_G04, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G04.setText(Cf_UserG04[which]);
+                        act_G04.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -782,7 +720,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 17").setAdapter(adapter_G08, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G08.setText(Cf_UserG08[which]);
+                        act_G08.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -795,7 +733,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 18").setAdapter(adapter_G28, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G28.setText(Cf_UserG28[which]);
+                        act_G28.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -809,7 +747,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 19").setAdapter(adapter_G30, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G30.setText(Cf_UserG30[which]);
+                        act_G30.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -822,7 +760,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 20").setAdapter(adapter_G12, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G12.setText(Cf_UserG12[which]);
+                        act_G12.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -835,7 +773,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih  nilai Gejala 21").setAdapter(adapter_G02, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G02.setText(Cf_UserG02[which]);
+                        act_G02.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -848,7 +786,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 22").setAdapter(adapter_G13, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G13.setText(Cf_UserG13[which]);
+                        act_G13.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -861,7 +799,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 23").setAdapter(adapter_G39, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G39.setText(Cf_UserG39[which]);
+                        act_G39.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -874,7 +812,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 24").setAdapter(adapter_G49, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G49.setText(Cf_UserG49[which]);
+                        act_G49.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -887,7 +825,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 25").setAdapter(adapter_G46, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G46.setText(Cf_UserG46[which]);
+                        act_G46.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -900,7 +838,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 26").setAdapter(adapter_G47, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G47.setText(Cf_UserG47[which]);
+                        act_G47.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -914,7 +852,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 27").setAdapter(adapter_G24, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G24.setText(Cf_UserG24[which]);
+                        act_G24.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -927,7 +865,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 28").setAdapter(adapter_G37, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G37.setText(Cf_UserG37[which]);
+                        act_G37.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -940,7 +878,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 29").setAdapter(adapter_G43, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G43.setText(Cf_UserG43[which]);
+                        act_G43.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -953,7 +891,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 30").setAdapter(adapter_G35, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G35.setText(Cf_UserG35[which]);
+                        act_G35.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -966,7 +904,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 31").setAdapter(adapter_G36, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G36.setText(Cf_UserG36[which]);
+                        act_G36.setText(Cf_User[which]);
                     }
                 }).create().show();
 
@@ -980,7 +918,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 32").setAdapter(adapter_G23, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G23.setText(Cf_UserG23[which]);
+                        act_G23.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -994,7 +932,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 33").setAdapter(adapter_G06, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G06.setText(Cf_UserG06[which]);
+                        act_G06.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -1007,7 +945,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 34").setAdapter(adapter_G33, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G33.setText(Cf_UserG33[which]);
+                        act_G33.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -1020,7 +958,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 35").setAdapter(adapter_G21, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G21.setText(Cf_UserG21[which]);
+                        act_G21.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -1033,7 +971,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 36").setAdapter(adapter_G15, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G15.setText(Cf_UserG15[which]);
+                        act_G15.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -1046,7 +984,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 37").setAdapter(adapter_G20, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G20.setText(Cf_UserG20[which]);
+                        act_G20.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -1059,7 +997,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 38").setAdapter(adapter_G40, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G40.setText(Cf_UserG40[which]);
+                        act_G40.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -1072,7 +1010,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 39").setAdapter(adapter_G10, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G10.setText(Cf_UserG10[which]);
+                        act_G10.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -1085,7 +1023,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 40").setAdapter(adapter_G41, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G41.setText(Cf_UserG41[which]);
+                        act_G41.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -1099,7 +1037,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 41").setAdapter(adapter_G19, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G19.setText(Cf_UserG19[which]);
+                        act_G19.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -1112,7 +1050,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 42").setAdapter(adapter_G11, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G11.setText(Cf_UserG11[which]);
+                        act_G11.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -1125,7 +1063,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 43").setAdapter(adapter_G42, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G42.setText(Cf_UserG42[which]);
+                        act_G42.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -1138,7 +1076,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 44").setAdapter(adapter_G31, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G31.setText(Cf_UserG31[which]);
+                        act_G31.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -1151,7 +1089,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 45").setAdapter(adapter_G14, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G14.setText(Cf_UserG14[which]);
+                        act_G14.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -1164,7 +1102,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 46").setAdapter(adapter_G26, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G26.setText(Cf_UserG26[which]);
+                        act_G26.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -1177,7 +1115,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 47").setAdapter(adapter_G22, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G22.setText(Cf_UserG22[which]);
+                        act_G22.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -1190,7 +1128,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 48").setAdapter(adapter_G32, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G32.setText(Cf_UserG32[which]);
+                        act_G32.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -1203,7 +1141,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 49").setAdapter(adapter_G01, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G01.setText(Cf_UserG01[which]);
+                        act_G01.setText(Cf_User[which]);
                     }
                 }).create().show();
             }
@@ -1216,7 +1154,7 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                 new AlertDialog.Builder(v.getContext()).setTitle("Pilih nilai Gejala 50").setAdapter(adapter_G25, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        act_G25.setText(Cf_UserG25[which]);
+                        act_G25.setText(Cf_User[which]);
                     }
                 }).create().show();
             }

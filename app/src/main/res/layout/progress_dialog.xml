@@ -8,7 +8,7 @@
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="@dimen/layout_width_LottieAnimationView"
         android:layout_height="@dimen/layout_height_LottieAnimationView"
-        app:lottie_fileName="progress.json"
+        app:lottie_rawRes="@raw/progress_bar"
         app:lottie_loop="true"
         app:lottie_autoPlay="true"
         app:layout_constraintBottom_toBottomOf="parent"

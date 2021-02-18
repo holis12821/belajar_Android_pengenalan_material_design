@@ -252,6 +252,7 @@
     <string name="referensi">Referensi</string>
     <string name="stres">stress</string>
     <string name="title_activity_maps">Map</string>
+    <string name="crop">Crop</string>
 
 
 </resources>
