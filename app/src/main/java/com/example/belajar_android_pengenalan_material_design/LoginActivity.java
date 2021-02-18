@@ -100,7 +100,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 if (documentSnapshot.getString("isAdmin") != null){
                     /*User is Admin*/
-                    startActivity(new Intent(getApplicationContext(), SettingsActivity.class));
+                    startActivity(new Intent(getApplicationContext(), ExpertActivity.class));
                     finish();
                 }
                 if (documentSnapshot.getString("isUser") != null){

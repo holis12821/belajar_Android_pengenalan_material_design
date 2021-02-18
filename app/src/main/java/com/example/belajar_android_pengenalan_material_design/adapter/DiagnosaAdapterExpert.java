@@ -22,7 +22,7 @@ public class DiagnosaAdapterExpert extends FirestoreRecyclerAdapter<UserDiagnosa
      * Create a new RecyclerView adapter that listens to a Firestore Query.  See {@link
      * FirestoreRecyclerOptions} for configuration options.
      *
-     * @param options
+     *
      */
     public DiagnosaAdapterExpert(@NonNull FirestoreRecyclerOptions<UserDiagnosa> options) {
         super(options);

@@ -195,7 +195,7 @@ class SettingsActivity : AppCompatActivity() {
 
     /*function hidden loading animation*/
     private fun hiddenLoadingBar(){
-        loadingDialog?.let {if (it.isShowing) it.cancel()}
+        loadingDialog?.also {if (it.isShowing) it.cancel()}
     }
 
     private fun showLoadingBar(){
