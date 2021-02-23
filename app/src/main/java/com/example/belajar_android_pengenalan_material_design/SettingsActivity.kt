@@ -21,6 +21,7 @@ import com.squareup.picasso.Picasso
 import com.theartofdev.edmodo.cropper.CropImage
 import com.theartofdev.edmodo.cropper.CropImageView
 import kotlinx.android.synthetic.main.activity_settings.*
+import kotlinx.android.synthetic.main.bar_layout.*
 import java.io.ByteArrayOutputStream
 import java.io.IOException
 
@@ -39,6 +40,17 @@ class SettingsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settings)
+
+        /*define toolbar*/
+        setSupportActionBar(toolbar)
+        supportActionBar?.title = "Settings"
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        /*Listener to back the home expert*/
+        toolbar.setNavigationOnClickListener {
+            startActivity(Intent(this, ExpertActivity::class.java))
+        }
+
+
         /*Initialize FirebaseAuth*/
         mAuth = FirebaseAuth.getInstance()
         val mUsers: FirebaseUser? = mAuth.currentUser
@@ -61,7 +73,7 @@ class SettingsActivity : AppCompatActivity() {
                     .setPhotoUri(image)
                     .build().also {
                         mUsers?.updateProfile(it)
-                                ?.addOnCompleteListener { profile ->
+                                ?.addOnCompleteListener { profile  ->
                                     if (profile.isSuccessful){
                                         Toast.makeText(this,
                                         "Profile Updated",

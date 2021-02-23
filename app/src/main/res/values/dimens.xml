@@ -37,7 +37,7 @@
     <dimen name="textSize_Waktu">10sp</dimen>
 
     <!--Define Margin CardView-->
-    <dimen name="layout_marginTop_CardView">3dp</dimen>
+    <dimen name="layout_marginTop_CardView">8dp</dimen>
      <dimen name="layout_marginBottom_CardView">4dp</dimen>
     <dimen name="layout_margin_CardView">4dp</dimen>
     <dimen name="cardElevation">3dp</dimen>
@@ -444,7 +444,7 @@
     <dimen name="layout_widthCircleImageView">190dp</dimen>
     <dimen name="layout_heightCircleImageView">190dp</dimen>
 
-    <dimen name="layout_marginTopCircleImageView">45dp</dimen>
+    <dimen name="layout_marginTopCircleImageView">88dp</dimen>
 
     <dimen name="layout_marginStartEditText">15dp</dimen>
     <dimen name="layout_marginEndEditText">15dp</dimen>
@@ -456,5 +456,27 @@
 
     <dimen name="layout_width_LottieAnimationView">150dp</dimen>
     <dimen name="layout_height_LottieAnimationView">150dp</dimen>
+    <dimen name="layout_marginBottomTollbar">10dp</dimen>
+
+    <dimen name="layout_widthImageView">100dp</dimen>
+    <dimen name="layout_width_CardViewImage">277dp</dimen>
+
+    <dimen name="layout_marginTopTextViewImg">12dp</dimen>
+    <dimen name="textSizeTextViewImgJudul">14sp</dimen>
+
+    <dimen name="layout_marginTopTxt">6dp</dimen>
+    <dimen name="textSizeTextViewImgPengarang">11sp</dimen>
+    <dimen name="layout_marginLeftTextViewImg">11dp</dimen>
+
+    <dimen name="layout_widthImageViewRating">99dp</dimen>
+
+    <dimen name="layout_marginTopImageViewRating">4dp</dimen>
+    <dimen name="layout_heightButtonView">34dp</dimen>
+    <dimen name="layout_marginTopButtonView">17dp</dimen>
+
+    <dimen name="layout_marginLeftBottom">11dp</dimen>
+    <dimen name="textSizeBotton">10sp</dimen>
+
+    <dimen name="layout_marginTopFrameLayout">67dp</dimen>
 
 </resources>

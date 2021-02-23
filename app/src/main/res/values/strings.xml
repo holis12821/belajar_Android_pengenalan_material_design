@@ -253,6 +253,10 @@
     <string name="stres">stress</string>
     <string name="title_activity_maps">Map</string>
     <string name="crop">Crop</string>
+    <string name="daftar_acuan">Daftar Acuan</string>
+    <string name="judul_buku">Manajemen stres, cemas dan depresi</string>
+    <string name="ratingbuku1">Rating Buku1</string>
+    <string name="view">View</string>
 
 
 </resources>

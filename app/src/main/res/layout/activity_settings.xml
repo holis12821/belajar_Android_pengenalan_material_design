@@ -6,11 +6,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".SettingsActivity">
 
+    <include
+        android:id="@+id/tollbar"
+        layout="@layout/bar_layout" />
+
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_image"
         android:layout_width="@dimen/layout_widthCircleImageView"
         android:layout_height="@dimen/layout_heightCircleImageView"
         android:src="@drawable/profile_image"
+        android:layout_marginBottom="@dimen/layout_marginBottomTollbar"
+        android:layout_below="@+id/tollbar"
         app:civ_border_width="@dimen/civ_border_width"
         app:civ_border_color="@color/civBorderColor"
         android:layout_alignParentTop="true"
