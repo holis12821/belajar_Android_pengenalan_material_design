@@ -22,6 +22,6 @@ class ReferenceFragmentBook : Fragment() {
         /*element view is here*/
         /*add element pdfViewer*/
         pdfBook.fromAsset("jurnal.pdf")
-                .load()
+                .load() /*load this pdf in the fragment*/
     }
 }

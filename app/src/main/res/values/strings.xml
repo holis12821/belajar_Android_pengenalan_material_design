@@ -257,6 +257,7 @@
     <string name="judul_buku">Manajemen stres, cemas dan depresi</string>
     <string name="ratingbuku1">Rating Buku1</string>
     <string name="view">View</string>
+    <string name="action_info">Info</string>
 
 
 </resources>

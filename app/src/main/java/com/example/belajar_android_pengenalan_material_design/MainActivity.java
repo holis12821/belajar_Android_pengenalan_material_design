@@ -77,6 +77,9 @@ public class MainActivity extends AppCompatActivity {
         else if (id == R.id.location){
             startActivity(new Intent(MainActivity.this, MapsActivity.class));
         }
+        else if (id == R.id.referenceInfo){
+            startActivity(new Intent(MainActivity.this, ReferenceActivity.class));
+        }
         else if(id == R.id.logout){
             /*Define Firebase to logout user*/
              FirebaseAuth.getInstance().signOut();
