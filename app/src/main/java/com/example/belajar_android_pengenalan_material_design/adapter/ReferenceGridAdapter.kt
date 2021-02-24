@@ -1,6 +1,5 @@
 package com.example.belajar_android_pengenalan_material_design.adapter
 
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,7 +11,7 @@ import kotlinx.android.synthetic.main.reference_grid.view.*
 
 class ReferenceGridAdapter(
         private val mItems: MutableList<ReferenceData>,
-        val onReferenceListener: OnReferenceListener
+        private val onReferenceListener: OnReferenceListener
         ) : RecyclerView.Adapter<ReferenceGridAdapter.ViewHolder>() {
 
     /*Create block init*/

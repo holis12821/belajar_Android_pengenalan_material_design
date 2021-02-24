@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.belajar_android_pengenalan_material_design.R
+import kotlinx.android.synthetic.main.fragment_reference_book.*
 
 class ReferenceFragmentBook : Fragment() {
 
@@ -19,7 +20,8 @@ class ReferenceFragmentBook : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         /*element view is here*/
-
+        /*add element pdfViewer*/
+        pdfBook.fromAsset("jurnal.pdf")
+                .load()
     }
-
 }
