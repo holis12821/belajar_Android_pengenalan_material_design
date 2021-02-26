@@ -25,9 +25,6 @@ class DetailDiagnosa : AppCompatActivity() {
         setContentView(R.layout.activity_detail_diagnosa)
         /*call back function*/
         dataDiagnosa()
-        /*call back function reference*/
-        reference()
-
         /*keep on state activity*/
         if (savedInstanceState != null){
             val name = savedInstanceState.getString(NAMA)
@@ -61,27 +58,6 @@ class DetailDiagnosa : AppCompatActivity() {
         tvpersentase.text = "Persentase : $persentase %"
         tvsolusi.text = "Solusi : $solusi"
       }
-
-    private fun reference(){
-        /*TextView for reference*/
-        val tvReference1 = findViewById<TextView>(R.id.tv_referensi1)
-        val tvReference2 = findViewById<TextView>(R.id.tv_referensi2)
-        val tvReference3 = findViewById<TextView>(R.id.tv_referens3)
-        /*the result Reference*/
-        val referensi1 = """S. Sukadiyanto, Stress Dan Cara Menguranginya,
-            |J.Cakrawala Pendidik., vol. 1, no. 1, pp. 55–66, 2010, doi: 10.21831/cp.v1i1.218.""".trimMargin()
-        val referensi2 = """H. Dadang. 2011. Stres, Cemas dan Depresi.
-            |Jakarta:FKUI
-        """.trimMargin()
-        val referensi3 = """G. Goliszek.2005. Manajemen Stres. 
-            |Jakarta:PT Bhuana Ilmu Populer""".trimMargin()
-
-        /*Assignment to TextView in reference*/
-        tvReference1.text = referensi1
-        tvReference2.text = referensi2
-        tvReference3.text = referensi3
-    }
-
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         outState.putString(NAMA, tvnama.text.toString())

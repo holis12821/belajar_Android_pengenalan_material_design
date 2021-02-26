@@ -139,12 +139,13 @@
     <string name="Jurusan">Jurusan : </string>
     <string name="Universitas">Instansi : </string>
     <!--Gejala stres-->
-    <string name="judul">Anda diminta untuk memilih lebih dari satu gejala yang sesuai dengan
-    pengalaman pribadi anda tentang stres yang dialami selama menyusun tugas akhir.Terdapat 50 gejala stres sesuai tingkatannya
-        dan terdapat lima pilihan jawaban
-    yaitu : 0: Sangat tidak tahu, 0.2 : Tidak tahu, 0.4 : Mungkin,
-    0.6 : Kemungkinan besar, 0.8 : Hampir pasti, 1 : Pasti. Anda hanya menceklis gejala yang anda rasakan, jika anda tidak menceklis
-    gejala sesuai aturan dari sistem maka tidak akan menghasilkan diagnosa.</string>
+    <string name="pemberitahuan">Pemberitahuan</string>
+    <string name="panduan">Panduan melakukan diagnosa</string>
+    <string name="pertama">1. User memilih gejala yang tersedia</string>
+    <string name="kedua">2. User memberikan nilai kepercayaan</string>
+    <string name="ketiga">3. Klik button diagnosa</string>
+    <string name="back_btn">Coba kembali</string>
+
 
     <!--Stres Ringan-->
     <string name="G48">Wajah tampak murung</string>
@@ -258,6 +259,7 @@
     <string name="ratingbuku1">Rating Buku1</string>
     <string name="view">View</string>
     <string name="action_info">Info</string>
+    <string name="warning">Warning</string>
 
 
 </resources>

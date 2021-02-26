@@ -44,4 +44,8 @@
     <color name="white">#FFFFFF</color>
 
     <color name="civBorderColor">#18a3fe</color>
+
+    <color name="color_blue">#18a3fe</color>
+    <color name="color_red">#E41E27</color>
+    <color name="color_red_dark">#AF101B</color>
 </resources>

@@ -69,8 +69,8 @@ class ReferenceGridAdapter(
         holder.setData(reference)
 
         /*onClick button*/
-        holder.itemView.btn_View.setOnClickListener {
-            onReferenceListener.onReferenceClick(it, holder.adapterPosition)
+        holder.itemView.setOnClickListener {
+            onReferenceListener.onReferenceClick(mItems[holder.adapterPosition])
         }
     }
 

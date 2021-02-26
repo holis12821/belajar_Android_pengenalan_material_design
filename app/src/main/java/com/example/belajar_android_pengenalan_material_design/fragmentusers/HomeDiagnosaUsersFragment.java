@@ -10,6 +10,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.text.TextUtils;
 import android.view.LayoutInflater;
@@ -25,6 +26,7 @@ import android.widget.Toast;
 
 import com.example.belajar_android_pengenalan_material_design.DetailDiagnosa;
 import com.example.belajar_android_pengenalan_material_design.R;
+import com.example.belajar_android_pengenalan_material_design.form.GuideDialog;
 import com.example.belajar_android_pengenalan_material_design.model.UserDiagnosa;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -100,6 +102,11 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this com.example.belajar_android_pengenalan_material_design.fragment
         itemView = inflater.inflate(R.layout.fragment_diagnosa_home_user, container, false);
+
+        /*Showing to dialog fragment*/
+        GuideDialog guideDialog = new GuideDialog();
+        FragmentManager mFragmentManager = getChildFragmentManager();
+        guideDialog.show(mFragmentManager, GuideDialog.class.getSimpleName());
 
         /*Membuat FirebaseAuth*/
         mAuth = FirebaseAuth.getInstance();

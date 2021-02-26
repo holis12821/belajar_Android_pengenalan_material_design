@@ -5,9 +5,8 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import androidx.recyclerview.widget.DefaultItemAnimator
-import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.belajar_android_pengenalan_material_design.adapter.ReferenceGridAdapter
 import com.example.belajar_android_pengenalan_material_design.fragmentusers.ReferenceFragmentBook
 import com.example.belajar_android_pengenalan_material_design.model.ReferenceData
@@ -18,7 +17,7 @@ import kotlinx.android.synthetic.main.content_reference.*
 @Suppress("SameParameterValue")
 class ReferenceActivity : AppCompatActivity() {
     /*create lateinit field*/
-    private lateinit var list: ArrayList<ReferenceData>
+    private var list: ArrayList<ReferenceData> = arrayListOf()
     private lateinit var listener: OnReferenceListener
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,20 +38,25 @@ class ReferenceActivity : AppCompatActivity() {
         setOnClickListenerReference()
         val adapter = ReferenceGridAdapter(list, listener)
         referenceList.setHasFixedSize(true)
-        referenceList.layoutManager = GridLayoutManager(applicationContext, 2)
+        referenceList.layoutManager = LinearLayoutManager(this)
         referenceList.itemAnimator = DefaultItemAnimator()
         referenceList.adapter = adapter
     }
     /*create function to handle onClick to start a new Activity*/
     private fun setOnClickListenerReference() {
+        /*Create anonymous object or anonymous class*/
         listener = object : OnReferenceListener {
-            override fun onReferenceClick(itemView: View, position: Int) {
-                /*create when to identify listener onClick*/
-                when(list[position]){
-                  list[position] ->  gotoURLBooks1("https://tokopedia.link/dSJvrvQ96db")
-                  list[position] -> gotoURLBook2("http://bit.ly/ManjemenStres")
-                  list[position] -> gotoPDFJurnal()
-            }
+            override fun onReferenceClick(referenceData: ReferenceData) {
+                /*define when to handle click*/
+                when (referenceData.judul) {
+                    "Manajemen stres, cemas dan depresi"
+                    -> gotoURLBooks1("https://tokopedia.link/dSJvrvQ96db")
+                    "Manajemen stres"
+                    -> gotoURLBook2("http://bit.ly/ManjemenStres")
+                    "Stres dan cara menguranginya"
+                    -> gotoPDFJurnal()
+                }
+
         }
      }
    }

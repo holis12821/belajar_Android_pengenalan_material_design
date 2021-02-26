@@ -291,7 +291,7 @@
     <!--TextView-->
     <dimen name="TextViewListSize">25sp</dimen>
 
-    <dimen name="TextView_judul_size">12sp</dimen>
+    <dimen name="TextView_judul_size">19sp</dimen>
 
     <dimen name="paddingTop_EditText">10dp</dimen>
 
@@ -374,7 +374,7 @@
     <dimen name="layout_marginEnd">15dp</dimen>
     <dimen name="padding_circleImageView">6dp</dimen>
     <dimen name="paddingTop_circleImageView">13dp</dimen>
-    <dimen name="layout_marginTop">10dp</dimen>
+    <dimen name="layout_marginTop">2dp</dimen>
     <dimen name="layout_marginTopEdt">17dp</dimen>
     <dimen name="layout_marginLeft">15dp</dimen>
     <dimen name="layout_marginRight">15dp</dimen>
@@ -456,7 +456,7 @@
 
     <dimen name="layout_width_LottieAnimationView">150dp</dimen>
     <dimen name="layout_height_LottieAnimationView">150dp</dimen>
-    <dimen name="layout_marginBottomTollbar">10dp</dimen>
+    <dimen name="layout_marginBottomTollbar">4dp</dimen>
 
     <dimen name="layout_widthImageView">100dp</dimen>
     <dimen name="layout_width_CardViewImage">277dp</dimen>
@@ -471,12 +471,52 @@
     <dimen name="layout_widthImageViewRating">99dp</dimen>
 
     <dimen name="layout_marginTopImageViewRating">4dp</dimen>
-    <dimen name="layout_heightButtonView">34dp</dimen>
-    <dimen name="layout_marginTopButtonView">17dp</dimen>
+    <dimen name="layout_heightButtonView">26dp</dimen>
+    <dimen name="layout_marginTopButtonView">9dp</dimen>
 
     <dimen name="layout_marginLeftBottom">11dp</dimen>
     <dimen name="textSizeBotton">10sp</dimen>
 
-    <dimen name="layout_marginTopFrameLayout">67dp</dimen>
+    <dimen name="layout_marginTopFrameLayout">55dp</dimen>
 
+    <dimen name="layout_marginLeftButtonView">11dp</dimen>
+    <dimen name="layout_marginStartButtonView">11dp</dimen>
+
+    <dimen name="layout_marginTopTextViewGuide">40dp</dimen>
+
+    <dimen name="textSizeTextViewGuide">35sp</dimen>
+
+    <dimen name="layout_marginTopImageViewWarning">26dp</dimen>
+
+    <dimen name="layout_widthImageViewWarning">110dp</dimen>
+    <dimen name="layout_heightImageViewWarning">110dp</dimen>
+
+    <dimen name="layoutMarginTopCardView">26dp</dimen>
+
+    <dimen name="paddingTopTextViewCardView">3dp</dimen>
+    <dimen name="paddingStartTextViewCardView">3dp</dimen>
+    <dimen name="paddingEndTextViewCardView">3dp</dimen>
+    <dimen name="layout_marginLeftcardView">25dp</dimen>
+    <dimen name="layout_marginRightcardView">25dp</dimen>
+    <dimen name="paddingBottomTextViewCardView">3dp</dimen>
+
+    <dimen name="textSizeTextViewCardView">23sp</dimen>
+    <dimen name="textSizeLangkah_langkah">16sp</dimen>
+
+    <dimen name="layout_marginTopTextViewCardView">14dp</dimen>
+
+    <dimen name="layout_marginLeftTextViewCardView">40dp</dimen>
+    <dimen name="layout_marginRightTextViewCardView">40dp</dimen>
+    <dimen name="cornerRadiusCardView">8dp</dimen>
+
+    <dimen name="layout_marginLeftCardViewTextView">14dp</dimen>
+    <dimen name="layout_marginRightCardViewTextView">14dp</dimen>
+    <dimen name="layout_marginBottomCardViewTextView">14dp</dimen>
+    <dimen name="layout_marginTopCardViewTextView">9dp</dimen>
+
+    <dimen name="layout_marginLeftBottonCardView">23dp</dimen>
+    <dimen name="layout_marginRightBottonCardView">23dp</dimen>
+    <dimen name="layout_marginTopButtonBack">35dp</dimen>
+
+    <dimen name="textSizeBtnBack">16sp</dimen>
 </resources>

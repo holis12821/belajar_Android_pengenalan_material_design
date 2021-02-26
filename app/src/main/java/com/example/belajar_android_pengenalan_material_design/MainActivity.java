@@ -1,19 +1,12 @@
 package com.example.belajar_android_pengenalan_material_design;
-
 import android.content.Intent;
 import android.os.Bundle;
-
-import com.example.belajar_android_pengenalan_material_design.form.Guide;
 import com.example.belajar_android_pengenalan_material_design.tab.MyAdapter;
 import com.example.belajar_android_pengenalan_material_design.tab.SlidingTabLayout;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
-
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -41,16 +34,6 @@ public class MainActivity extends AppCompatActivity {
 
         /*Setup View Pager with SlidingTabLayout*/
         mSlidingTabLayout.setViewPager(mViewPager);
-
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-              Guide panduan = new Guide();
-              panduan.show(getSupportFragmentManager(), "form");
-            }
-        });
-
     }
 
     @Override
