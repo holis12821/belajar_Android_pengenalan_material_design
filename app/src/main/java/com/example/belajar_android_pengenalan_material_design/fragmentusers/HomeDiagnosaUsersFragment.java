@@ -1,4 +1,4 @@
-         package com.example.belajar_android_pengenalan_material_design.fragmentusers;
+package com.example.belajar_android_pengenalan_material_design.fragmentusers;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
@@ -6,12 +6,9 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,10 +20,8 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import com.example.belajar_android_pengenalan_material_design.DetailDiagnosa;
 import com.example.belajar_android_pengenalan_material_design.R;
-import com.example.belajar_android_pengenalan_material_design.form.GuideDialog;
 import com.example.belajar_android_pengenalan_material_design.model.UserDiagnosa;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -35,7 +30,6 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
-
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.util.HashMap;
@@ -102,12 +96,6 @@ public class HomeDiagnosaUsersFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this com.example.belajar_android_pengenalan_material_design.fragment
         itemView = inflater.inflate(R.layout.fragment_diagnosa_home_user, container, false);
-
-        /*Showing to dialog fragment*/
-        GuideDialog guideDialog = new GuideDialog();
-        FragmentManager mFragmentManager = getChildFragmentManager();
-        guideDialog.show(mFragmentManager, GuideDialog.class.getSimpleName());
-
         /*Membuat FirebaseAuth*/
         mAuth = FirebaseAuth.getInstance();
 

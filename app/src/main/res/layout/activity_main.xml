@@ -20,7 +20,28 @@
             android:background="?attr/colorPrimary"
             app:layout_anchor="@+id/appBarLayout"
             app:layout_anchorGravity="center"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <!--Create Circle Image View in toolbar-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="@dimen/layout_widthCircleImageViewToolbar"
+                android:layout_height="@dimen/layout_heightCircleImageViewToolbar"
+                android:src="@drawable/ic_baseline_account_circle_24">
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/username"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSizeUsername"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/layout_marginLeftUsername"
+                android:layout_marginStart="@dimen/layout_marginLeftUsername" />
+
+        </androidx.appcompat.widget.Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
 

@@ -291,7 +291,7 @@
     <!--TextView-->
     <dimen name="TextViewListSize">25sp</dimen>
 
-    <dimen name="TextView_judul_size">19sp</dimen>
+    <dimen name="TextView_judul_size">15.5sp</dimen>
 
     <dimen name="paddingTop_EditText">10dp</dimen>
 
@@ -501,7 +501,7 @@
     <dimen name="paddingBottomTextViewCardView">3dp</dimen>
 
     <dimen name="textSizeTextViewCardView">23sp</dimen>
-    <dimen name="textSizeLangkah_langkah">16sp</dimen>
+    <dimen name="textSizeLangkah_langkah">13sp</dimen>
 
     <dimen name="layout_marginTopTextViewCardView">14dp</dimen>
 
@@ -512,11 +512,21 @@
     <dimen name="layout_marginLeftCardViewTextView">14dp</dimen>
     <dimen name="layout_marginRightCardViewTextView">14dp</dimen>
     <dimen name="layout_marginBottomCardViewTextView">14dp</dimen>
-    <dimen name="layout_marginTopCardViewTextView">9dp</dimen>
+    <dimen name="layout_marginTopCardViewTextView">12dp</dimen>
 
     <dimen name="layout_marginLeftBottonCardView">23dp</dimen>
     <dimen name="layout_marginRightBottonCardView">23dp</dimen>
     <dimen name="layout_marginTopButtonBack">35dp</dimen>
 
-    <dimen name="textSizeBtnBack">16sp</dimen>
+    <dimen name="textSizeTextViewPilih">15sp</dimen>
+
+    <dimen name="layout_marginLeftTextViewPanduan">15dp</dimen>
+    <dimen name="layout_marginRightTextViewPanduan">15dp</dimen>
+    <dimen name="layout_marginTopTextViewPanduan">5dp</dimen>
+
+    <dimen name="layout_widthCircleImageViewToolbar">32dp</dimen>
+    <dimen name="layout_heightCircleImageViewToolbar">32dp</dimen>
+
+    <dimen name="textSizeUsername">18sp</dimen>
+    <dimen name="layout_marginLeftUsername">26dp</dimen>
 </resources>

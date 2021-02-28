@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.example.belajar_android_pengenalan_material_design.fragmentusers.ChatFragment;
+import com.example.belajar_android_pengenalan_material_design.fragmentusers.ChatsFragment;
 import com.example.belajar_android_pengenalan_material_design.fragmentusers.HomeDiagnosaUsersFragment;
 
 public class MyAdapter  extends FragmentPagerAdapter {
@@ -26,9 +26,8 @@ public class MyAdapter  extends FragmentPagerAdapter {
         Fragment frag = null;
         if (position == 0){
             frag = new HomeDiagnosaUsersFragment();
-        }
-        else if (position == 1){
-            frag = new ChatFragment();
+        } else if (position == 1) {
+            frag = new ChatsFragment();
         }
         Bundle b = new Bundle();
         b.putInt("position", position);

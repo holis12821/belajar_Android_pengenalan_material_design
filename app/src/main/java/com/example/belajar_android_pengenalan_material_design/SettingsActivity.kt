@@ -56,7 +56,10 @@ class SettingsActivity : AppCompatActivity() {
         val mUsers: FirebaseUser? = mAuth.currentUser
         /*Initialize DatabaseReference to Realtime Database*/
         if (mUsers != null) {
-            dbRef = FirebaseDatabase.getInstance().reference.child("Users").child(mUsers.uid)
+            dbRef = FirebaseDatabase.getInstance()
+                    .reference
+                    .child("Users")
+                    .child(mUsers.uid)
         }
         storageReference = FirebaseStorage.getInstance().getReference("profile_images")
 
@@ -170,6 +173,7 @@ class SettingsActivity : AppCompatActivity() {
                                         imageUri = uri
                                         val mapUri = hashMapOf<String, Any?>()
                                         mapUri["imageUri"] = imageUri.toString()
+                                        mapUri["imageUri"] = "default"
                                         val mUsers: FirebaseUser? = mAuth.currentUser
                                         val dbRefUri = mUsers?.uid?.let { user ->
                                             FirebaseDatabase.getInstance()

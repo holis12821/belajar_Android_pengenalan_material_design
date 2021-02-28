@@ -60,7 +60,6 @@
             android:theme="@style/AppTheme_Login" />
         <activity
             android:name=".ExpertActivity"
-            android:label="@string/label_ExpertActivity"
             android:theme="@style/AppTheme_ExpertActivity"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
@@ -74,17 +73,11 @@
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name=".MainActivity"
-            android:label="@string/title_activity_home"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".ChangePasswordActivity"
             android:label="@string/title_changePassword"
             android:theme="@style/AppTheme_Change_Password"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
-        <activity
-            android:name=".ChatActivity"
-            android:label="@string/Chat"
-            android:theme="@style/AppTheme_chat"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name=".DetailDiagnosa"

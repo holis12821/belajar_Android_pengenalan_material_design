@@ -3,32 +3,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.belajar_android_pengenalan_material_design.MainActivity">
 
-    <item android:title="@string/Account"
-        android:id="@+id/account"
+
+    <item
+        android:id="@+id/location"
         android:orderInCategory="100"
-        app:showAsAction="ifRoom"
-        android:icon="@drawable/ic_baseline_account_circle_24" />
+        android:title="@string/action_location"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/changePsw"
+        android:orderInCategory="100"
+        android:title="@string/action_changePassword"
+        app:showAsAction="never" />
+
 
     <item
         android:id="@+id/about_developer"
         android:orderInCategory="100"
         android:title="@string/about_developer"
         app:showAsAction="never" />
-    <item
-        android:id="@+id/changePsw"
-        android:orderInCategory="100"
-        android:title="@string/action_changePassword"
-        app:showAsAction="never" />
-    <item
-        android:id="@+id/location"
-        android:orderInCategory="100"
-        android:title="@string/action_location"
-        app:showAsAction="never" />
+
     <item
         android:id="@+id/referenceInfo"
         android:orderInCategory="100"
         android:title="@string/action_info"
         app:showAsAction="never" />
+
     <item
         android:id="@+id/logout"
         android:orderInCategory="100"

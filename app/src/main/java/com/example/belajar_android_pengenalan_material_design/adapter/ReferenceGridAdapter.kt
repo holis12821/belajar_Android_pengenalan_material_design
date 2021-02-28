@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.belajar_android_pengenalan_material_design.R
 import com.example.belajar_android_pengenalan_material_design.model.ReferenceData
 import com.example.belajar_android_pengenalan_material_design.onclick.OnReferenceListener
-import kotlinx.android.synthetic.main.reference_grid.view.*
+import kotlinx.android.synthetic.main.reference_list.view.*
 
 class ReferenceGridAdapter(
         private val mItems: MutableList<ReferenceData>,
@@ -60,7 +60,7 @@ class ReferenceGridAdapter(
             viewType: Int
     ): ViewHolder {
        val v =  LayoutInflater.from(parent.context)
-               .inflate(R.layout.reference_grid, parent, false)
+               .inflate(R.layout.reference_list, parent, false)
         return ViewHolder(v)
     }
 

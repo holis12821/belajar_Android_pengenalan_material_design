@@ -7,14 +7,13 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.example.belajar_android_pengenalan_material_design.fragmentexpert.ChatFragmentExpert;
 import com.example.belajar_android_pengenalan_material_design.fragmentexpert.DataGejalaFragmentExpert;
 import com.example.belajar_android_pengenalan_material_design.fragmentexpert.HomeFragmentExpert;
 
 public class MyAdapterExpert extends FragmentPagerAdapter {
 
     /*define field class*/
-    private String[] titles = {"Diagnosa User", "Data Gejala", "Chat"};
+    private final String[] titles = {"Diagnosa User", "Data Gejala"};
 
     /*Create Constructor*/
     public MyAdapterExpert(FragmentManager fm){
@@ -32,8 +31,6 @@ public class MyAdapterExpert extends FragmentPagerAdapter {
             frag = new HomeFragmentExpert();
         }else if (position == 1) {
             frag = new DataGejalaFragmentExpert();
-        } else if (position == 2){
-            frag = new ChatFragmentExpert();
         }
         Bundle b = new Bundle();
         b.putInt("position", position);

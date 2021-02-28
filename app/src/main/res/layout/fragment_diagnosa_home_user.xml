@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:paddingBottom="@dimen/padding_Bottom_RelativeLayout"
     tools:context="com.example.belajar_android_pengenalan_material_design.fragmentusers.HomeDiagnosaUsersFragment">
@@ -18,6 +19,81 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="@dimen/corner_radius_CardViewDiagnosa"
+                app:cardElevation="@dimen/CardElevation_CardView"
+                android:layout_marginBottom="@dimen/layout_marginBottom_CardView_Diagnosa"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa">
+
+                <RelativeLayout
+                    android:id="@+id/linear2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_LinearLayout">
+                    <TextView
+                        android:id="@+id/tv_tingkat_stres"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/panduan"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/layout_marginTopTextViewPanduan"
+                        android:layout_marginLeft="@dimen/layout_marginLeftTextViewPanduan"
+                        android:layout_marginRight="@dimen/layout_marginRightTextViewPanduan"
+                        android:textSize="@dimen/TextView_judul_size"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="@dimen/layout_marginLeftTextViewPanduan"
+                        android:layout_marginEnd="@dimen/layout_marginRightTextViewPanduan" />
+                    <TextView
+                        android:id="@+id/tv_hasil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pertama"
+                        android:layout_marginTop="@dimen/layout_marginTop_hasil"
+                        android:layout_below="@+id/tv_tingkat_stres"
+                        android:textSize="@dimen/textSizeLangkah_langkah"/>
+                    <TextView
+                        android:id="@+id/tv_solusi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kedua"
+                        android:layout_marginTop="@dimen/layout_marginTop_hasil"
+                        android:layout_below="@+id/tv_hasil"
+                        android:textSize="@dimen/textSizeLangkah_langkah"/>
+
+                    <TextView
+                        android:id="@+id/tv_ketiga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ketiga"
+                        android:layout_marginTop="@dimen/layout_marginTop_hasil"
+                        android:layout_below="@+id/tv_solusi"
+                        android:textSize="@dimen/textSizeLangkah_langkah"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Isi_biodata"
+                android:textSize="@dimen/textSizeTextViewPilih"
+                android:layout_marginTop="@dimen/layout_marginTopCardViewTextView"
+                android:layout_marginBottom="@dimen/layout_marginTopCardViewTextView"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"/>
 
             <EditText
                 android:id="@+id/edt_NPM"
@@ -81,6 +157,18 @@
                 android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
                 android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
                 tools:ignore="Autofill" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pilih"
+                android:textSize="@dimen/textSizeTextViewPilih"
+                android:layout_marginTop="@dimen/layout_marginTopCardViewTextView"
+                android:layout_marginBottom="@dimen/layout_marginTopCardViewTextView"
+                android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"/>
 
             <CheckBox
                 android:id="@+id/cb_G48"
@@ -743,7 +831,8 @@
                 android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
                 android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
                 android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
-                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"/>
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                tools:ignore="TooManyViews" />
 
             <CheckBox
                 android:id="@+id/cb_G06"
@@ -753,7 +842,8 @@
                 android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
                 android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
                 android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
-                android:text="@string/G06"/>
+                android:text="@string/G06"
+                tools:ignore="TooManyViews" />
 
             <AutoCompleteTextView
                 android:id="@+id/AutoComplete_tv_G06"
@@ -763,7 +853,8 @@
                 android:layout_marginLeft="@dimen/layout_marginLeft_Checkbox_Diagnosa"
                 android:layout_marginRight="@dimen/layout_marginRight_Checkbox_Diagnosa"
                 android:layout_marginStart="@dimen/layout_marginLeft_Checkbox_Diagnosa"
-                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"/>
+                android:layout_marginEnd="@dimen/layout_marginRight_Checkbox_Diagnosa"
+                tools:ignore="TooManyViews" />
 
             <CheckBox
                 android:id="@+id/cb_G33"
