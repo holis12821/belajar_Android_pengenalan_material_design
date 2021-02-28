@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Det Stres</string>
+    <string name="app_name">Det-Stres</string>
     <!--Strings used for icon in the Toolbar-->
     <string name="action_settings">Settings</string>
     <string name="acton_search">Search</string>
