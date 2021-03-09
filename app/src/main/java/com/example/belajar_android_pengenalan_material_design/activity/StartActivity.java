@@ -1,7 +1,8 @@
-package com.example.belajar_android_pengenalan_material_design;
+package com.example.belajar_android_pengenalan_material_design.activity;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -12,8 +13,10 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -21,6 +24,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.example.belajar_android_pengenalan_material_design.R;
 import com.example.belajar_android_pengenalan_material_design.model.UsersData;
 import com.example.belajar_android_pengenalan_material_design.model.ImagesList;
 import com.example.belajar_android_pengenalan_material_design.adapter.ImagesRecyclerAdapter;
@@ -35,6 +39,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.StorageTask;
@@ -46,6 +52,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -53,31 +60,37 @@ public class StartActivity extends AppCompatActivity {
     private TextView userName;
     private CircleImageView circleImageView;
     private FirebaseUser firebaseUser;
-    private FirebaseAuth firebaseAuth;
     private ImagesRecyclerAdapter imagesRecyclerAdapter;
     private DatabaseReference databaseReference;
     private List<ImagesList> imagesList;
     private static final int IMAGE_REQUEST = 1;
-    private StorageTask storageTask;
+    private StorageTask<UploadTask.TaskSnapshot> storageTask;
     private Uri imageUri;
     private StorageReference storageReference;
     private UsersData usersData;
+    private FirebaseFirestore fStore;
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Profile");
+        Objects.requireNonNull(getSupportActionBar()).setTitle("Profile");
         /*Initialize imageList in the onCreate StartActivity */
+
+        /*init FirebaseFireStore*/
+        fStore = FirebaseFirestore.getInstance();
+
         imagesList = new ArrayList<>();
         userName = findViewById(R.id.username);
         circleImageView = findViewById(R.id.profileImage);
 
-        firebaseAuth = FirebaseAuth.getInstance();
+        FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
         firebaseUser = firebaseAuth.getCurrentUser();
         databaseReference = FirebaseDatabase.getInstance().getReference("Users").child(firebaseUser.getUid());
         storageReference = FirebaseStorage.getInstance().getReference("profile_images");
+
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -170,11 +183,12 @@ public class StartActivity extends AppCompatActivity {
             final StorageReference imageReference = storageReference.child(usersData.getUsername()+System.currentTimeMillis()+".jpg");
             storageTask = imageReference.putBytes(imageFileToByte);
             storageTask.continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
+                @RequiresApi(api = Build.VERSION_CODES.KITKAT)
                 @Override
                 public Task<Uri> then(@NonNull Task<UploadTask.TaskSnapshot> task) throws Exception {
                     /*Conditional IF. jika nilainya true maka dijalankan, jika false aka lewatkan*/
                     if (!task.isSuccessful()){
-                        throw  task.getException();
+                        throw Objects.requireNonNull(task.getException());
                     }
                     return imageReference.getDownloadUrl();
                 }
@@ -186,16 +200,55 @@ public class StartActivity extends AppCompatActivity {
                         String sDownloadUri = downLoadUri.toString();
                         Map<String, Object> hashMap = new HashMap<>();
                         hashMap.put("imageUrl", sDownloadUri);
-                        databaseReference.updateChildren(hashMap);
+                        /*create DocumentReference to instance FirebaseFirestore*/
+                        DocumentReference df = fStore.collection("Users").document(firebaseUser.getUid());
+                        df.update(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task) {
+                                Toast.makeText(StartActivity.this,
+                                        "Update profile image Cloud FireStore successfully",
+                                        Toast.LENGTH_SHORT).show();
+                            }
+                        }).addOnFailureListener(new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception e) {
+                                Toast.makeText(StartActivity.this,
+                                        "Update profile image Cloud FireStore Failed",
+                                        Toast.LENGTH_SHORT).show();
+                                Log.e(StartActivity.class.getSimpleName(),
+                                        "Failed to update profile image Cloud FireStore at line 205");
+                            }
+                        });
+                        databaseReference.updateChildren(hashMap)
+                                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                    @Override
+                                    public void onComplete(@NonNull Task<Void> task) {
+                                        if (task.isSuccessful()){
+                                            Toast.makeText(StartActivity.this,
+                                                    "Update profile image successfully",
+                                                    Toast.LENGTH_SHORT).show();
+                                        }
+                                    }
+                                }).addOnFailureListener(new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception e) {
+                                Toast.makeText(StartActivity.this,
+                                        "Update profile image failed",
+                                        Toast.LENGTH_SHORT).show();
+                                Log.e(StartActivity.class.getSimpleName(),
+                                        "Failed to update profile image at line 197");
+                            }
+                        });
                         final DatabaseReference profileImageReference = FirebaseDatabase.getInstance().getReference("profile_images").child(firebaseUser.getUid());
                         profileImageReference.push().setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @RequiresApi(api = Build.VERSION_CODES.KITKAT)
                             @Override
                             public void onComplete(@NonNull Task<Void> task) {
                                 if (task.isSuccessful()){
                                     progressDialog.dismiss();
                                 } else{
                                     progressDialog.dismiss();
-                                    Toast.makeText(StartActivity.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(StartActivity.this, Objects.requireNonNull(task.getException()).getMessage(), Toast.LENGTH_SHORT).show();
                                 }
                             }
                         });

@@ -1,9 +1,10 @@
-package com.example.belajar_android_pengenalan_material_design
+package com.example.belajar_android_pengenalan_material_design.activity
 
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.belajar_android_pengenalan_material_design.R
 
 class DetailDiagnosa : AppCompatActivity() {
     /*Initialize Field in the activity*/

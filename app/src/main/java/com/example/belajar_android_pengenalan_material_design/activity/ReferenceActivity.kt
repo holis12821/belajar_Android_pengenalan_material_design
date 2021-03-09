@@ -1,4 +1,4 @@
-package com.example.belajar_android_pengenalan_material_design
+package com.example.belajar_android_pengenalan_material_design.activity
 
 import android.content.Intent
 import android.net.Uri
@@ -7,10 +7,11 @@ import android.os.Bundle
 import android.util.Log
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.belajar_android_pengenalan_material_design.adapter.ReferenceGridAdapter
+import com.example.belajar_android_pengenalan_material_design.R
+import com.example.belajar_android_pengenalan_material_design.adapter.ReferenceListAdapter
 import com.example.belajar_android_pengenalan_material_design.fragmentusers.ReferenceFragmentBook
 import com.example.belajar_android_pengenalan_material_design.model.ReferenceData
-import com.example.belajar_android_pengenalan_material_design.onclick.OnReferenceListener
+import com.example.belajar_android_pengenalan_material_design.onclick.OnReference
 import kotlinx.android.synthetic.main.bar_layout.*
 import kotlinx.android.synthetic.main.content_reference.*
 
@@ -18,7 +19,7 @@ import kotlinx.android.synthetic.main.content_reference.*
 class ReferenceActivity : AppCompatActivity() {
     /*create lateinit field*/
     private var list: ArrayList<ReferenceData> = arrayListOf()
-    private lateinit var listener: OnReferenceListener
+    private lateinit var listener: OnReference
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_reference)
@@ -36,7 +37,7 @@ class ReferenceActivity : AppCompatActivity() {
 
     private fun setAdapterReference(){
         setOnClickListenerReference()
-        val adapter = ReferenceGridAdapter(list, listener)
+        val adapter = ReferenceListAdapter(list, listener)
         referenceList.setHasFixedSize(true)
         referenceList.layoutManager = LinearLayoutManager(this)
         referenceList.itemAnimator = DefaultItemAnimator()
@@ -45,7 +46,7 @@ class ReferenceActivity : AppCompatActivity() {
     /*create function to handle onClick to start a new Activity*/
     private fun setOnClickListenerReference() {
         /*Create anonymous object or anonymous class*/
-        listener = object : OnReferenceListener {
+        listener = object : OnReference {
             override fun onReferenceClick(referenceData: ReferenceData) {
                 /*define when to handle click*/
                 when (referenceData.judul) {

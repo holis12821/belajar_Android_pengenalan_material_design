@@ -1,9 +1,9 @@
-package com.example.belajar_android_pengenalan_material_design;
+package com.example.belajar_android_pengenalan_material_design.activity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-
+import com.example.belajar_android_pengenalan_material_design.R;
 import com.example.belajar_android_pengenalan_material_design.model.UsersData;
 import com.example.belajar_android_pengenalan_material_design.tab.MyAdapter;
 import com.example.belajar_android_pengenalan_material_design.tab.SlidingTabLayout;
@@ -15,7 +15,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
@@ -45,30 +44,29 @@ public class MainActivity extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).setTitle("");
 
         final TextView tv_User = findViewById(R.id.user);
-        final CircleImageView circleImageView =  findViewById(R.id.profile_image);
+        final CircleImageView circleImageView = findViewById(R.id.profile_image);
 
         /*instance DatabaseReference to retrieve image and username*/
         /*instance the firebase user to get that current User*/
         FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         /*create conditoon if, where if condition is null than, next the condition.
-        * if not null than running to the instance database reference */
-       if (firebaseUser != null) {
-           DatabaseReference refUser = FirebaseDatabase.getInstance()
-                   .getReference()
-                   .child("Users")
-                   .child(firebaseUser.getUid());
-           /*Display the username*/
+         * if not null than running to the instance database reference */
+        if (firebaseUser != null) {
+            DatabaseReference refUser = FirebaseDatabase.getInstance()
+                    .getReference("Users")
+                    .child(firebaseUser.getUid());
+            /*Display the username*/
             refUser.addValueEventListener(new ValueEventListener() {
                 @SuppressLint("SetTextI18n")
                 @Override
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
-                    if (snapshot.exists()){
+                    if (snapshot.exists()) {
                         /*retrieve the data username*/
                         UsersData user = snapshot.getValue(UsersData.class);
                         if (user != null) {
                             tv_User.setText("Halo " + user.getUsername());
                             /*create condition if, if the image  has been null than retrieve the image default to a display profil*/
-                            if (user.getImageURL().equals("default")){
+                            if (user.getImageURL().equals("default")) {
                                 circleImageView.setImageResource(R.drawable.profile_image);
                             } else {
                                 Picasso.get()
@@ -85,15 +83,15 @@ public class MainActivity extends AppCompatActivity {
                     Log.e("Error display username", error.getMessage());
                 }
             });
-       }
+        }
 
-       /*Create onClick listener to show in the profile image*/
-       circleImageView.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-               startActivity(new Intent(MainActivity.this, StartActivity.class));
-           }
-       });
+        /*Create onClick listener to show in the profile image*/
+        circleImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, StartActivity.class));
+            }
+        });
 
         /*Define ViewPager*/
         ViewPager mViewPager = findViewById(R.id.vp_tabs);
@@ -125,21 +123,19 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-         if (id == R.id.changePsw) {
+        if (id == R.id.changePsw) {
             startActivity(new Intent(MainActivity.this, ChangePasswordActivity.class));
-        }
-        else if (id == R.id.location){
+        } else if (id == R.id.location) {
             startActivity(new Intent(MainActivity.this, MapsActivity.class));
-        }
-        else if (id == R.id.referenceInfo){
+        } else if (id == R.id.referenceInfo) {
             startActivity(new Intent(MainActivity.this, ReferenceActivity.class));
-        }
-        else if(id == R.id.logout){
+        } else if (id == R.id.logout) {
             /*Define Firebase to logout user*/
-             FirebaseAuth.getInstance().signOut();
+            FirebaseAuth.getInstance().signOut();
             startActivity(new Intent(MainActivity.this, LoginActivity.class));
             finish();
         }
         return true;
+
     }
 }

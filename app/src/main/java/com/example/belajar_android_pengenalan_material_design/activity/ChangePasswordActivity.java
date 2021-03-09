@@ -1,4 +1,4 @@
-package com.example.belajar_android_pengenalan_material_design;
+package com.example.belajar_android_pengenalan_material_design.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.example.belajar_android_pengenalan_material_design.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthCredential;
@@ -21,7 +22,6 @@ import com.rengwuxian.materialedittext.MaterialEditText;
 
 public class ChangePasswordActivity extends AppCompatActivity {
     private MaterialEditText oldPsw, newPsw, confirmPsw;
-    private Button changePsw;
     private FirebaseUser firebaseUser;
     private ProgressBar progressBar;
     private FirebaseAuth firebaseAuth;
@@ -44,7 +44,7 @@ public class ChangePasswordActivity extends AppCompatActivity {
         oldPsw = findViewById(R.id.oldPassword);
         newPsw = findViewById(R.id.newPassword);
         confirmPsw = findViewById(R.id.confirmPassword);
-        changePsw = findViewById(R.id.resetPassword);
+        Button changePsw = findViewById(R.id.resetPassword);
         progressBar = findViewById(R.id.progressBar);
 
         changePsw.setOnClickListener(new View.OnClickListener() {

@@ -261,6 +261,11 @@
     <string name="warning">Warning</string>
     <string name="pilih">Pilihan diagnosa :</string>
     <string name="Isi_biodata">Isi biodata :</string>
+    <string name="write_message">write message here</string>
+    <string name="imgChat">Image Attach</string>
+    <string name="search">Cari psikolog....</string>
+    <string name="email">email</string>
+    <string name="online">online</string>
 
 
 </resources>

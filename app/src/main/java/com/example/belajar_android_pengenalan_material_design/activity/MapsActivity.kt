@@ -1,7 +1,8 @@
-package com.example.belajar_android_pengenalan_material_design
+package com.example.belajar_android_pengenalan_material_design.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.belajar_android_pengenalan_material_design.R
 
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap

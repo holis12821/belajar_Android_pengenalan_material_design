@@ -1,4 +1,4 @@
-package com.example.belajar_android_pengenalan_material_design.screenItem;
+package com.example.belajar_android_pengenalan_material_design.model.screenItem;
 
 public class ScreenItem {
     private String  Title, Description;

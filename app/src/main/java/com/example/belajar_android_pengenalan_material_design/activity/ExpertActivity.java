@@ -1,4 +1,4 @@
-package com.example.belajar_android_pengenalan_material_design;
+package com.example.belajar_android_pengenalan_material_design.activity;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
@@ -15,9 +15,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
-
+import com.example.belajar_android_pengenalan_material_design.R;
 import com.example.belajar_android_pengenalan_material_design.form.DialogForm;
+import com.example.belajar_android_pengenalan_material_design.model.UsersData;
 import com.example.belajar_android_pengenalan_material_design.tab.MyAdapterExpert;
 import com.example.belajar_android_pengenalan_material_design.tab.SlidingTabLayout;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -59,12 +61,11 @@ public class ExpertActivity extends AppCompatActivity {
         });
 
         /*define Firebase User and Database reference to retrieve the data user and image*/
-        FirebaseUser mUsers = FirebaseAuth.getIns tance().getCurrentUser();
+        FirebaseUser mUsers = FirebaseAuth.getInstance().getCurrentUser();
         /*create condition if statement, where the if statement  will handled to a null value*/
         if (mUsers != null){
             DatabaseReference refExpert = FirebaseDatabase.getInstance()
-                    .getReference()
-                    .child("Users")
+                    .getReference("Users")
                     .child(mUsers.getUid());
             /*retrieve the username expert*/
             refExpert.addValueEventListener(new ValueEventListener() {
@@ -77,10 +78,16 @@ public class ExpertActivity extends AppCompatActivity {
                         /*retrieve the data*/
                         /*check data*/
                         /*looping forEach*/
-                        for (DataSnapshot s : snapshot.getChildren()){
-                        String retrieveUsername = Objects.requireNonNull(s.child("name").getValue()).toString();
-                        tv_expert.setText("Halo " + retrieveUsername);
-                        }
+                       try {
+                           UsersData usersData = snapshot.getValue(UsersData.class);
+                          if (usersData != null){
+                              tv_expert.setText("Halo " + usersData.getUsername());
+                          }
+                       } catch (NullPointerException e){
+                           Toast.makeText(ExpertActivity.this,
+                                   "Username has been null to produce null pointer exception" + e.getMessage(),
+                                   Toast.LENGTH_SHORT).show();
+                       }
                     }
                 }
 
@@ -91,8 +98,7 @@ public class ExpertActivity extends AppCompatActivity {
             });
 
             DatabaseReference dbRefExpert = FirebaseDatabase.getInstance()
-                    .getReference()
-                    .child("profile_images")
+                    .getReference("profile_images")
                     .child(mUsers.getUid());
             /*retrieve the image to display in the home activity*/
             dbRefExpert.addValueEventListener(new ValueEventListener() {
@@ -100,17 +106,22 @@ public class ExpertActivity extends AppCompatActivity {
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                     if (snapshot.exists()){
                         /*snapshot data to the captured*/
-                        for (DataSnapshot s : snapshot.getChildren() /*push*/){
-                            String retrieveImage = Objects.requireNonNull(s.child("imageUri").getValue()).toString();
-                            if (retrieveImage.equals("default")){
-                                circleImageView.setImageResource(R.drawable.profile_image);
-                            } else {
-                                Picasso.get()
-                                        .load(retrieveImage)
+                          try {
+                               UsersData usersData = snapshot.getValue(UsersData.class);
+                               if (usersData != null){
+                                   if (usersData.getImageURL().equals("default")){
+                                       circleImageView.setImageResource(R.drawable.profile_image);
+                                 } else {
+                                    Picasso.get()
+                                        .load(usersData.getImageURL())
                                         .into(circleImageView);
-                            }
-
-                        }
+                                   }
+                               }
+                          } catch (NullPointerException e){
+                              Toast.makeText(ExpertActivity.this,
+                                      "Image  has been null to produce null pointer exception" + e.getMessage(),
+                                      Toast.LENGTH_SHORT).show();
+                          }
                     }
                 }
 
@@ -141,7 +152,7 @@ public class ExpertActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 DialogForm dialogForm = new DialogForm("tambah");
-                dialogForm.show(getSupportFragmentManager(), "form");
+                dialogForm.show(getSupportFragmentManager(), DialogForm.class.getSimpleName());
             }
         });
     }

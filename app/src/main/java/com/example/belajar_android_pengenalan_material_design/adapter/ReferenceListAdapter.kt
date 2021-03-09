@@ -6,13 +6,13 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.belajar_android_pengenalan_material_design.R
 import com.example.belajar_android_pengenalan_material_design.model.ReferenceData
-import com.example.belajar_android_pengenalan_material_design.onclick.OnReferenceListener
+import com.example.belajar_android_pengenalan_material_design.onclick.OnReference
 import kotlinx.android.synthetic.main.reference_list.view.*
 
-class ReferenceGridAdapter(
+class ReferenceListAdapter(
         private val mItems: MutableList<ReferenceData>,
-        private val onReferenceListener: OnReferenceListener
-        ) : RecyclerView.Adapter<ReferenceGridAdapter.ViewHolder>() {
+        private val onReference: OnReference
+        ) : RecyclerView.Adapter<ReferenceListAdapter.ViewHolder>() {
 
     /*Create block init*/
     /*init block akan dipanggil ketika sebuah
@@ -70,7 +70,7 @@ class ReferenceGridAdapter(
 
         /*onClick button*/
         holder.itemView.setOnClickListener {
-            onReferenceListener.onReferenceClick(mItems[holder.adapterPosition])
+            onReference.onReferenceClick(mItems[holder.adapterPosition])
         }
     }
 

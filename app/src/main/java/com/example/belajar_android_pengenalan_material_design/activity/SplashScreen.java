@@ -1,4 +1,4 @@
-package com.example.belajar_android_pengenalan_material_design;
+package com.example.belajar_android_pengenalan_material_design.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,8 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.belajar_android_pengenalan_material_design.R;
 
 public class SplashScreen extends AppCompatActivity {
     /*Define Field in the Class Splash_Screen*/

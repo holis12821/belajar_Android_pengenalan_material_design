@@ -1,10 +1,12 @@
-package com.example.belajar_android_pengenalan_material_design;
+package com.example.belajar_android_pengenalan_material_design.activity;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -16,6 +18,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.example.belajar_android_pengenalan_material_design.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -28,6 +31,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.rengwuxian.materialedittext.MaterialEditText;
 
 import java.util.HashMap;
+import java.util.Objects;
 
 public class RegisterActivity extends AppCompatActivity {
     private MaterialEditText userName,emailAddress,password,mobile;
@@ -37,13 +41,14 @@ public class RegisterActivity extends AppCompatActivity {
     private FirebaseAuth firebaseAuth;
     private FirebaseFirestore fStore;
     private DatabaseReference databaseReference;
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         Toolbar toolbar = findViewById(R.id.toolbar);
        setSupportActionBar(toolbar);
-       getSupportActionBar().setTitle(R.string.label_Register);
+       Objects.requireNonNull(getSupportActionBar()).setTitle(R.string.label_Register);
        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
            @Override
@@ -87,12 +92,13 @@ public class RegisterActivity extends AppCompatActivity {
 
        /*Listener Button*/
         registerBtn.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.KITKAT)
             @Override
             public void onClick(View v) {
-                final String user_name = userName.getText().toString();
-                final String email = emailAddress.getText().toString();
-                final String txt_password = password.getText().toString();
-                final String txt_mobile = mobile.getText().toString();
+                final String user_name = Objects.requireNonNull(userName.getText()).toString();
+                final String email = Objects.requireNonNull(emailAddress.getText()).toString();
+                final String txt_password = Objects.requireNonNull(password.getText()).toString();
+                final String txt_mobile = Objects.requireNonNull(mobile.getText()).toString();
                 int checkedId = radioGroup.getCheckedRadioButtonId();
                 RadioButton selected_gender = radioGroup.findViewById(checkedId);
 
@@ -123,6 +129,7 @@ public class RegisterActivity extends AppCompatActivity {
         progressBar.setVisibility(View.VISIBLE);
         /*Define FirebaseAuth and Create User with email and password*/
         firebaseAuth.createUserWithEmailAndPassword(email, txt_password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            @RequiresApi(api = Build.VERSION_CODES.KITKAT)
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()){
@@ -132,9 +139,11 @@ public class RegisterActivity extends AppCompatActivity {
                     String userId = rUser.getUid();
                     DocumentReference df = fStore.collection("Users").document(rUser.getUid());
                     databaseReference = FirebaseDatabase.getInstance().getReference("Users").child(userId);
-                    HashMap<String,String> hashMap = new HashMap<>();
+                    HashMap<String, String> hashMap = new HashMap<>();
                     hashMap.put("userId", userId);
-                    hashMap.put("username", user_name);
+                    hashMap.put("username", user_name.toLowerCase());
+                    hashMap.put("search", user_name.toLowerCase());
+                    hashMap.put("status", "offline");
                     hashMap.put("email", email);
                     hashMap.put("gender", gender);
                     hashMap.put("mobile", txt_mobile);
@@ -150,6 +159,7 @@ public class RegisterActivity extends AppCompatActivity {
                     df.set(hashMap);
                     databaseReference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
 
+                        @RequiresApi(api = Build.VERSION_CODES.KITKAT)
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
                             progressBar.setVisibility(View.GONE);
@@ -158,14 +168,14 @@ public class RegisterActivity extends AppCompatActivity {
                                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK| Intent.FLAG_ACTIVITY_NEW_TASK);
                                 startActivity(intent);
                             } else{
-                                Toast.makeText(RegisterActivity.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(RegisterActivity.this, Objects.requireNonNull(task.getException()).getMessage(), Toast.LENGTH_SHORT).show();
                             }
                         }
                     });
 
                 }else{
                     progressBar.setVisibility(View.GONE);
-                    Toast.makeText(RegisterActivity.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegisterActivity.this, Objects.requireNonNull(task.getException()).getMessage(), Toast.LENGTH_SHORT).show();
                 }
             }
         });

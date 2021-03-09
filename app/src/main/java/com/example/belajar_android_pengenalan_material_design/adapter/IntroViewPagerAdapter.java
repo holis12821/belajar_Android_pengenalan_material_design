@@ -12,7 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 
 import com.example.belajar_android_pengenalan_material_design.R;
-import com.example.belajar_android_pengenalan_material_design.screenItem.ScreenItem;
+import com.example.belajar_android_pengenalan_material_design.model.screenItem.ScreenItem;
 
 import java.util.List;
 

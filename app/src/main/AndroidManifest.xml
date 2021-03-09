@@ -21,7 +21,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         tools:ignore="AllowBackup">
-
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -35,7 +34,7 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".SplashScreen"
+            android:name=".activity.SplashScreen"
             android:label="@string/app_name"
             android:theme="@style/AppTheme_splash_screen">
             <intent-filter>
@@ -45,52 +44,52 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".IntroActivity"
+            android:name=".activity.IntroActivity"
             android:label="@string/SplashScreen_onBoard"
             android:theme="@style/AppTheme_IntroActivity"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name=".RegisterActivity"
+            android:name=".activity.RegisterActivity"
             android:label="@string/label_Register"
             android:theme="@style/AppTheme_Register"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".activity.LoginActivity"
             android:label="@string/label_Login"
             android:theme="@style/AppTheme_Login" />
         <activity
-            android:name=".ExpertActivity"
+            android:name=".activity.ExpertActivity"
             android:theme="@style/AppTheme_ExpertActivity"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name=".ForgetPasswordActivity"
+            android:name=".activity.ForgetPasswordActivity"
             android:label="@string/title_activity_Forget_Password"
             android:theme="@style/AppTheme_Forget_Password"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name=".StartActivity"
+            android:name=".activity.StartActivity"
             android:theme="@style/AppTheme_Start"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".ChangePasswordActivity"
+            android:name=".activity.ChangePasswordActivity"
             android:label="@string/title_changePassword"
             android:theme="@style/AppTheme_Change_Password"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name=".DetailDiagnosa"
+            android:name=".activity.DetailDiagnosa"
             android:label="@string/detail_Diagnosa"
             android:theme="@style/AppTheme_detail_Diagnosa"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name=".MapsActivity"
+            android:name=".activity.MapsActivity"
             android:label="@string/title_activity_maps"
             android:theme="@style/AppTheme_maps"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name=".SettingsActivity"
+            android:name=".activity.SettingsActivity"
             android:label="@string/settings"
             android:theme="@style/AppTheme_settings"
             android:windowSoftInputMode="adjustResize|stateHidden" />
@@ -99,9 +98,14 @@
             android:label="@string/crop"
             android:theme="@style/Base.Theme.AppCompat"
             android:windowSoftInputMode="adjustResize|stateHidden" />
-        <activity android:name=".ReferenceActivity"
+        <activity
+            android:name=".activity.ReferenceActivity"
             android:label="@string/daftar_acuan"
             android:theme="@style/AppTheme_Reference"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".activity.MessageChatActivity"
+            android:theme="@style/AppTheme_Message"
             android:windowSoftInputMode="adjustResize|stateHidden"/>
     </application>
 

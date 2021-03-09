@@ -1,5 +1,4 @@
-package com.example.belajar_android_pengenalan_material_design
-
+package com.example.belajar_android_pengenalan_material_design.activity
 import android.app.Dialog
 import android.content.Intent
 import android.graphics.Bitmap
@@ -8,20 +7,27 @@ import android.os.Bundle
 import android.os.Handler
 import android.provider.MediaStore
 import android.text.TextUtils
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.belajar_android_pengenalan_material_design.R
 import com.example.belajar_android_pengenalan_material_design.`object`.CommonUtils
+import com.example.belajar_android_pengenalan_material_design.model.UsersData
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.UserProfileChangeRequest
 import com.google.firebase.database.*
+import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import com.squareup.picasso.Picasso
 import com.theartofdev.edmodo.cropper.CropImage
 import com.theartofdev.edmodo.cropper.CropImageView
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_settings.*
+import kotlinx.android.synthetic.main.activity_settings.profile_image
 import kotlinx.android.synthetic.main.bar_layout.*
+import kotlinx.android.synthetic.main.bar_layout.toolbar
 import java.io.ByteArrayOutputStream
 import java.io.IOException
 
@@ -61,7 +67,8 @@ class SettingsActivity : AppCompatActivity() {
                     .child("Users")
                     .child(mUsers.uid)
         }
-        storageReference = FirebaseStorage.getInstance().getReference("profile_images")
+        storageReference = FirebaseStorage.getInstance()
+                .getReference("profile_images")
 
         /*add data profile*/
         btn_update_status.setOnClickListener {
@@ -157,7 +164,7 @@ class SettingsActivity : AppCompatActivity() {
                 val image = byteAOS.toByteArray()
 
                 val imageReference = mAuth.currentUser?.uid?.let {
-                    storageReference.child("$it.jpg")
+                    storageReference.child(it + System.currentTimeMillis() +".jpg")
                 }
                 /*Upload file image ke firebase storage yang mana menggunakan referensi*/
                 imageReference?.putBytes(image)
@@ -172,18 +179,36 @@ class SettingsActivity : AppCompatActivity() {
                                     task.result?.let { uri ->
                                         imageUri = uri
                                         val mapUri = hashMapOf<String, Any?>()
-                                        mapUri["imageUri"] = imageUri.toString()
-                                        mapUri["imageUri"] = "default"
-                                        val mUsers: FirebaseUser? = mAuth.currentUser
-                                        val dbRefUri = mUsers?.uid?.let { user ->
-                                            FirebaseDatabase.getInstance()
-                                                    .reference
-                                                    .child("profile_images")
-                                                    .child(user)
+                                            mapUri["imageUrl"] = imageUri.toString()
+                                            val mUsers: FirebaseUser? = mAuth.currentUser
+                                            val dbRefUri = mUsers?.uid?.let { user ->
+                                                FirebaseDatabase.getInstance()
+                                                        .reference
+                                                        .child("profile_images")
+                                                        .child(user)
                                         }
+                                        /*create FirebaseFirestore*/
+                                        val fStore = FirebaseFirestore.getInstance()
+                                        val documentRef = mUsers?.uid?.let { uid ->
+                                            fStore.collection("Users").document(uid)
+                                        }
+                                        /*Update imageUrl for FirebaseFirestore*/
+                                        documentRef?.update(mapUri)
+                                                ?.addOnCompleteListener { complete ->
+                                                    if (complete.isSuccessful){
+                                                        Toast.makeText(this,
+                                                                "Image update firestore successfully",
+                                                                Toast.LENGTH_SHORT).show()
+                                                    }
+                                                }?.addOnFailureListener { error ->
+                                                    Toast.makeText(this,
+                                                            "Image error update firestore",
+                                                            Toast.LENGTH_SHORT).show()
+                                                    Log.e(SettingsActivity::class.java.simpleName,
+                                                            "Error update firestore at line 195 ${error.message}")
+                                                }
                                         /*push the data in realtime database*/
-                                        dbRefUri?.push()
-                                                ?.setValue(mapUri)
+                                        dbRefUri?.setValue(mapUri)
                                                 ?.addOnCompleteListener {done ->
                                                     if (done.isSuccessful) {
                                                         Toast.makeText(this,
@@ -236,16 +261,14 @@ class SettingsActivity : AppCompatActivity() {
                         Toast.LENGTH_SHORT).show()
             } else -> {
             val currentUserId = mAuth.currentUser?.uid
-            val profilMap = hashMapOf<String, String?>()
+            val profilMap = hashMapOf<String, Any?>()
             /*Conditional if, if the current user id has containing null
             * then unfulfilled */
             if (currentUserId != null){
-                profilMap["uid"] = currentUserId
-                profilMap["name"] = setUsername
+                profilMap["username"] = setUsername
                 profilMap["status"] = setStatus
                 /*add data to DatabaseReference*/
-                dbRef.push()
-                        .setValue(profilMap)
+                dbRef.updateChildren(profilMap)
                         .addOnCompleteListener {
                             /*Condition if, if task successful*/
                             if (it.isSuccessful){
@@ -272,13 +295,9 @@ class SettingsActivity : AppCompatActivity() {
                 /*retrieve data users*/
                 /*disable EditText if the user account has been created*/
                if (snapshot.exists()){
-                   for(h in snapshot.children){
-                       val retrieveUser = h.child("name").value.toString()
-                       val retrieveStatus = h.child("status").value.toString()
-                       /*print the data*/
-                       set_username.setText(retrieveUser)
-                       status.setText(retrieveStatus)
-                   }
+                   val userData = snapshot.getValue(UsersData::class.java)
+                   set_username.setText(userData?.username)
+                   status.setText(userData?.status)
                } else {
                    Toast.makeText(this@SettingsActivity,
                    "Please update your profile information",

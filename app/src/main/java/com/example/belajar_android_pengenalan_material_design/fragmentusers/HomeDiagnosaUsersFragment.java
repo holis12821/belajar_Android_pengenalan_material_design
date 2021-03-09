@@ -20,7 +20,7 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Toast;
-import com.example.belajar_android_pengenalan_material_design.DetailDiagnosa;
+import com.example.belajar_android_pengenalan_material_design.activity.DetailDiagnosa;
 import com.example.belajar_android_pengenalan_material_design.R;
 import com.example.belajar_android_pengenalan_material_design.model.UserDiagnosa;
 import com.google.android.gms.tasks.OnCompleteListener;

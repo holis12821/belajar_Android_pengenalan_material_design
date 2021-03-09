@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.belajar_android_pengenalan_material_design.MainActivity"
+    tools:context="com.example.belajar_android_pengenalan_material_design.activity.MainActivity"
     tools:showIn="@layout/activity_main">
 
     <com.example.belajar_android_pengenalan_material_design.tab.SlidingTabLayout

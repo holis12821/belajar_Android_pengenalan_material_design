@@ -528,5 +528,54 @@
     <dimen name="layout_heightCircleImageViewToolbar">32dp</dimen>
 
     <dimen name="textSizeUsername">18sp</dimen>
-    <dimen name="layout_marginLeftUsername">26dp</dimen>
+    <dimen name="layout_marginLeftUsername">11dp</dimen>
+
+    <dimen name="layout_marginLeftUsername_status">26dp</dimen>
+
+    <dimen name="paddingRelativeLayout">6dp</dimen>
+
+    <dimen name="layout_widthImageViewRelativeLayout">34dp</dimen>
+    <dimen name="layout_heightImageViewRelativeLayout">34dp</dimen>
+
+    <dimen name="layoutBottom_attach_file">5dp</dimen>
+
+    <dimen name="layout_marginLeftEditTextChat">6dp</dimen>
+    <dimen name="layout_marginRightEditTextChat">6dp</dimen>
+
+    <dimen name="layout_width_Circle_ImageView">47dp</dimen>
+    <dimen name="layout_height_Circle_ImageView">47dp</dimen>
+
+    <dimen name="layout_width_Circle_ImageView_online">18dp</dimen>
+    <dimen name="layout_height_Circle_ImageView_online">18dp</dimen>
+
+    <dimen name="layout_marginLeftTextViewSearch">12dp</dimen>
+    <dimen name="textSizeTextViewSearch">16sp</dimen>
+    <dimen name="layout_marginTopLayout">14dp</dimen>
+
+    <dimen name="civ_border_width_imageView_online">9dp</dimen>
+    <dimen name="layout_marginTopImageView_online">12dp</dimen>
+    <dimen name="layout_marginLeftImageViewOnline">-16dp</dimen>
+
+    <dimen name="layout_marginTopTextViewLast">14dp</dimen>
+    <dimen name="layout_marginLeftTextViewLast">20dp</dimen>
+    <dimen name="paddingTextView">6dp</dimen>
+
+    <dimen name="layout_marginEditTextSearch">6dp</dimen>
+
+    <dimen name="layout_marginLeftSearchUser">8dp</dimen>
+    <dimen name="layout_marginRightSearchUser">8dp</dimen>
+
+    <dimen name="layout_marginTopTextViewUsername">7dp</dimen>
+    <dimen name="textEmailSize">10sp</dimen>
+    <dimen name="layout_marginTopTextViewEmail">30dp</dimen>
+
+    <dimen name="layout_marginLeftTextViewEmail">13dp</dimen>
+
+    <dimen name="layout_marginTopLayoutDiagnosa">14dp</dimen>
+
+    <dimen name="layout_marginStartStatus">20dp</dimen>
+    <dimen name="layout_marginLeftStatusLayout">20dp</dimen>
+    <dimen name="layout_marginLeftOnlineStatus">12dp</dimen>
+    <dimen name="layout_marginTopOnlineStatus">5dp</dimen>
+    <dimen name="layout_marginTopOnlineStatusSearch">9dp</dimen>
 </resources>

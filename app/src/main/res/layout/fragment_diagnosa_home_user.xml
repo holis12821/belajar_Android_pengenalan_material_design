@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:layout_marginTop="@dimen/layout_marginTopLayoutDiagnosa"
     android:paddingBottom="@dimen/padding_Bottom_RelativeLayout"
     tools:context="com.example.belajar_android_pengenalan_material_design.fragmentusers.HomeDiagnosaUsersFragment">
 
