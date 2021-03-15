@@ -144,7 +144,7 @@ class SettingsActivity : AppCompatActivity() {
                 /*Define Handler to handle tread time process animation progressDialog*/
                 Handler().postDelayed({
                     hiddenLoadingBar()
-                }, 5000)
+                }, 4500)
                 /*get Uri image*/
                 imageUri = result.uri
                 var bitMap: Bitmap? = null

@@ -106,7 +106,7 @@ class  MessageChatActivity : AppCompatActivity() {
                     if (chats?.receiver?.equals(senderId)!! && chats.sender.equals(receiverId)
                             || chats.receiver.equals(receiverId) && chats.sender.equals(senderId)) {
                         (mChatList as ArrayList<Chats>).add(chats)
-                    }
+                    } 
                     displayChatAdapter = hisImage?.let { image ->
                         DisplayChatAdapter(this@MessageChatActivity,
                                 mChatList as ArrayList<Chats>, image)

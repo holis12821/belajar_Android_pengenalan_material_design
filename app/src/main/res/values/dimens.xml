@@ -612,8 +612,8 @@
     <dimen name="layout_Linear_height">295dp</dimen>
     <dimen name="layout_marginTopTextViewTimeChat">13dp</dimen>
 
-    <dimen name="layout_marginLeftLinearLayoutMessage">52dp</dimen>
-    <dimen name="layout_marginRightLinearLayoutMessage">14dp</dimen>
+    <dimen name="layout_marginLeftLinearLayoutMessage">59dp</dimen>
+    <dimen name="layout_marginRightLinearLayoutMessage">9dp</dimen>
     <dimen name="layout_marginLeftLinearLayoutMessageLeft">15dp</dimen>
     <dimen name="layout_marginTopLinearLayoutChat">9dp</dimen>
     <dimen name="paddingMessageChat">13dp</dimen>
