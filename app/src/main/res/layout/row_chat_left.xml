@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="@dimen/layout_Linear_width"
+    android:layout_marginTop="@dimen/layout_marginTopLinearLayoutChat"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutChatLeft"
+        android:layout_width="@dimen/layout_Linear_width"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="@dimen/layout_widthCircleImageViewChatLeft"
+            android:layout_height="@dimen/layout_widthCircleImageViewChatLeft"
+            android:layout_marginTop="@dimen/layout_marginTopCircleImageViewLeftChat"
+            android:layout_marginLeft="@dimen/layout_marginLeftTimeChat"
+            android:src="@drawable/profile_image"
+            android:layout_marginStart="@dimen/layout_marginLeftTimeChat" />
+
+        <TextView
+            android:id="@+id/messageChat"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSizeChat_Left"
+            android:layout_marginTop="@dimen/marginTopDisplayChat"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/bg_receiver"
+            android:padding="@dimen/paddingTextChat"
+            android:text="@string/His_message"
+            />
+
+        <ImageView
+            android:id="@+id/left_image_view"
+            android:layout_width="@dimen/layout_widthImageViewMessageLeft"
+            android:layout_height="@dimen/layout_heightImageViewMessageLeft"
+            android:visibility="gone"
+            android:contentDescription="@string/ImageView_StartActivity" />
+
+
+        <TextView
+            android:id="@+id/timeChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/textSizeTimeChat"
+            android:layout_marginTop="@dimen/layout_marginTopTextViewTimeChat"
+            android:layout_marginLeft="@dimen/layout_marginLeftTimeChat"
+            android:layout_marginRight="@dimen/layout_marginRightTimeChat"
+            android:layout_marginStart="@dimen/layout_marginLeftTimeChat"
+            android:layout_marginEnd="@dimen/layout_marginRightTimeChat" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/isSeenChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_marginRight="@dimen/layout_marginRightTimeChat"
+        android:textAlignment="textEnd"
+        android:text="@string/delivered"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginEnd="@dimen/layout_marginRightTimeChat" />
+
+</LinearLayout>

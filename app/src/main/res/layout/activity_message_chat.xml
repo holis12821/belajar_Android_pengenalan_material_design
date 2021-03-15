@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.MessageChatActivity"
+    android:background="@color/color_white_background"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_message"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_anchor="@+id/appBarLayout"
+            app:layout_anchorGravity="center"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <LinearLayout
+                android:id="@+id/layout_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/layout_marginStartStatus"
+                android:layout_marginLeft="@dimen/layout_marginLeftStatusLayout">
+
+                <!--Create Circle Image View in toolbar-->
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image_message"
+                    android:layout_width="@dimen/layout_widthCircleImageViewToolbar"
+                    android:layout_height="@dimen/layout_heightCircleImageViewToolbar"
+                    android:layout_marginTop="@dimen/layout_marginTopOnlineStatus"
+                    android:src="@drawable/ic_baseline_account_circle_24">
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <RelativeLayout
+                    android:id="@+id/layout_username_online"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/user_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/username"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSizeUsername"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/layout_marginTopUsernameUser"
+                        android:layout_marginLeft= "@dimen/layout_marginLeftUsername"
+                        android:layout_marginStart="@dimen/layout_marginLeftUsername"/>
+                    <!--Online offline status letter the implement-->
+                    <TextView
+                        android:id="@+id/online_offline_status"
+                        android:layout_width="wrap_content"
+                        android:text="@string/online"
+                        android:textColor="@color/white"
+                        android:layout_below="@+id/user_message"
+                        android:layout_marginBottom="@dimen/layout_marginBottomUsernameUser"
+                        android:layout_marginLeft="@dimen/layout_marginLeftOnlineStatus"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/layout_marginRightUsernameUser"
+                        android:layout_marginStart="@dimen/layout_marginLeftOnlineStatus"
+                        android:layout_marginEnd="@dimen/layout_marginRightUsernameUser" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBarLayout"
+        android:layout_above="@+id/relative_layout_bottom">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/paddingRelativeLayout"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/attach_image_file_btn"
+            android:layout_width="@dimen/layout_widthImageViewRelativeLayout"
+            android:layout_height="@dimen/layout_heightImageViewRelativeLayout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="@dimen/layoutTop_attach_file"
+            android:layout_marginBottom="@dimen/layoutBottom_attach_file"
+            android:background="@drawable/ic_baseline_attach_file_24"
+            android:contentDescription="@string/imgChat" />
+
+        <EditText
+            android:id="@+id/text_Message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:autofillHints="@string/write_message"
+            android:hint="@string/write_message"
+            android:layout_toRightOf="@id/attach_image_file_btn"
+            android:layout_centerVertical="true"
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_toLeftOf="@+id/send_message_btn"
+            android:layout_toEndOf="@id/attach_image_file_btn"
+            android:layout_marginLeft="@dimen/layout_marginLeftEditTextChat"
+            android:padding="@dimen/paddingMessageChat"
+            android:layout_marginStart="@dimen/layout_marginLeftEditTextChat"
+            android:layout_marginRight="@dimen/layout_marginRightEditTextChat"
+            android:layout_marginEnd="@dimen/layout_marginRightEditTextChat"
+            android:layout_marginBottom="@dimen/layout_marginBottomTextMessage"
+            android:layout_toStartOf="@+id/send_message_btn" />
+
+        <ImageView
+            android:id="@+id/send_message_btn"
+            android:layout_width="@dimen/layout_widthImageViewRelativeLayout"
+            android:layout_height="@dimen/layout_heightImageViewRelativeLayout"
+            android:background="@drawable/ic_baseline_send_24"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/layoutTop_SendMessageButton"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/imgChat"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

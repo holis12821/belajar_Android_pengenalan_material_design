@@ -532,15 +532,15 @@
 
     <dimen name="layout_marginLeftUsername_status">26dp</dimen>
 
-    <dimen name="paddingRelativeLayout">6dp</dimen>
+    <dimen name="paddingRelativeLayout">4dp</dimen>
 
     <dimen name="layout_widthImageViewRelativeLayout">34dp</dimen>
     <dimen name="layout_heightImageViewRelativeLayout">34dp</dimen>
 
-    <dimen name="layoutBottom_attach_file">5dp</dimen>
-
-    <dimen name="layout_marginLeftEditTextChat">6dp</dimen>
-    <dimen name="layout_marginRightEditTextChat">6dp</dimen>
+    <dimen name="layoutBottom_attach_file">2dp</dimen>
+    <dimen name="layoutTop_attach_file">12dp</dimen>
+    <dimen name="layout_marginLeftEditTextChat">8dp</dimen>
+    <dimen name="layout_marginRightEditTextChat">8dp</dimen>
 
     <dimen name="layout_width_Circle_ImageView">47dp</dimen>
     <dimen name="layout_height_Circle_ImageView">47dp</dimen>
@@ -575,7 +575,52 @@
 
     <dimen name="layout_marginStartStatus">20dp</dimen>
     <dimen name="layout_marginLeftStatusLayout">20dp</dimen>
-    <dimen name="layout_marginLeftOnlineStatus">12dp</dimen>
-    <dimen name="layout_marginTopOnlineStatus">5dp</dimen>
+    <dimen name="layout_marginLeftOnlineStatus">11dp</dimen>
+    <dimen name="layout_marginTopOnlineStatus">9dp</dimen>
     <dimen name="layout_marginTopOnlineStatusSearch">9dp</dimen>
+
+    <dimen name="layout_paddingLinearLayoutChatLeft">10dp</dimen>
+
+    <dimen name="layout_widthCircleImageViewChatLeft">40dp</dimen>
+    <dimen name="layout_heightCircleImageViewChatLeft">40dp</dimen>
+    <dimen name="layout_widthCircleImageViewChatRight">40dp</dimen>
+    <dimen name="layout_marginTopCircleImageViewLeftChat">9dp</dimen>
+    <dimen name="textSizeChat_Left">16sp</dimen>
+    <dimen name="paddingTextChat">15dp</dimen>
+    <dimen name="marginTopDisplayChat">12dp</dimen>
+    <dimen name="textSizeTimeChat">10sp</dimen>
+    <dimen name="layout_marginLeftTimeChat">6dp</dimen>
+    <dimen name="layout_marginRightTimeChat">11dp</dimen>
+    <dimen name="layout_marginTopSender">6dp</dimen>
+
+    <dimen name="RelativeLayoutChatLeft">295dp</dimen>
+    <dimen name="layout_marginLefttextViewMessageLeft">9dp</dimen>
+    <dimen name="paddingTextViewMessageLeft">8dp</dimen>
+    <dimen name="paddingTextViewMessage">8dp</dimen>
+
+    <dimen name="layout_widthImageViewMessageLeft">100dp</dimen>
+    <dimen name="layout_heightImageViewMessageLeft">100dp</dimen>
+
+    <dimen name="layout_widthRelativeLayoutChatLeft">400dp</dimen>
+    <dimen name="layout_marginLeftCircleImageViewLeftChat">11dp</dimen>
+    <dimen name="layout_marginTopLeftChat">11dp</dimen>
+    <dimen name="layout_marginTopChatLeft">5dp</dimen>
+    <dimen name="layout_widthRelativeLayoutRightChat">300dp</dimen>
+    <dimen name="layout_marginLeftRelativeLayoutChat">99dp</dimen>
+    <dimen name="layout_marginTopRelative">7dp</dimen>
+    <dimen name="layout_Linear_width">370dp</dimen>
+    <dimen name="layout_Linear_height">295dp</dimen>
+    <dimen name="layout_marginTopTextViewTimeChat">13dp</dimen>
+
+    <dimen name="layout_marginLeftLinearLayoutMessage">52dp</dimen>
+    <dimen name="layout_marginRightLinearLayoutMessage">14dp</dimen>
+    <dimen name="layout_marginLeftLinearLayoutMessageLeft">15dp</dimen>
+    <dimen name="layout_marginTopLinearLayoutChat">9dp</dimen>
+    <dimen name="paddingMessageChat">13dp</dimen>
+    <dimen name="layout_marginBottomTextMessage">6dp</dimen>
+    <dimen name="layoutTop_SendMessageButton">12dp</dimen>
+    <dimen name="layout_marginTopUsernameUser">3dp</dimen>
+    <dimen name="layout_marginTopOnlineStatusMessage">10dp</dimen>
+    <dimen name="layout_marginBottomUsernameUser">3dp</dimen>
+    <dimen name="layout_marginRightUsernameUser">2dp</dimen>
 </resources>

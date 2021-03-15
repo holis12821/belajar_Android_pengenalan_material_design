@@ -266,6 +266,9 @@
     <string name="search">Cari psikolog....</string>
     <string name="email">email</string>
     <string name="online">online</string>
+    <string name="His_message">His message</string>
+    <string name="time">09/03/2021 15:59pm</string>
+    <string name="delivered">delivered</string>
 
 
 </resources>
